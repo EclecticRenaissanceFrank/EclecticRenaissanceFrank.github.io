@@ -1,9 +1,16 @@
+/*
+  ========================================
+  REMOVE UNNEEDED FONT WEIGHTS IN HTML WHEN FINISHED
+  ========================================
+*/
+
+
+
 body {
   background-color: #151515;
   color: #FAFAFA;
   font-family: lato, Arial, Helvetica, sans-serif;
   font-size: 20px;
-  margin: 4.15% 8.3% 4.15% 8.3%;
   border: red dashed 1px;
 }
 
@@ -14,17 +21,35 @@ body {
 
   nav {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    align-content: space-around;
+    grid-template-columns: 4fr 1fr 1fr 1fr;
+    justify-content: space-evenly;
   }
 
-/* font-family: droid serif, georgia, serif;
+/* font-family: ???????, georgia, serif;
+
+
 
 The text-indent property allows to add space before the first letter of the first line of a block-level element.
 Default value: 0 (zero)
 
 
+
 border: red dashed 1px;
+
+
+
+<blockquote> for bruce lee quote <blockquote> the <p> for "-Bruce Lee"
+
+
+
+@media
+media type: all, screen, print, tv, braille
+logical operator: and, not, only
+media feature: ()...
+  (orientation: landscape)
+  (min-width: 320px)
+  (max-width: 780px)
+
 
 
 @media all and (min-width: 800px) and (max-width: 1024px) {...}
@@ -40,6 +65,68 @@ Default styles first then media queries
 @media screen and (min-width: 600px)  {...}
 @media screen and (min-width: 1000px) {...}
 @media screen and (min-width: 1400px) {...}
+
+
+
+
+Both the <article> and <section> elements contribute to a document’s structure and help to outline a document. If the content is being grouped solely for styling purposes and doesn’t provide value to the outline of a document, use the <div> element.
+
+If the content adds to the document outline and it can be independently redistributed or syndicated, use the <article> element.
+
+If the content adds to the document outline and represents a thematic group of content, use the <section> element.
+
+NEW PAGE
+<a href="http://shayhowe.com/" target="_blank">Shay Howe</a>
+SAME PART OF PAGE
+<body id="top"> - put an id of whatever
+<a href="#top">Back to top</a> - #whtever
+
+
+
+a:hover {
+  color: #ff7b29; MAYBE HOVER TO MY PALETTE
+
+
+
+CITATION
+  <p>The book <cite><a href="http://www.amazon.com/Steve-Jobs-Walter-Isaacson/dp/1451648537">Steve Jobs</a></cite> is truly inspirational</p>
+QUOTE
+<p>Steve Jobs once said, <q>One home run is much better than two doubles.</q></p>
+
+
+
+
+
+
+
+
+
+
+
+
+Fixed Header or Footer
+
+One of the most common uses of fixed positioning is to build a fixed header, or footer, anchored to one side of a page. As a user scrolls the element stays prevalent, always within the viewport for users to interact with.
+
+The code and demonstration below outline how this may be achieved. Notice how both left and right box offset properties are declared. This allows the footer to span the entire width of the bottom of the page, and it does so without disrupting the box model, allowing margins, borders, and padding to be applied freely.
+HTML
+<footer>Fixed Footer</footer>
+
+CSS	
+body {
+  background: #eaeaed;
+}
+footer {
+  background: #2db34a;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+}
+
+
+
+
 
 
 */
