@@ -10,23 +10,68 @@ body {
   background-color: #151515;
   color: #FAFAFA;
   font-family: lato, Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   border: red dashed 1px;
 }
 
-.intro {display: grid;
-  grid-template-columns: 1fr;
-  text-align: center;
-  }
+.grid-index {
+  display: grid;
+  grid-template-areas: ;
+  grid-template-columns: repeat(1fr, 12);
+  grid-template-rows: 10vh 90vh max-content 10vh; 
+}
 
-  nav {
-    display: grid;
-    grid-template-columns: 4fr 1fr 1fr 1fr;
-    justify-content: space-evenly;
-  }
+.grid-about {
+  display: grid;
+}
 
-/* font-family: ???????, georgia, serif;
+header {
+  grid-row: 1;
+  border: red dashed 1px;
+}
+/* Define grid areas for header & footer
+so different numbers can be used*/
+footer {
+  grid-row: 4;
+  border: red dashed 1px;
+}
 
+a {
+    background-color: salmon;
+}
+.type-logo {
+  display: inline;
+}
+
+.projects {
+  display: flex;
+  border: red dashed 1px;
+}
+
+.tile {
+  width: 100%;
+  border: red dashed 1px;
+}
+
+
+
+.green-l {
+  color: #9FD39F;
+}
+
+.green-d {
+  color: rgba(24, 81, 27, 0.8);
+}
+
+.gold {
+  color: #E3C588;
+}
+
+.mustard {
+  color: rgba(119, 89, 29, 0.8);
+}
+
+/*
 
 
 The text-indent property allows to add space before the first letter of the first line of a block-level element.
