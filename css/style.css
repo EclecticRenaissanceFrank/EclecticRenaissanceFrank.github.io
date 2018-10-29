@@ -79,7 +79,14 @@ a {
 .grid-index {
   display: grid;
 
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 
+  10vh
+  85vh
+  5vh
+  max-content
+  max-content
+  10vh;
+  
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 
   grid-gap: 5vh;
