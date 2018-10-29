@@ -1,60 +1,18 @@
 /*
   ========================================
-  REMOVE UNNEEDED FONT WEIGHTS IN HTML WHEN FINISHED
+  NOTES:
+  - Remove unneeded font weights in html when finished
+  - ...
   ========================================
 */
 
 
 
-body {
-  background-color: #151515;
-  color: #FAFAFA;
-  font-family: lato, Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  border: red dashed 1px;
-}
-
-.grid-index {
-  display: grid;
-  grid-template-areas: ;
-  grid-template-columns: repeat(1fr, 12);
-  grid-template-rows: 10vh 90vh max-content 10vh; 
-}
-
-.grid-about {
-  display: grid;
-}
-
-header {
-  grid-row: 1;
-  border: red dashed 1px;
-}
-/* Define grid areas for header & footer
-so different numbers can be used*/
-footer {
-  grid-row: 4;
-  border: red dashed 1px;
-}
-
-a {
-    background-color: salmon;
-}
-.type-logo {
-  display: inline;
-}
-
-.projects {
-  display: flex;
-  border: red dashed 1px;
-}
-
-.tile {
-  width: 100%;
-  border: red dashed 1px;
-}
-
-
-
+/*
+  ========================================
+  COLORS
+  ========================================
+*/
 .green-l {
   color: #9FD39F;
 }
@@ -71,7 +29,127 @@ a {
   color: rgba(119, 89, 29, 0.8);
 }
 
+
+
 /*
+  ========================================
+  WHERE IS IT?
+  ========================================
+*/
+header {
+  border: red dashed 1px;
+}
+body {
+  border: red dashed 1px;
+}
+.nav {
+  border: red dashed 1px;
+}
+.hero {
+  border: red dashed 1px;
+}
+.projects {
+  border: red dashed 1px;
+}
+.projects-bandtastic {
+  border: red dashed 1px;
+}
+.projects-vocoacher {
+  border: red dashed 1px;
+}
+footer {
+  border: red dashed 1px;
+}
+a {
+    background-color: #ff8484;
+}
+
+
+
+/*
+  ========================================
+  Grids
+  ========================================
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+.grid-index {
+  display: grid;
+
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+  grid-gap: 5vh;
+  place-content: space-evenly / space-evenly;
+}
+
+.grid-about {
+  display: grid;
+}
+
+
+/*
+  ========================================
+  Base Style
+  ========================================
+*/
+body {
+  background-color: #151515;
+  color: #FAFAFA;
+  font-family: lato, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+/*
+  ========================================
+  Placement
+  ========================================
+*/
+.nav {
+  grid-column: 1 / 13;
+  grid-row: 1 / 2;
+}
+.hero {}
+.projects {}
+.projects-vocoacher {}
+.projects-bandtastic {}
+.footer {}
+
+
+
+
+/*
+
+
+
+
+
+
+.nav {
+  justify-items: space-around;
+}
+
+.projects...or band & voco...idk... {
+  display: block;
+}
+#type-logo {
+  display: inline;
+}
+
+.projects {
+  display: block;
+  border: red dashed 1px;
+  height: 100vw;
+}
+
+.tile {
+  width: 100wv;
+  border: red dashed 1px;
+}
+
+
 
 
 The text-indent property allows to add space before the first letter of the first line of a block-level element.
