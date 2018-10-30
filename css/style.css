@@ -36,14 +36,11 @@
   WHERE IS IT?
   ========================================
 */
-header {
-  border: red dashed 1px;
-}
 body {
   border: red dashed 1px;
 }
 .nav {
-  border: green dotted 1px;
+  border: orange solid 1px;
 }
 .hero {
   border: green dotted 1px;
@@ -52,16 +49,13 @@ body {
   border: green dotted 1px;
 }
 .projects-bandtastic {
-  border: green dotted 1px;
+  border: #E3C588 dotted 1px;
 }
 .projects-vocoacher {
-  border: green dotted 1px;
+  border: #9FD39F dotted 1px;
 }
 footer {
-  border: red dashed 1px;
-}
-a {
-    background-color: #ff8484;
+  border: orange solid 1px;
 }
 
 
@@ -76,31 +70,27 @@ a {
   box-sizing: border-box;
 }
 
-.grid-index {
+.grid-nav {
   display: grid;
-
-  grid-template-rows: 
-  10vh
-  85vh
-  5vh
-  max-content
-  max-content
-  10vh;
-  
-  grid-template-columns: 
-  1fr 1fr 1fr 
-  1fr 1fr 1fr 
-  1fr 1fr 1fr 
-  1fr 1fr 1fr;
-
-  grid-gap: 1vh;
-  place-content: space-evenly / space-evenly;
+  grid-template-rows: 10vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
 }
 
-.grid-about {
+.grid-hero {
   display: grid;
+  grid-template-rows: 85vh;
+  align-items: center;
+  justify-items: center;
 }
 
+.grid-arrow {
+  display: flex;
+  height: 5vh;
+  align-items: center;
+  justify-content: center;
+}
 
 /*
   ========================================
@@ -110,29 +100,33 @@ a {
 body {
   background-color: #151515;
   color: #FAFAFA;
-  font-family: lato, Arial, Helvetica, sans-serif;
+  font-family: Lato, Arial, Helvetica, sans-serif;
   font-size: 16px;
 }
+
+.garamond {
+  color: #FAFAFA;
+  font-family: 'Cormorant Garamond', 'Times New Roman', Times, serif;
+  font-size: 16px;
+}
+
+
+
 /*
   ========================================
-  Placement
+  Typography
   ========================================
 */
-.nav {
-  grid-column: 1 / 13;
-  grid-row: 1 / 2;
-  justify-items: space-evenly;
+.hero {
+text-align: center;
 }
-.hero {}
-.projects {}
-.projects-vocoacher {}
-.projects-bandtastic {}
-.footer {}
-
-
 
 
 /*
+
+Underline the current tab?????
+box-shadow:0 0 2px 0 rgba(119, 89, 29, 0.8);
+
 
 The text-indent property allows to add space before the first letter of the first line of a block-level element.
 Default value: 0 (zero)
@@ -201,8 +195,15 @@ QUOTE
 
 
 
+EXAMPLE OF ADDING LINE BREAK THROUGH MEDIA QUERIE
+br{ display: none; }
+@media all and (max-width: 480px) {
+    .break2 { display: inline }
+}
 
-
+@media all and (max-width: 320px) {
+    br { display: inline }
+}
 
 
 

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="126px" height="31px" viewBox="0 0 126 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>ArrowDown</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Main-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MAIN-Macbook-Pro-(1680x1050)" transform="translate(-777.000000, -865.000000)" fill="#E3C588">
+            <g id="ArrowDown" transform="translate(776.000000, 864.000000)">
+                <rect id="L" transform="translate(34.000000, 16.500000) rotate(22.500000) translate(-34.000000, -16.500000) " x="-1" y="14" width="70" height="5" rx="2.5"></rect>
+                <rect id="R" transform="translate(94.000000, 16.500000) scale(-1, 1) rotate(22.500000) translate(-94.000000, -16.500000) " x="59" y="14" width="70" height="5" rx="2.5"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
