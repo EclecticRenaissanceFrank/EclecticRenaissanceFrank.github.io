@@ -10,23 +10,32 @@
 
 /*
   ========================================
-  COLORS
+  Reference
   ========================================
 */
 .green-l {
   color: #9FD39F;
 }
-
-.green-d {
+.greed-d {
+  color: #6DB66D;
+}
+.green-tint {
   color: rgba(24, 81, 27, 0.8);
 }
-
-.gold {
+.gold-l {
+  color: #FFEAC0;
+}
+.gold-d {
   color: #E3C588;
 }
 
-.mustard {
+.yellow-tint {
   color: rgba(119, 89, 29, 0.8);
+}
+.garamond {
+  color: #FAFAFA;
+  font-family: 'Cormorant Garamond', 'Times New Roman', Times, serif;
+  font-size: 1em;
 }
 
 
@@ -37,25 +46,28 @@
   ========================================
 */
 body {
-  border: red dashed 1px;
+  border: red dashed .1px;
 }
 .nav {
-  border: orange solid 1px;
+  border: orange solid .1px;
 }
 .hero {
-  border: green dotted 1px;
+  border: green dotted .1px;
+}
+.grid-arrow{
+  border: orange solid .1px;
 }
 .projects {
-  border: green dotted 1px;
+  border: green dashed .1px;
 }
 .projects-bandtastic {
-  border: #E3C588 dotted 1px;
+  border: #E3C588 dotted .1px;
 }
 .projects-vocoacher {
-  border: #9FD39F dotted 1px;
+  border: #9FD39F dotted .1px;
 }
 footer {
-  border: orange solid 1px;
+  border: orange solid .1px;
 }
 
 
@@ -92,6 +104,34 @@ footer {
   justify-content: center;
 }
 
+.grid-projects {
+  display: grid;
+  grid-template-rows: 50vh 50vh;
+  align-items: center;
+  justify-items: center;
+}
+
+.grid-footer {
+  display: grid;
+  grid-template-rows: 10vh;
+  grid-template-columns: 
+  1fr 1fr 1fr 
+  1fr 1fr 1fr
+  1fr 1fr 1fr 
+  1fr 1fr 1fr;
+  align-items: center;
+}
+
+.footer-item-mail {
+  grid-column: 2 / 3;
+  justify-self: start;
+}
+
+.footer-item-lin {
+  grid-column: 11 / 12;
+  justify-self: end;
+}
+
 /*
   ========================================
   Base Style
@@ -104,11 +144,10 @@ body {
   font-size: 16px;
 }
 
-.garamond {
-  color: #FAFAFA;
-  font-family: 'Cormorant Garamond', 'Times New Roman', Times, serif;
-  font-size: 16px;
+a {
+  text-decoration: none;
 }
+
 
 
 
@@ -117,9 +156,61 @@ body {
   Typography
   ========================================
 */
+
+.nav a {
+  color: #FAFAFA;
+  font-size: 1em;
+  font-weight: 300;
+}
+#type-logo a {
+  font-weight: 400;
+}
+#tla {
+  color: #E3C588;
+  display: inline;
+}
+#tlb {
+  color: #6DB66D;
+  display: inline;
+}
+
+
 .hero {
 text-align: center;
+font-size: 1.5em;
 }
+#hfm {
+  display: inline;
+  color: #E3C588;
+}
+.hu {
+  display: inline;
+  color: #6DB66D;
+}
+
+
+
+.project-title {
+  font-size: 1.75em;
+  font-family: "Cormorant Garamond"
+}
+.project-content {
+  font-size: 1em;
+}
+.footer {
+  font-size: 1em;
+
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /*

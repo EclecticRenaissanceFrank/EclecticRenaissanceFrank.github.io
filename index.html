@@ -4,16 +4,19 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 		<title>FM.UX</title>
-		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet"> 
-		<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:600,700" rel="stylesheet"> <!-- semi bold = 600 needs +4 points compared to others-->
+		<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
 	</head>
 
 	<body>
 		<header>
 			<nav class="nav grid-nav">
-				<div class="nav-item"><a href="#index.html">FM.UX</a></div>
+				<div class="nav-item" id="type-logo">
+					<a href="index.html">
+						<span id="tla">FM</span>.<span id="tlb">UX</span></a></div>
+
 				<div class="nav-item"><a href="#projects">PROJECTS</a></div>
 				<div class="nav-item"><a href="resume.html">RESUME</a></div>
 				<div class="nav-item"><a href="about.html">ABOUT</a></div>
@@ -21,29 +24,32 @@
 		</header>
 
 		<h1 class="hero grid-hero">
-				Hey, I’m Frank Mooradian,<br>
-				a UX/UI Designer <br>
+				Hey, I’m <span id="hfm">Frank Mooradian</span>,<br>
+				a <span class="hu">UX</span>/<span class="hu">UI</span> Designer<br>
 				relocating to Chicago, IL.
 		</h1>
 
 		<div class="arrow grid-arrow">
-				<img src="mob-assets/arrow.svg">
+				<img src="mob-assets/arrow.png">
 		</div>
 
-		<section class="projects">
+		<section class="projects grid-projects">
 			<div class="projects-vocoacher">
-				Pocket VoCoacher A gameified vocal training app
+				<img src="mob-assets/project-bg-green.png">
+				<div class="project-title">Pocket VoCoacher </div><br>
+				<div class="project-content">A gameified vocal training app</div>
 			</div>
 			<div class="projects-bandtastic">
-				Bandtastic A mobile ecommerce app
-				focused on local musicians
-				& used instruments
+				<img src="mob-assets/project-bg-gold.png">
+				<div class="project-title">Bandtastic</div><br>
+				<div class="project-content">A mobile ecommerce app focused on local musicians & used instruments</div>
 			</div>
 		</section>
 		
-		<footer class="footer">
-				Frank@FMUX.design
-				LinkedIn
+		<footer class="footer grid-footer">
+				<div class="footer-item-mail"><a href="mailto:Frank@FMUX.design">Frank@FMUX.design</a></div>
+
+				<div class="footer-item-lin"><a href="https://www.linkedin.com/in/frank-mooradian-a464b2143/">LinkedIn</a></div>
 		</footer>
 	</body>
 </html>
