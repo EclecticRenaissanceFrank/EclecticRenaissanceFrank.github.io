@@ -113,7 +113,7 @@ footer {
 
 .grid-projects {
   display: grid;
-  grid-template-rows: 50vh 50vh;
+  grid-template-rows: 375px 375px;
   align-items: center;
   justify-items: center;
 }
