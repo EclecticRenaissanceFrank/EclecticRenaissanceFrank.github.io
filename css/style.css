@@ -38,7 +38,7 @@
 }
 
 
-/*
+/**/
   ========================================
   WHERE IS IT?
   ========================================
@@ -67,7 +67,7 @@ body {
 footer {
   border: orange solid .1px;
 }
-*/
+
 
 /*
   ========================================
@@ -97,7 +97,7 @@ footer {
 
 .grid-hero {
   display: grid;
-  grid-template-rows: 90vh;
+  grid-template-rows: 95vh;
   align-items: center;
   justify-items: center;
 }
@@ -105,7 +105,7 @@ footer {
 
 .grid-arrow {
   display: flex;
-  height: 5vh;
+  height: 50px;
   align-items: center;
   justify-content: center;
 }
