@@ -19,7 +19,7 @@
 							<span id="tl-fm">FM</span>.<span id="tl-ux">UX</span></a></div>
 
 					<div class="nav-item"><a href="#projects">PROJECTS</a></div>
-					<div class="nav-item"><a href="resume.html">RESUME</a></div>
+					<div class="nav-item"><a href="resume.html" target="_blank">RESUME</a></div>
 					<div class="nav-item"><a href="about.html">ABOUT</a></div>
 				</nav>
 		</div>
@@ -36,16 +36,30 @@
 
 
 		<div class="arrow grid-arrow">
-				<a href="#projects"><img src="mob-assets/arrow.png"></a>
+				<a href="#projects">
+					<img srcset="tab-assets/arrow.png 57w,
+											desk-assets/arrow.png 128w"
+											src="mob-assets/arrow.png"
+						sizes="(min-width: 600px) and (max-width: 1024px) 57px,
+									(min-width: 1024px) 128px,
+									28px"
+					/>
+				</a>
 		</div>
 
 
 		<section class="projects grid-projects"> 
 			<div class="project-vocoacher"> 
 
-				<a name="projects"></a>
+				<a name="projects"></a> <!-- This is for #projects -->
 				
-				<img src="mob-assets/project-vocoach.png">
+				<img srcset="tab-assets/project-vocoach.png 384w,
+										desk-assets/project-vocoach.png 560w"
+						src="mob-assets/project-vocoach.png"
+						
+						sizes="(min-width: 600px) and (max-width: 1024px) 50vw,
+            (min-width: 1024px) 33vw,
+            100vw"/>
 
 				<div class="project-text-2l">
 					<div class="project-title">Pocket VoCoacher </div>
@@ -54,7 +68,15 @@
 			</div>
 
 			<div class="project-bandtastic">
-					<img src="mob-assets/project-bandtastic.png">
+
+				<img srcset="tab-assets/project-bandtastic.png 384w, 										
+											desk-assets/project-bandtastic.png 560w"
+					src="mob-assets/project-bandtastic.png"
+					
+					sizes="(min-width: 600px) and (max-width: 1024px) 50vw,
+					(min-width: 1024px) 33vw,
+					100vw"/>
+					
 				<div class="project-text-3l">
 					<div class="project-title">Bandtastic</div>
 					<div class="project-content">A mobile ecommerce app focused on local musicians & used instruments</div>

@@ -1,8 +1,12 @@
 /*
   ========================================
   NOTES:
+
+  - NEXT ACTIONS: 
+
   - Remove unneeded font weights in html when finished
-  - ...
+
+  - alt="all my images">
   ========================================
 */
 
@@ -105,7 +109,7 @@ footer {
 
 .grid-arrow {
   display: flex;
-  height: 50px;
+  height: 75px;
   align-items: center;
   justify-content: center;
 }
@@ -113,7 +117,7 @@ footer {
 
 .grid-projects {
   display: grid;
-  grid-template-rows: 375px 375px;
+  grid-template-rows: 1fr 1fr;
   align-items: center;
   justify-items: center;
 }
@@ -165,7 +169,7 @@ body {
   background-color: #151515;
   color: #FAFAFA;
   font-family: Lato, Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 1em;
 }
 a {
   text-decoration: none;
@@ -240,7 +244,10 @@ font-size: 1.5em;
   font-size: 1.75em;
   font-family: "Cormorant Garamond";
   font-weight: 600;
-  padding: 10px;
+  padding: 5px;
+}
+.project-content {
+  line-height: 1.125em;
 }
 
 
@@ -264,32 +271,103 @@ font-size: 1.5em;
   ========================================
 */
 
+@media screen and (min-width: 600px) {
+
+  .grid-projects {  
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 1fr;
+    justify-content: center;}  
+  
+  body {  font-size: 1.125em; }
+  
+  .hero { font-size: 2em; }
+  
+  .project-title {  font-size: 2em; }
+  .project-content {  line-height: 1.25em; }
+  
+}
+  
+
+@media screen and (min-width: 1024px) {
+
+  .grid-projects {  
+    grid-template-columns: 33vw 33vw 33vw; 
+    justify-content: center;}  
+  
+  body {  font-size: 1.25em; }
+  
+  .hero { font-size: 3em; }
+  
+  .project-title {  font-size: 2em; }
+  .project-content {  line-height: 1.375em; }
+}
+
+
+@media screen and (min-width: 1280px) {
+  .hero { font-size: 4em; }
+}
+
+
+
 
 /* For desktop media query now
 .project-title, .project-content {
   color: #151515;
 }
-*/
 
 
+a:hover {
+  color: #ff7b29; MAYBE HOVER TO MY PALETTE }
 
-
-
-/*
 
 Underline the current tab?????
 box-shadow:0 0 2px 0 rgba(119, 89, 29, 0.8);
-
 
 
 The text-indent property allows to add space before the first letter of the first line of a block-level element.
 Default value: 0 (zero)
 
 
+NEW PAGE
+<a href="http://shayhowe.com/" target="_blank">Shay Howe</a>
+SAME PART OF PAGE
+<body id="top"> - put an id of whatever
+<a href="#top">Back to top</a> - #whtever
 
+
+CITATION
+  <p>The book <cite><a href="http://www.amazon.com/Steve-Jobs-Walter-Isaacson/dp/1451648537">Steve Jobs</a></cite> is truly inspirational</p>
+QUOTE
+<p>Steve Jobs once said, <q>One home run is much better than two doubles.</q></p>
+BLOCKQUOTE
 <blockquote> for bruce lee quote <blockquote> the <p> for "-Bruce Lee"
 
 
+
+
+
+
+
+
+Both the <article> and <section> elements contribute to a document’s structure and help to outline a document. If the content is being grouped solely for styling purposes and doesn’t provide value to the outline of a document, use the <div> element.
+
+If the content adds to the document outline and it can be independently redistributed or syndicated, use the <article> element.
+
+If the content adds to the document outline and represents a thematic group of content, use the <section> element.
+
+
+
+
+
+
+EXAMPLE OF ADDING LINE BREAK THROUGH MEDIA QUERIE
+br{ display: none; }
+@media all and (max-width: 480px) {
+    .break2 { display: inline }
+}
+@media all and (max-width: 320px) {
+    br { display: inline }
+}
 
 @media
 media type: all, screen, print, tv, braille
@@ -302,6 +380,7 @@ media feature: ()...
 @media all and (min-width: 800px) and (max-width: 1024px) {...}
 @media all and (min-width: 320px) and (max-width: 780px) {...}
 @media all and (orientation: landscape) {...}
+
 Pixel Ratio
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-device-pixel-ratio: 1.3) {...}
 
@@ -311,70 +390,6 @@ Default styles first then media queries
 @media screen and (min-width: 600px)  {...}
 @media screen and (min-width: 1000px) {...}
 @media screen and (min-width: 1400px) {...}
-
-
-
-Both the <article> and <section> elements contribute to a document’s structure and help to outline a document. If the content is being grouped solely for styling purposes and doesn’t provide value to the outline of a document, use the <div> element.
-
-If the content adds to the document outline and it can be independently redistributed or syndicated, use the <article> element.
-
-If the content adds to the document outline and represents a thematic group of content, use the <section> element.
-
-
-
-NEW PAGE
-<a href="http://shayhowe.com/" target="_blank">Shay Howe</a>
-SAME PART OF PAGE
-<body id="top"> - put an id of whatever
-<a href="#top">Back to top</a> - #whtever
-
-
-
-a:hover {
-  color: #ff7b29; MAYBE HOVER TO MY PALETTE }
-
-
-
-CITATION
-  <p>The book <cite><a href="http://www.amazon.com/Steve-Jobs-Walter-Isaacson/dp/1451648537">Steve Jobs</a></cite> is truly inspirational</p>
-QUOTE
-<p>Steve Jobs once said, <q>One home run is much better than two doubles.</q></p>
-
-
-
-
-EXAMPLE OF ADDING LINE BREAK THROUGH MEDIA QUERIE
-br{ display: none; }
-@media all and (max-width: 480px) {
-    .break2 { display: inline }
-}
-
-@media all and (max-width: 320px) {
-    br { display: inline }
-}
-
-
-
-
-
-
-Fixed Header or Footer
-
-CSS	
-body {
-  background: #eaeaed;
-}
-footer {
-  background: #2db34a;
-  bottom: 0;
-  left: 0;
-  position: fixed;
-  right: 0;
-}
-
-
-
-
 
 
 */
