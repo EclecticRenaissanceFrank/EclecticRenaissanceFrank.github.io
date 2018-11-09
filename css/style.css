@@ -262,25 +262,13 @@ font-size: 1.5em;
   border-bottom: 1px solid #E3C588;
 }
 
-.hover {
-  display: none;
-}
-
-.original:hover {
-  display: none;
-}
-
-.hover:hover {
-  display: inline;
-}
-
 
 /*
   ========================================
   @Media Queries
   ========================================
 */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 675px) {
 
   .grid-arrow { height: 85px; }
 
@@ -292,14 +280,13 @@ font-size: 1.5em;
   body {  font-size: 1.125em; }
   
   .hero { font-size: 2em; }
-  
+
   .project-title {  font-size: 2em; }
   .project-content {  line-height: 1.25em; }
-  
 }
   
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1150px) {
 
   .grid-arrow { height: 100px; }
 
