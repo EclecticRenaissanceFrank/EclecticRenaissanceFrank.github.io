@@ -291,8 +291,8 @@ font-size: 1.5em;
   .grid-arrow { height: 100px; }
 
   .grid-projects {  
-    grid-template-columns: 33vw 33vw 33vw; 
-    justify-content: center;}  
+    grid-template-columns: 33vw 33vw; 
+    justify-content: space-evenly;}  
   
   body {  font-size: 1.25em; }
   
