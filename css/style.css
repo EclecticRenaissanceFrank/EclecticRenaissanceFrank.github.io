@@ -83,7 +83,7 @@ footer {
 * {
   box-sizing: border-box;
 }
-
+/* Header */
 .nav-sticky-wrapper {
   position: fixed;
   top: 0;
@@ -100,15 +100,13 @@ footer {
   justify-items: center;
 }
 
-
+/* Hero */
 .grid-hero {
   display: grid;
   grid-template-rows: 90vh;
   align-items: center;
   justify-items: center;
 }
-
-
 .grid-arrow {
   display: flex;
   height: 75px;
@@ -116,7 +114,7 @@ footer {
   justify-content: center;
 }
 
-
+/* Projects */
 .grid-projects {
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -124,7 +122,7 @@ footer {
   justify-items: center;
 }
 
-
+/* Footer */
 .grid-footer {
   display: grid;
   grid-template-rows: 10vh;
@@ -152,6 +150,40 @@ footer {
   z-index: 1;
 }
 
+/* about.html */
+.north-strip {
+  display: grid;
+  grid-template-rows: auto auto;
+  align-items: center;
+  justify-items: center;
+  padding: 10vh 0 5vh 0;
+}
+
+.bio {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.grid-bio-content {
+  /* always 1/12 on each side */
+  grid-column: 2 / 12;
+}
+.grid-bio-h2s {
+  /* 1/4 desk
+  1/3 tablet
+  1/2 mobile*/
+  grid-column: 1 / 7;
+}
+.bruce {
+  /* always 1/12 on each side */
+  grid-column: 2 / 12;
+}
+.pic-strip {
+  /* 1/6 each desk/tab
+  1/3 mobile */
+  grid-column: 1 / 13;
+}
+ /*Bio Section Ends */
+
 
 /*
   ========================================
@@ -176,6 +208,7 @@ body {
 a {
   text-decoration: none;
 }
+
 
 /* Header/Footer */
 .nav a, .footer a {
@@ -308,12 +341,7 @@ font-size: 1.5em;
 
 
 
-
-/* For desktop media query now
-.project-title, .project-content {
-  color: #151515;
-}
-
+/*
 
 The text-indent property allows to add space before the first letter of the first line of a block-level element.
 Default value: 0 (zero)
@@ -324,29 +352,6 @@ NEW PAGE
 SAME PART OF PAGE
 <body id="top"> - put an id of whatever
 <a href="#top">Back to top</a> - #whtever
-
-
-CITATION
-  <p>The book <cite><a href="http://www.amazon.com/Steve-Jobs-Walter-Isaacson/dp/1451648537">Steve Jobs</a></cite> is truly inspirational</p>
-QUOTE
-<p>Steve Jobs once said, <q>One home run is much better than two doubles.</q></p>
-BLOCKQUOTE
-<blockquote> for bruce lee quote <blockquote> the <p> for "-Bruce Lee"
-
-
-
-
-
-
-
-
-Both the <article> and <section> elements contribute to a document’s structure and help to outline a document. If the content is being grouped solely for styling purposes and doesn’t provide value to the outline of a document, use the <div> element.
-
-If the content adds to the document outline and it can be independently redistributed or syndicated, use the <article> element.
-
-If the content adds to the document outline and represents a thematic group of content, use the <section> element.
-
-
 
 
 
