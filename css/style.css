@@ -3,7 +3,7 @@
   NOTES:
 
   - NEXT ACTIONS: 
-  - mouse-over desktop
+  - h2 about alignment?
 
   - alt="all my images">
 
@@ -90,7 +90,7 @@ footer {
   left: 0;
   right: 0;
   background: #151515;
-  z-index: 1;
+  z-index: 10;
 }
 .grid-nav {
   display: grid;
@@ -147,40 +147,47 @@ footer {
   left: 0;
   right: 0;
   background: #151515;
-  z-index: 1;
+  z-index: 10;
 }
 
 /* about.html */
 .north-strip {
   display: grid;
-  grid-template-rows: auto auto;
+  grid-template-rows: 10vh auto;
   align-items: center;
   justify-items: center;
-  padding: 10vh 0 5vh 0;
+  margin: 10vh 0 5vh 0;
 }
-
 .bio {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
 .grid-bio-content {
-  /* always 1/12 on each side */
   grid-column: 2 / 12;
+  margin: 1vh 0 1vh 0;
 }
 .grid-bio-h2s {
   /* 1/4 desk
   1/3 tablet
   1/2 mobile*/
   grid-column: 1 / 7;
+  margin: 2vh 0 2vh 0;
 }
 .bruce {
   /* always 1/12 on each side */
   grid-column: 2 / 12;
+  padding: 5vh 0 5vh 0;
 }
 .pic-strip {
   /* 1/6 each desk/tab
   1/3 mobile */
   grid-column: 1 / 13;
+  padding: 5vh 0 0 0;
+}
+.pictures {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
  /*Bio Section Ends */
 
@@ -285,6 +292,35 @@ font-size: 1.5em;
   line-height: 1.125em;
 }
 
+/* About */
+.about {
+  font-size: 2em;
+  font-family: "Cormorant Garamond";
+  font-weight: 300;
+  color: #151515;
+}
+.grid-bio-h2s img {
+  position: relative;
+  display: inline-block;
+}
+.grid-bio-h2s h2 {
+  position: absolute;
+  z-index: 1; 
+  left: 8.3%; 
+  font-size: 1.75em;
+  font-family: "Cormorant Garamond";
+  font-weight: 700;
+}
+.grid-bio-content {
+  text-indent: 5%;
+}
+.bruce {
+  text-align: center;
+  font-weight: 700;
+}
+.bruce-q {
+  font-style: italic;
+}
 
 /*
   ========================================
@@ -293,6 +329,9 @@ font-size: 1.5em;
 */
 .nav-item a:active {
   border-bottom: 1px solid #E3C588;
+}
+.north-strip {
+  background-color: #E3C588;
 }
 
 
@@ -316,8 +355,29 @@ font-size: 1.5em;
 
   .project-title {  font-size: 2em; }
   .project-content {  line-height: 1.25em; }
+
+
+
+  .north-strip {  
+    grid-template-columns: 1fr max-content;
+    grid-template-rows: 1fr;}
+  .about { grid-column: 1 / 2 }
+
+  .grid-bio-h2s h2 {  font-size: 2em;  }
+  .bruce  { font-size: 1.125em; }
+
+  .pictures {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+  }
 }
   
+
+@media screen and (min-width: 800px) {
+.about {  font-size: 3em; }}
+
+
+
 
 @media screen and (min-width: 1150px) {
 
@@ -333,6 +393,15 @@ font-size: 1.5em;
   
   .project-title {  font-size: 2em; }
   .project-content {  line-height: 1.375em; }
+
+
+  .grid-bio-h2s h2 {  font-size: 2.25em;  }
+  .about {  font-size: 4em; }
+
+  .bruce {
+    font-size: 1.75em;
+    font-weight: 400;
+  }
 }
 
 @media screen and (min-width: 1280px) {
