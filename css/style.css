@@ -4,6 +4,8 @@
 
   - NEXT ACTIONS: 
   - h2 about alignment?
+  - Make link/visited color better for dark BG
+  - continue bio copy from design.edu
 
   - alt="all my images">
 
@@ -150,7 +152,7 @@ footer {
   z-index: 10;
 }
 
-/* about.html */
+/* about.html =============================== */
 .north-strip {
   display: grid;
   grid-template-rows: 10vh auto;
@@ -292,7 +294,7 @@ font-size: 1.5em;
   line-height: 1.125em;
 }
 
-/* About */
+/* about.html ================================= */
 .about {
   font-size: 2em;
   font-family: "Cormorant Garamond";
