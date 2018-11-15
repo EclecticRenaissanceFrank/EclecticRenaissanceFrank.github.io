@@ -1,11 +1,10 @@
 /*
   ========================================
-  NOTES:
+  NEXT ACTIONS:
 
-  - NEXT ACTIONS: 
   - h2 about alignment?
-  - Make link/visited color better for dark BG
-  - continue bio copy from design.edu
+
+  -
 
   - alt="all my images">
 
@@ -216,6 +215,10 @@ body {
 }
 a {
   text-decoration: none;
+  color: #4B9BFF;
+}
+a:visited {
+  color: #AF50D7;
 }
 
 
@@ -286,7 +289,7 @@ font-size: 1.5em;
 
 .project-title {
   font-size: 1.75em;
-  font-family: "Cormorant Garamond";
+  font-family: 'Cormorant Garamond', 'Times New Roman', Times, serif;
   font-weight: 600;
   padding: 5px;
 }
@@ -297,7 +300,7 @@ font-size: 1.5em;
 /* about.html ================================= */
 .about {
   font-size: 2em;
-  font-family: "Cormorant Garamond";
+  font-family: 'Cormorant Garamond', 'Times New Roman', Times, serif;
   font-weight: 300;
   color: #151515;
 }
@@ -310,7 +313,7 @@ font-size: 1.5em;
   z-index: 1; 
   left: 8.3%; 
   font-size: 1.75em;
-  font-family: "Cormorant Garamond";
+  font-family: 'Cormorant Garamond', 'Times New Roman', Times, serif;
   font-weight: 700;
 }
 .grid-bio-content {
