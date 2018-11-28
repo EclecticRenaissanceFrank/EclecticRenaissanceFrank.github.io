@@ -6,40 +6,14 @@
 
   - Remove unneeded font weights in html when finished
 
+  - I just put the invision logo in srcset. 
+  Add Process strip
+  Add fonts
+  Add a layout template for each section or type of section. ie, Left mid & center grid. All it is is word, image
+  Make a case-grid only section to apply to deliverables.
+
   ========================================
 */
-
-
-/*
-  ========================================
-  Reference
-  ========================================
-*/
-.green-l {
-  color: #9FD39F;
-}
-.greed-d {
-  color: #6DB66D;
-}
-.green-tint {
-  color: rgba(24, 81, 27, 0.8);
-}
-.gold-l {
-  color: #FFEAC0;
-}
-.gold-d {
-  color: #E3C588;
-}
-
-.yellow-tint {
-  color: rgba(119, 89, 29, 0.8);
-}
-.garamond {
-  color: #FAFAFA;
-  font-family: 'Cormorant Garamond', 'Times New Roman', Times, serif;
-  font-size: 1em;
-}
-
 
 /*
   ========================================
@@ -106,6 +80,8 @@
 .footer-item-contact {
   grid-column: 3 / 11;
   justify-self: center;
+  text-align: center;
+  margin: 0 auto;
 }
 .footer-item-lin {
   grid-column: 11 / 12;
@@ -176,6 +152,19 @@
 }
 
 
+/* casetemp.grid =============================== */
+
+
+
+
+.case-study {
+  margin: 10vh 0 0 0;
+}
+
+
+
+
+
 
 /*
   ========================================
@@ -197,6 +186,7 @@ body {
   font-family: Lato, Arial, Helvetica, sans-serif;
   font-size: 1em;
 }
+
 a {
   text-decoration: none;
   color: #4B9BFF;
@@ -327,7 +317,7 @@ input {
   font-size: 2em;
   text-align: center;
   align-self: center;
-  font-weight: 800;
+  font-weight: 300;
 }
 .flabel {
   font-size: 1.25em;
@@ -341,6 +331,13 @@ input {
   width: 90%;
   justify-self: center;
 }
+
+/* casetemp.typo ================================= */
+.case-section-label {
+  font-size: 1.75em;
+  font-family: 'Cormorant Garamond', 'Times New Roman', Times, serif;
+}
+
 
 
 
@@ -357,12 +354,33 @@ input {
 }
 
 .contact-form {
-  background: rgba(24, 81, 27, 0.8);
+  background: rgb(39, 39, 39);
   border-radius: 5px;
 }
 .contact-form h1, .contact-form button, .flabel {
   background: #E3C588;
 }
+
+
+.case-hero {
+  background-color: #35270B;
+}
+.case-snapshot {
+  background-color: #DADADA;
+  color: #151515;
+}
+
+.proto {
+  background-color: #212121;
+}
+
+.conclusion {
+  background-color: #0B250C;
+}
+
+
+
+
 
 
 
@@ -409,6 +427,10 @@ input {
     width: 90%;
     justify-self: center;
   }
+
+
+
+  .case-section-label {font-size: 2.25em;}
 }
 
 
@@ -444,10 +466,56 @@ input {
   input { font-size: 1.125em;  }
   .contact-form h1 {  font-size: 2.5em; }
   .flabel { font-size: 1.75em;  }
+
+
+
+
+
+  .case-section-label {font-size: 2.5em;}
 }
 
 
 
 @media screen and (min-width: 1280px) {
   .hero { font-size: 4em; }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+  ========================================
+  Reference
+  ========================================
+*/
+.green-l {
+  color: #9FD39F;
+}
+.greed-d {
+  color: #6DB66D;
+}
+.green-tint {
+  color: rgba(24, 81, 27, 0.8);
+}
+.gold-l {
+  color: #FFEAC0;
+}
+.gold-d {
+  color: #E3C588;
+}
+
+.yellow-tint {
+  color: rgba(119, 89, 29, 0.8);
+}
+.garamond {
+  color: #FAFAFA;
+  font-family: 'Cormorant Garamond', 'Times New Roman', Times, serif;
+  font-size: 1em;
 }
