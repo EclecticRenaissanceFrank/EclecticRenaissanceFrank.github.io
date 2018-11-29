@@ -6,7 +6,8 @@
 
   - Remove unneeded font weights in html when finished
 
-  -
+  - prototype grid change....ALL media query grid changes!!!!!!!!!!!
+  
   Add fonts
   Add a layout template for each section or type of section. ie, Left mid & center grid. All it is is word, image
   Make a case-grid only section to apply to deliverables.
@@ -153,12 +154,22 @@
 
 /* casetemp.grid =============================== */
 
-
-
-
 .case-study {
   margin: 10vh 0 0 0;
 }
+
+.proto {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.case-grid-33-66 {}
+.case-grid-66-33 {}
+.case-grid-50-50 {}
+.case-grid-top-c {}
+.case-grid-bot-c {}
+.case-grid-25-50-25 {}
 
 
 
@@ -332,15 +343,37 @@ input {
 }
 
 /* casetemp.typo ================================= */
+.short-description {  text-align: center;  }
+.what { padding: 5vh 0 5vh 0; }
+
 .case-section-major-label {
-  font-size: 2.5em;
+  font-size: 2.25em;
   font-family: 'Cormorant Garamond', 'Times New Roman', Times, serif;
+
+  display: grid;
+  align-items: center;
+  justify-items: center;
+
+  padding: 5vh 0 5vh 0;
 }
 
 .case-section-label {
-  font-size: 10.75em;
+  font-size: 1.75em;
   font-family: 'Cormorant Garamond', 'Times New Roman', Times, serif;
+
+  display: grid;
+  align-items: center;
+  justify-items: center;
+
+  padding: 5vh 0 5vh 0;
 }
+
+.case-content {
+  text-indent: 5%;
+}
+
+
+
 
 
 
@@ -433,8 +466,8 @@ input {
   }
 
 
-
-  .case-section-label {font-size: 2.25em;}
+  .case-section-major-label { font-size: 2.5em;  }
+  .case-section-label {font-size: 2em;}
 }
 
 
@@ -474,7 +507,7 @@ input {
 
 
 
-
+  .case-section-major-label { font-size: 3em;  }
   .case-section-label {font-size: 2.5em;}
 }
 
