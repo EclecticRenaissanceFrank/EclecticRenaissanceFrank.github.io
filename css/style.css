@@ -23,7 +23,7 @@
   top: 0;
   left: 0;
   right: 0;
-  background: #151515;
+  background: rgba(21, 21, 21, 0.9);
   z-index: 10;
 }
 .grid-nav {
@@ -131,8 +131,6 @@
 }
 
 /* contact.grid =============================== */
-
-
 .contact-form {
   display: grid;
   grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 2fr 1fr;
@@ -145,28 +143,23 @@
   
 }
 
-
 /* casetemp.grid =============================== */
-
 .case-study {
   margin: 10vh 0 0 0;
 }
-
+.case-section-label, .case-section-major-label {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
 .proto {
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
 }
-
-.case-grid-33-66 {}
-.case-grid-66-33 {}
-.case-grid-50-50 {}
-.case-grid-top-c {}
-.case-grid-bot-c {}
-.case-grid-25-50-25 {}
-
-
-
+.case-grid-process-icon {
+  margin: 0 0 1vh 0;
+}
 
 
 
@@ -263,8 +256,6 @@ font-size: 1.5em;
   text-align: center;
   width: 85%;
 }
-
-
 .project-title {
   font-size: 1.75em;
   font-family: 'Cormorant Garamond', 'Times New Roman', Times, serif;
@@ -304,8 +295,8 @@ font-size: 1.5em;
 .bruce-q {
   font-style: italic;
 }
-/* contact.typo ================================= */
 
+/* contact.typo ================================= */
 .contact-form {
   font-family: 'Cormorant Garamond', 'Times New Roman', Times, serif;
   color: #151515;
@@ -337,38 +328,26 @@ input {
 }
 
 /* casetemp.typo ================================= */
-.short-description {  text-align: center;  }
-.what { padding: 5vh 0 5vh 0; }
-
+.app-name { padding: 15vh 0 5vh 0;  }
+.short-description {
+  text-align: center;
+  padding-bottom: 15vh;
+}
 .case-section-major-label {
   font-size: 2.25em;
   font-family: 'Cormorant Garamond', 'Times New Roman', Times, serif;
-
-  display: grid;
-  align-items: center;
-  justify-items: center;
-
-  padding: 5vh 0 5vh 0;
 }
-
 .case-section-label {
   font-size: 1.75em;
   font-family: 'Cormorant Garamond', 'Times New Roman', Times, serif;
-
-  display: grid;
-  align-items: center;
-  justify-items: center;
-
   padding: 5vh 0 5vh 0;
 }
-
 .case-content {
   text-indent: 5%;
+  padding: 0 1vh 5vh 1vh;
 }
-
-
-
-
+.what { padding: 5vh 1vh 0 1vh;  }
+.process  { padding: 5vh 0 15vh 0;  }
 
 
 
@@ -380,10 +359,13 @@ input {
 .nav-item a:active {
   border-bottom: 1px solid #E3C588;
 }
+
+/* About */
 .north-strip {
   background-color: #E3C588;
 }
 
+/* Contact Page */
 .contact-form {
   background: rgb(39, 39, 39);
   border-radius: 5px;
@@ -392,26 +374,17 @@ input {
   background: #E3C588;
 }
 
-
-.case-hero {
-  background-color: #35270B;
+/* Case Studies */
+.case-hero, .conclusion {
+  background-color: #0B250C;
 }
 .case-snapshot {
   background-color: #DADADA;
   color: #151515;
 }
-
 .proto {
   background-color: #212121;
 }
-
-.conclusion {
-  background-color: #0B250C;
-}
-
-
-
-
 
 
 
@@ -421,6 +394,7 @@ input {
   ========================================
 */
 @media screen and (min-width: 675px) {
+  /* Index */
   .grid-arrow { height: 85px; }
   .grid-projects {  
     grid-template-columns: 50vw 50vw;
@@ -431,9 +405,7 @@ input {
   .hero { font-size: 2em; }
   .project-title {  font-size: 2em; }
   .project-content {  line-height: 1.25em; }
-
-
-
+  /* About */
   .north-strip {  
     grid-template-columns: 1fr max-content;
     grid-template-rows: 1fr;
@@ -445,9 +417,7 @@ input {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 1fr;
   }
-
-
-
+  /* Contact Page */
   .contact-form { width: 66vw;  }
   .contact-form button,
   .contact-form textarea,
@@ -458,20 +428,21 @@ input {
     width: 90%;
     justify-self: center;
   }
-
-
+  /* Case Studies */
   .case-section-major-label { font-size: 2.5em;  }
   .case-section-label {font-size: 2em;}
 }
 
 
 
+/* another "About" h1 size */
 @media screen and (min-width: 800px) {
 .about {  font-size: 3em; }}
 
 
 
 @media screen and (min-width: 1150px) {
+  /* Index */
   .grid-arrow { height: 100px; }
   .grid-projects {  
     grid-template-columns: 33vw 33vw; 
@@ -480,37 +451,31 @@ input {
   .hero { font-size: 3em; }
   .project-title {  font-size: 2em; }
   .project-content {  line-height: 1.375em; }
-
-
-
+  /* About */
   .grid-bio-h2s h2 {  font-size: 2.25em;  }
   .about {  font-size: 4em; }
   .bruce {
     font-size: 1.75em;
     font-weight: 400;
   }
-
-
+  /* Contact Page */
   .contact-form { width: 50vw;  }
   .contact-form button,
   .contact-form textarea,
   input { font-size: 1.125em;  }
   .contact-form h1 {  font-size: 2.5em; }
   .flabel { font-size: 1.75em;  }
-
-
-
-
+  /* Case Studies */
   .case-section-major-label { font-size: 3em;  }
   .case-section-label {font-size: 2.5em;}
 }
 
 
 
+/* index-hero-typog for giant screens */
 @media screen and (min-width: 1280px) {
   .hero { font-size: 4em; }
 }
-
 
 
 
@@ -541,12 +506,27 @@ input {
 .gold-d {
   color: #E3C588;
 }
-
 .yellow-tint {
   color: rgba(119, 89, 29, 0.8);
 }
+.black-80 {
+  color: rgba(21, 21, 21, 0.9);
+}
+.black-100 {
+  color: #151515;
+}
+
 .garamond {
   color: #FAFAFA;
   font-family: 'Cormorant Garamond', 'Times New Roman', Times, serif;
   font-size: 1em;
 }
+
+
+/* future grids perhaps */
+.content-grid-33-66 {}
+.content-grid-66-33 {}
+.content-grid-50-50 {}
+.content-grid-top-c {}
+.content-grid-bot-c {}
+.content-grid-25-50-25 {}
