@@ -152,10 +152,9 @@
   align-items: center;
   justify-items: center;
 }
-.proto { /* DISPLAY & MEDIA QUERY FOR 2-ROW MOBILE & THEN */
+.proto { /* 1-COL MOBILE / 1-ROW MEDIA QUERY */
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 .case-grid-process-icon {
   margin: 0 0 1vh 0;
@@ -344,7 +343,11 @@ input {
 }
 .case-content {
   text-indent: 5%;
+  line-height: 1.75em;
+  letter-spacing: 0.05em;
+  word-spacing: 0.1em;
   padding: 0 1vh 5vh 1vh;
+  font-weight: 300;
   /*LINE HEIGHT/SPACING*/
 }
 .what { padding: 5vh 1vh 0 1vh;  }
@@ -435,7 +438,7 @@ input {
 
   .proto { /* DISPLAY & MEDIA QUERY FOR 2-ROW MOBILE & THEN */
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
@@ -475,12 +478,6 @@ input {
   /* Case Studies */
   .case-section-major-label { font-size: 3em;  }
   .case-section-label {font-size: 2.5em;}
-
-  .proto { /* DISPLAY & MEDIA QUERY FOR 2-ROW MOBILE & THEN */
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
 }
 
 
@@ -493,7 +490,27 @@ input {
 
 
 
+/*
+  ========================================
+  Bandtastic Specific
+  ========================================
+*/
+.case-hero-bandtastic {
+  background-image: url(../desk-assets/project-bandtastic-banner-center.png);
+  background-size: cover;
+  background-position: center;
+}
 
+.app-bg-color-bandtastic {
+  background-color: #E1EAF7;
+}
+
+
+/*
+  ========================================
+  Pocket VoCoacher Specific
+  ========================================
+*/
 
 
 
