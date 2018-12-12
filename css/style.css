@@ -286,6 +286,9 @@ font-size: 1.5em;
 }
 .grid-bio-content {
   text-indent: 5%;
+  line-height: 1.75em;
+  letter-spacing: 0.05em;
+  word-spacing: 0.1em;
 }
 .bruce {
   text-align: center;
@@ -378,10 +381,10 @@ input {
   background: #E3C588;
 }
 
-/* Case Studies */
+/* Case Studies 
 .case-hero, .conclusion {
   background-color: #0B250C;
-}
+}*/
 .case-snapshot {
   background-color: #DADADA;
   color: #151515;
@@ -416,6 +419,7 @@ input {
   }
   .about { grid-column: 1 / 2 }
   .grid-bio-h2s h2 {  font-size: 2em;  }
+  .grid-bio-content { font-weight: 300; }
   .bruce  { font-size: 1.125em; }
   .pictures {
     grid-template-columns: repeat(6, 1fr);
@@ -505,6 +509,12 @@ input {
   background-color: #E1EAF7;
 }
 
+
+.bandtastic-conclusion-bg {
+  background-image: url(../desk-assets/project-bandtastic-conclusion-bg.png);
+  background-size: contain;
+  background-position: center;
+}
 
 /*
   ========================================
