@@ -148,6 +148,7 @@
   margin: 10vh 0 0 0;
 }
 .case-section-label, .case-section-major-label {
+  /* No text-align: center because images */
   display: grid;
   align-items: center;
   justify-items: center;
@@ -159,6 +160,7 @@
 .case-grid-process-icon {
   margin: 0 0 1vh 0;
 }
+
 
 
 
@@ -330,10 +332,8 @@ input {
 }
 
 /* casetemp.typo ================================= */
-.app-name { padding: 15vh 0 5vh 0;  }
 .short-description {
   text-align: center;
-  padding-bottom: 15vh;
 }
 .case-section-major-label {
   font-size: 2.25em;
@@ -342,20 +342,14 @@ input {
 .case-section-label {
   font-size: 1.75em;
   font-family: 'Cormorant Garamond', 'Times New Roman', Times, serif;
-  padding: 5vh 0 5vh 0;
 }
 .case-content {
-  text-indent: 5%;
   line-height: 1.75em;
   letter-spacing: 0.05em;
   word-spacing: 0.1em;
-  padding: 0 1vh 5vh 1vh;
   font-weight: 300;
-  /*LINE HEIGHT/SPACING*/
+  text-align: center;
 }
-.what { padding: 5vh 1vh 0 1vh;  }
-.process  { padding: 5vh 0 15vh 0;  }
-
 
 
 /*
@@ -381,10 +375,10 @@ input {
   background: #E3C588;
 }
 
-/* Case Studies 
+/* Case Studies */
 .case-hero, .conclusion {
   background-color: #0B250C;
-}*/
+}
 .case-snapshot {
   background-color: #DADADA;
   color: #151515;
@@ -392,6 +386,43 @@ input {
 .proto {
   background-color: #212121;
 }
+
+
+
+
+
+
+/*
+  ========================================
+  ALL CASE STUDY PADDING UNTIL FURTHER NOTICE
+  ========================================
+
+
+.case-content-label, .swot { padding: 2vh 1vh 0 1vh;}
+
+.app-name { padding: 15vh 0 5vh 0;  }
+
+.short-description {  padding-bottom: 15vh; }
+
+.case-section-label {  padding: 5vh 0 2vh 0;  }
+
+.case-content {  padding: 0 1vh 5vh 1vh;  }
+
+
+.what { padding: 5vh 1vh 0 1vh;  }
+.process  { padding: 10vh 0 5vh 0;  }
+.case-snapshot  { padding: 0 0 5vh 0;  }
+
+/* this fixes the problem of too much spacing between Problem & Solution due to .case-content & case-section-label's combined padding 
+.sol-top-pad-over {padding: 0 0 2vh 0;}
+
+*/
+
+
+
+
+
+
 
 
 
@@ -444,6 +475,17 @@ input {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  /* ...to create columns... */
+  .case-content {
+    text-indent: 5%;
+    text-align: left;
+  }
+  /* ...to keep centered... */
+  .problem, .solution {
+    text-align: center;
+    text-indent: 0%;
   }
 }
 
@@ -508,7 +550,6 @@ input {
 .app-bg-color-bandtastic {
   background-color: #E1EAF7;
 }
-
 
 .bandtastic-conclusion-bg {
   background-image: url(../desk-assets/project-bandtastic-conclusion-bg.png);
