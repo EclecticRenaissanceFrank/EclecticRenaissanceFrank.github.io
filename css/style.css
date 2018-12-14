@@ -352,6 +352,7 @@ input {
 }
 
 
+
 /*
   ========================================
   Styling
@@ -386,9 +387,7 @@ input {
 .proto {
   background-color: #212121;
 }
-
-
-
+.swot { border-bottom: 1px ridge rgb(0, 0, 0);  }
 
 
 
@@ -467,26 +466,53 @@ input {
     width: 90%;
     justify-self: center;
   }
-  /* Case Studies */
+
+  /* Case Studies ================================= */
   .case-section-major-label { font-size: 2.5em;  }
   .case-section-label {font-size: 2em;}
 
+  .case-content {
+    text-indent: 5%;
+    text-align: left; }
+  /* case-content override to keep centered... */
+  .problem, .solution {
+    text-align: center;
+    text-indent: 0%;
+  }
+  .swot { border: 5px ridge rgb(0, 0, 0);  }
+
+  /* Case Study GRIDS! ================================= */
   .proto { /* DISPLAY & MEDIA QUERY FOR 2-ROW MOBILE & THEN */
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
   }
+  .grid-swot {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 50%);
+  }
+  
 
-  /* ...to create columns... */
-  .case-content {
-    text-indent: 5%;
-    text-align: left;
-  }
-  /* ...to keep centered... */
-  .problem, .solution {
-    text-align: center;
-    text-indent: 0%;
-  }
+
+/*
+-Survey
+SWOT
+Personas
+Logo
+LogoCollage
+MBoard
+StyleTiles
+Typog
+Color
+TopBottomSammich
+BlueGreenButton
+Iterations
+*/
+
+
+
+
+
 }
 
 
@@ -611,3 +637,6 @@ input {
 .content-grid-top-c {}
 .content-grid-bot-c {}
 .content-grid-25-50-25 {}
+
+
+.swot-title, .bandmix, .craigslist, .ebay, .myspace, .mus-friend {  font-weight: 950; }
