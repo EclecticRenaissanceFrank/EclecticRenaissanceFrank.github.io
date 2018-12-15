@@ -160,7 +160,10 @@
 .case-grid-process-icon {
   margin: 0 0 1vh 0;
 }
-
+.grid-bandtastic-logoMistake {
+  display: grid;
+  justify-items: center;
+}
 
 
 
@@ -350,7 +353,7 @@ input {
   font-weight: 300;
   text-align: center;
 }
-
+.swot-title, .bandmix-title, .craigslist-title, .ebay-title, .myspace-title, .mus-friend-title {  font-weight: 600; }
 
 
 /*
@@ -480,6 +483,9 @@ input {
     text-indent: 0%;
   }
   .swot { border: 5px ridge rgb(0, 0, 0);  }
+  .swot-title, .bandmix-title, .craigslist-title, .ebay-title, .myspace-title, .mus-friend-title {
+    text-align: center;
+  }
 
   /* Case Study GRIDS! ================================= */
   .proto { /* DISPLAY & MEDIA QUERY FOR 2-ROW MOBILE & THEN */
@@ -491,19 +497,56 @@ input {
     display: grid;
     grid-template-columns: repeat(auto-fit, 50%);
   }
-  
+  .grid-bandtastic-personas {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .bandtastic-logoMistake-top { padding: 0 10vw 0 10vw; }
+  .bandtastic-logoMistake-bot { padding: 0 10vw 0 10vw; }
+  .grid-bandtastic-logoCollage {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .grid-bandtastic-styleTiles {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto;
+  }
+  .bandtastic-styleTiles-top { 
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+  .bandtastic-styleTiles-botL {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .bandtastic-styleTiles-botR {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  .grid-bandtastic-typog {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .grid-bandtastic-icon-issues {
+    display: grid;
 
+
+
+
+    
+  }
 
 /*
 -Survey
-SWOT
-Personas
-Logo
-LogoCollage
-MBoard
-StyleTiles
-Typog
-Color
+-SWOT
+-Personas
+-LogoMistake
+-LogoCollage
+-MBoard
+-StyleTiles
+-Typog
+-Color
 TopBottomSammich
 BlueGreenButton
 Iterations
@@ -637,6 +680,3 @@ Iterations
 .content-grid-top-c {}
 .content-grid-bot-c {}
 .content-grid-25-50-25 {}
-
-
-.swot-title, .bandmix, .craigslist, .ebay, .myspace, .mus-friend {  font-weight: 950; }
