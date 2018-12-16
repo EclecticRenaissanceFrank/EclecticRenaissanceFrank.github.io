@@ -160,11 +160,14 @@
 .case-grid-process-icon {
   margin: 0 0 1vh 0;
 }
-.grid-bandtastic-logoMistake {
+.grid-bandtastic-logoMistake, .grid-bandtastic-icon-issues {
   display: grid;
   justify-items: center;
 }
-
+.grid-bandtastic-greenNblueButt {
+  display: grid;
+  justify-items: center;
+}
 
 
 /*
@@ -354,6 +357,8 @@ input {
   text-align: center;
 }
 .swot-title, .bandmix-title, .craigslist-title, .ebay-title, .myspace-title, .mus-friend-title {  font-weight: 600; }
+.grid-swot ul li, .swot-conclusion { text-align: left;}
+.swot-conclusion { text-indent: 5%;}
 
 
 /*
@@ -528,14 +533,11 @@ input {
     display: grid;
     grid-template-columns: 2fr 1fr;
   }
-  .grid-bandtastic-icon-issues {
-    display: grid;
-
-
+  .project-bandtastic-icon-issuesMid1, .project-bandtastic-icon-issuesMid2, .project-bandtastic-icon-issuesMid3 { padding: 0 15vw 0 15vw;  }
 
 
     
-  }
+  
 
 /*
 -Survey
