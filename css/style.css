@@ -160,14 +160,11 @@
 .case-grid-process-icon {
   margin: 0 0 1vh 0;
 }
-.grid-bandtastic-logoMistake, .grid-bandtastic-icon-issues {
+.grid-bandtastic-logoMistake, .grid-bandtastic-icon-issues, .grid-bandtastic-greenNblueButt {
   display: grid;
   justify-items: center;
 }
-.grid-bandtastic-greenNblueButt {
-  display: grid;
-  justify-items: center;
-}
+
 
 
 /*
@@ -356,9 +353,21 @@ input {
   font-weight: 300;
   text-align: center;
 }
-.swot-title, .bandmix-title, .craigslist-title, .ebay-title, .myspace-title, .mus-friend-title {  font-weight: 600; }
-.grid-swot ul li, .swot-conclusion { text-align: left;}
-.swot-conclusion { text-indent: 5%;}
+ .bandmix-title, .craigslist-title, .ebay-title, .myspace-title, .mus-friend-title {
+  font-weight: 600;
+}
+.swot-title {
+  font-size: 1.375em;
+}
+.grid-swot ul li, .swot-conclusion {
+  text-align: left;
+}
+.swot-conclusion {
+  text-indent: 5%;
+}
+.bandtastic-iteration-chunk .case-content {
+  font-style: italic;
+}
 
 
 /*
@@ -395,15 +404,29 @@ input {
 .proto {
   background-color: #212121;
 }
-.swot { border-bottom: 1px ridge rgb(0, 0, 0);  }
-
+.swot { 
+  border-bottom: 1px ridge rgb(0, 0, 0);
+}
 
 
 /*
   ========================================
+  Padding & Margins
+  ========================================
+*/
+
+
+
+  
+
+
+
+
+
+/* 
+  ========================================
   ALL CASE STUDY PADDING UNTIL FURTHER NOTICE
   ========================================
-
 
 .case-content-label, .swot { padding: 2vh 1vh 0 1vh;}
 
@@ -422,6 +445,10 @@ input {
 
 /* this fixes the problem of too much spacing between Problem & Solution due to .case-content & case-section-label's combined padding 
 .sol-top-pad-over {padding: 0 0 2vh 0;}
+
+
+
+
 
 */
 
@@ -510,7 +537,7 @@ input {
   .bandtastic-logoMistake-bot { padding: 0 10vw 0 10vw; }
   .grid-bandtastic-logoCollage {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
   .grid-bandtastic-styleTiles {
     display: grid;
@@ -535,28 +562,28 @@ input {
   }
   .project-bandtastic-icon-issuesMid1, .project-bandtastic-icon-issuesMid2, .project-bandtastic-icon-issuesMid3 { padding: 0 15vw 0 15vw;  }
 
-
-    
-  
-
-/*
--Survey
--SWOT
--Personas
--LogoMistake
--LogoCollage
--MBoard
--StyleTiles
--Typog
--Color
-TopBottomSammich
-BlueGreenButton
-Iterations
-*/
+  .grid-bandtastic-greenNblueButt {
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "tl tr"
+    "bl br"
+  }
+  .greenNblueButt-1 { grid-area: tl;}
+  .greenNblueButt-2 { grid-area: bl;}
+  .greenNblueButt-3 { grid-area: tr;}
+  .greenNblueButt-4 { grid-area: br;}
 
 
-
-
+  .bandtastic-iteration-intro { text-align: center; }
+  .grid-bandtastic-iterations {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .bandtastic-iteration-chunk .case-content { 
+    text-align: center; 
+    font-weight: 150;
+  }
 
 }
 
@@ -595,11 +622,49 @@ Iterations
   /* Case Studies */
   .case-section-major-label { font-size: 3em;  }
   .case-section-label {font-size: 2.5em;}
+
+
+  /* Case Study GRIDS! ================================= */
+  .grid-bandtastic-mvp {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .grid-swot {  grid-template-columns: repeat(auto-fit, 33%); }
+  .grid-bandtastic-flows {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: "img txt"; }
+  .bandtastic-flow1 { grid-area: txt; }
+  .bandtastic-flow2 { grid-area: img; 
+  }
+  .grid-bandtastic-balsamiqWires {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+  .bandtastic-logoMistake-top { padding: 0 15vw 0 15vw; }
+  .bandtastic-logoMistake-bot { padding: 0 15vw 0 15vw; }
+  
+  .grid-bandtastic-styleTiles {
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 1fr 2fr; 
+    align-items: center;  }
+  .bandtastic-styleTiles-top { 
+    grid-column-start: 1;
+    grid-column-end: 2; }
+  .bandtastic-styleTiles-botL {
+     grid-column-start: 2;
+    grid-column-end: 3; }
+  .bandtastic-styleTiles-botR {
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+  .grid-bandtastic-typog {  grid-template-columns: 4fr 1fr; }
+  .grid-bandtastic-color {  grid-template-columns: 1fr 1fr; }
 }
 
 
 
-/* index-hero-typog for giant screens */
+/* giant screens */
 @media screen and (min-width: 1280px) {
   .hero { font-size: 4em; }
 }
@@ -673,12 +738,3 @@ Iterations
   font-family: 'Cormorant Garamond', 'Times New Roman', Times, serif;
   font-size: 1em;
 }
-
-
-/* future grids perhaps */
-.content-grid-33-66 {}
-.content-grid-66-33 {}
-.content-grid-50-50 {}
-.content-grid-top-c {}
-.content-grid-bot-c {}
-.content-grid-25-50-25 {}
