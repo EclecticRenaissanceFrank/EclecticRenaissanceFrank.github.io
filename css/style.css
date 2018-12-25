@@ -401,6 +401,9 @@ input {
 .swot { 
   border-bottom: 1px ridge rgb(0, 0, 0);
 }
+.greenNblueButt-2, .greenNblueButt-4 {
+  border: 1px solid black;
+}
 
 
 /*
@@ -420,7 +423,7 @@ input {
 
 /* Prototype & B4 actual Process ================================= */
 .proto {  padding: 5vh 0 5vh 0; }
-.process-title {  padding: 10vh 0 10vh 0; }
+.process-title {  padding: 15vh 0 10vh 0; }
 .process-strip { padding: 0 0 10vh 0; }
 /* Process Titles & Icons ================================= */
 .process-box {  padding: 15vh 0 5vh 0; }
@@ -432,9 +435,12 @@ input {
   padding: 2vh 5vw 2vh 5vw;
 }
 /* Postprocess Conclusion ================================= */
-.conclusion-bg  { margin: 10vh 0 0 0; }
+.conclusion-bg  { margin: 20vh 0 0 0; }
 .conclusion-label { padding: 5vh 0 1vh 0;  }
-.conclusion-content { padding: 0 0 5vh 0;  }
+.conclusion-content { 
+  padding: 0 0 5vh 0;
+  margin: 0 5vw 0 5vw;
+}
 
 /*
   ========================================
