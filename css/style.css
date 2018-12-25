@@ -1,6 +1,5 @@
 /*
   ========================================
-  NEXT ACTIONS:
 
   - alt="all my images">
 
@@ -144,21 +143,15 @@
 }
 
 /* casetemp.grid =============================== */
-.case-study {
-  margin: 10vh 0 0 0;
-}
 .case-section-label, .case-section-major-label {
   /* No text-align: center because images */
   display: grid;
   align-items: center;
   justify-items: center;
 }
-.proto { /* 1-COL MOBILE / 1-ROW MEDIA QUERY */
+.proto {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
-}
-.case-grid-process-icon {
-  margin: 0 0 1vh 0;
 }
 .grid-bandtastic-logoMistake, .grid-bandtastic-icon-issues, .grid-bandtastic-greenNblueButt {
   display: grid;
@@ -357,7 +350,8 @@ input {
   font-weight: 600;
 }
 .swot-title {
-  font-size: 1.375em;
+  font-size: 1.625em;
+  font-weight: 100;
 }
 .grid-swot ul li, .swot-conclusion {
   text-align: left;
@@ -393,8 +387,8 @@ input {
   background: #E3C588;
 }
 
-/* Case Studies */
-.case-hero, .conclusion {
+/* Case Studies OVERRIDE IN SPECIFIC */
+.case-hero, .conclusion-bg {
   background-color: #0B250C;
 }
 .case-snapshot {
@@ -411,46 +405,79 @@ input {
 
 /*
   ========================================
-  Padding & Margins
+  Universal Case Study Padding & Margins
   ========================================
 */
 
+.case-study { margin: 10vh 0 0 0; }
+/* Hero ================================= */
+.case-hero { padding: 15vh 0 15vh 0;  }
+.app-name { padding: 0 0 5vh 0;  }
 
+/* Intro-Problem-Solution ================================= */
+.case-snapshot  { padding: 5vh 5vw 5vh 5vw;  }
+.problem-title, .solution-title  { padding: 5vh 0 1vh 0;  }
 
-  
+/* Prototype & B4 actual Process ================================= */
+.proto {  padding: 5vh 0 5vh 0; }
+.process-title {  padding: 10vh 0 10vh 0; }
+.process-strip { padding: 0 0 10vh 0; }
+/* Process Titles & Icons ================================= */
+.process-box {  padding: 15vh 0 5vh 0; }
+.process-icon { padding: 0 0 2vh 0; }
+/* SWOT  ================================= */
+.swot-title { padding: 10vh 0 2vh 0;}
+.swot-item-title { padding: 2vh 0 2vh 0;}
+.swot {
+  padding: 2vh 5vw 2vh 5vw;
+}
+/* Postprocess Conclusion ================================= */
+.conclusion-bg  { margin: 10vh 0 0 0; }
+.conclusion-label { padding: 5vh 0 1vh 0;  }
+.conclusion-content { padding: 0 0 5vh 0;  }
 
-
-
-
-
-/* 
+/*
   ========================================
-  ALL CASE STUDY PADDING UNTIL FURTHER NOTICE
+  Padding/Margin Classes for content
   ========================================
-
-.case-content-label, .swot { padding: 2vh 1vh 0 1vh;}
-
-.app-name { padding: 15vh 0 5vh 0;  }
-
-.short-description {  padding-bottom: 15vh; }
-
-.case-section-label {  padding: 5vh 0 2vh 0;  }
-
-.case-content {  padding: 0 1vh 5vh 1vh;  }
-
-
-.what { padding: 5vh 1vh 0 1vh;  }
-.process  { padding: 10vh 0 5vh 0;  }
-.case-snapshot  { padding: 0 0 5vh 0;  }
-
-/* this fixes the problem of too much spacing between Problem & Solution due to .case-content & case-section-label's combined padding 
-.sol-top-pad-over {padding: 0 0 2vh 0;}
-
-
-
-
-
 */
+.pad-l5 { padding-left: 5vw; }
+.pad-r5 { padding-right: 5vw; }
+.pad-horz5 {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+.pad-t5 { padding-top: 5vw; }
+.pad-b5 { padding-bottom: 5vw; }
+.pad-vert5 {
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+}
+.mar-l5 { margin-left: 5vw; }
+.mar-r5 { margin-right: 5vw; }
+.mar-horz5 {
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+.mar-t5 { margin-top: 5vw; }
+.mar-b5 { margin-bottom: 5vw; }
+.mar-vert5 {
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+}
+.mar-l10 { margin-left: 10vw; }
+.mar-r10 { margin-right: 10vw; }
+.mar-horz10 {
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+.mar-t10 { margin-top: 10vw; }
+.mar-b10 { margin-bottom: 10vw; }
+.mar-vert10 {
+  margin-top: 10vw;
+  margin-bottom: 10vw;
+}
+
 
 
 
@@ -520,7 +547,7 @@ input {
   }
 
   /* Case Study GRIDS! ================================= */
-  .proto { /* DISPLAY & MEDIA QUERY FOR 2-ROW MOBILE & THEN */
+  .proto {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
@@ -536,6 +563,10 @@ input {
   .bandtastic-logoMistake-top { padding: 0 10vw 0 10vw; }
   .bandtastic-logoMistake-bot { padding: 0 10vw 0 10vw; }
   .grid-bandtastic-logoCollage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid-bandtastic-moodboard {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -659,7 +690,21 @@ input {
     grid-column-end: 4;
   }
   .grid-bandtastic-typog {  grid-template-columns: 4fr 1fr; }
-  .grid-bandtastic-color {  grid-template-columns: 1fr 1fr; }
+  .grid-bandtastic-color {  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "left right"
+  }
+  .bandtastic-iteration-chunk { justify-self: center; }
+  .grid-bandtastic-atomic { 
+    display: grid;
+    grid-template-rows: auto auto;  }
+    .grid-bandtastic-atomic p {
+      text-indent: 0%;
+      text-align: center; }
+    .grid-bandtastic-atomic a {
+      justify-self: center;
+  }
 }
 
 
@@ -685,12 +730,6 @@ input {
 
 .app-bg-color-bandtastic {
   background-color: #E1EAF7;
-}
-
-.bandtastic-conclusion-bg {
-  background-image: url(../desk-assets/project-bandtastic-conclusion-bg.png);
-  background-size: contain;
-  background-position: center;
 }
 
 /*
@@ -726,7 +765,7 @@ input {
 .yellow-tint {
   color: rgba(119, 89, 29, 0.8);
 }
-.black-80 {
+.black-90 {
   color: rgba(21, 21, 21, 0.9);
 }
 .black-100 {
