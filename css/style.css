@@ -346,7 +346,7 @@ input {
   font-weight: 300;
   text-align: center;
 }
- .bandmix-title, .craigslist-title, .ebay-title, .myspace-title, .mus-friend-title {
+ .swot-item-title {
   font-weight: 600;
 }
 .swot-title {
@@ -388,9 +388,6 @@ input {
 }
 
 /* Case Studies OVERRIDE IN SPECIFIC */
-.case-hero, .conclusion-bg {
-  background-color: #0B250C;
-}
 .case-snapshot {
   background-color: #DADADA;
   color: #151515;
@@ -548,7 +545,7 @@ input {
     text-indent: 0%;
   }
   .swot { border: 5px ridge rgb(0, 0, 0);  }
-  .swot-title, .bandmix-title, .craigslist-title, .ebay-title, .myspace-title, .mus-friend-title {
+  .swot-title, .swot-item-title {
     text-align: center;
   }
 
@@ -737,6 +734,9 @@ input {
 .app-bg-color-bandtastic {
   background-color: #E1EAF7;
 }
+.conclusion-bg-bandtastic {
+  background-color: rgb(9, 38, 78);
+}
 
 /*
   ========================================
@@ -744,6 +744,18 @@ input {
   ========================================
 */
 
+.case-hero-vocoach {
+  background-image: url(../desk-assets/project-vocoach-banner-center.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.app-bg-color-vocoach {
+  background-color: rgb(234, 217, 255);
+}
+.conclusion-bg-vocoach {
+  background-color: #240A44;
+}
 
 
 
