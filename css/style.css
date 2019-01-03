@@ -5,6 +5,8 @@
 
   - Remove unneeded font weights in html when finished
 
+  -Add text-indent: 5% again in a small amount of places where there are paragraphs with no line breaks, & in the case-hero area.
+
   ========================================
 */
 
@@ -284,7 +286,6 @@ font-size: 1.5em;
   font-weight: 700;
 }
 .grid-bio-content {
-  text-indent: 5%;
   line-height: 1.75em;
   letter-spacing: 0.05em;
   word-spacing: 0.1em;
@@ -357,15 +358,13 @@ input {
 .grid-swot ul li, .swot-conclusion {
   text-align: left;
 }
-.swot-conclusion {
-  text-indent: 5%;
-}
 /* case study specific.typo ================================= */
 .bandtastic-iteration-chunk .case-content {
   font-style: italic;
 }
 .vocoach-survey {
   font-style: italic;
+  font-weight: 150;
 }
 
 /*
@@ -543,14 +542,9 @@ li img {
   .case-section-major-label { font-size: 2.5em;  }
   .case-section-label {font-size: 2em;}
 
-  .case-content {
-    text-indent: 5%;
-    text-align: left; }
+  .case-content { text-align: left; }
   /* case-content override to keep centered... */
-  .problem, .solution {
-    text-align: center;
-    text-indent: 0%;
-  }
+  .problem, .solution { text-align: center; }
   .swot { border: 5px ridge rgb(0, 0, 0);  }
   .swot-title, .swot-item-title {
     text-align: center;
@@ -566,6 +560,7 @@ li img {
     display: grid;
     grid-template-columns: repeat(auto-fit, 50%);
   }
+  /* BANDTASTIC ------------------------- */
   .grid-bandtastic-personas {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -625,14 +620,13 @@ li img {
     text-align: center; 
     font-weight: 150;
   }
-  /* This is allowing 1 centered line not to get indented from case-content & bumped to the next line for no reason */
-  .vocoach-gamified, .vocoach-survey, .vocoach-sketches, .vocoach-title, .vocoach-sheet {
-    text-align: center;
-    text-indent: 0%;
-}
+  /* POCKET VOCOACHER ------------------------- */
+  .vocoach-gamified, .vocoach-survey, .vocoach-sitemap, .vocoach-flows, .vocoach-sketches, .vocoach-title, .vocoach-sheet { text-align: center; }
   .grid-vocoach-personas {
     display: grid;
     grid-template-columns: 1fr auto;
+    align-items: center;
+    margin-right: 5vw;
   }
 
 }
@@ -675,11 +669,11 @@ li img {
 
 
   /* Case Study GRIDS! ================================= */
+  /* BANDTASTIC ------------------------- */
   .grid-bandtastic-mvp {
     display: grid;
     grid-template-columns: 1fr 2fr;
   }
-  .grid-swot {  grid-template-columns: repeat(auto-fit, 33%); }
   .grid-bandtastic-flows {
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -711,6 +705,7 @@ li img {
   .grid-bandtastic-typog {  grid-template-columns: 4fr 1fr; }
   .grid-bandtastic-color {  
     display: grid;
+    align-items: center;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "left right"
   }
@@ -718,25 +713,39 @@ li img {
   .grid-bandtastic-atomic { 
     display: grid;
     grid-template-rows: auto auto;  }
-    .grid-bandtastic-atomic p {
-      text-indent: 0%;
-      text-align: center; }
+    .grid-bandtastic-atomic p { text-align: center; }
     .grid-bandtastic-atomic a {
       justify-self: center;
   }
-
+  /* POCKET VOCOACHER ------------------------- */
+  .vocoach-gamified, .vocoach-sitemap, .vocoach-sketches, .vocoach-title, .vocoach-sheet {
+    text-align: left;
+  }
   .grid-vocoach-discovery {
     grid-template-columns: 1fr auto;
-    margin-right: 5vw;
+    margin-left: 5vw;
+    margin-right: 10vw;
+    grid-column-gap: 10vw;
+    align-items: center;
   }
   .grid-vocoach-gamified {
     display: grid;
     grid-template-columns: auto auto;
   }
-  .gamified, .survey { text-align: left; }
-  .grid-vocoach-survey {
+  .grid-vocoach-personas {  
+    margin-left: 5vw;
+    margin-right: 10vw;
+    grid-column-gap: 5vw;
+  }
+  .grid-vocoach-sitemap {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: auto auto;
+  }
+  .grid-vocoach-flows {
+    display: grid;
+    grid-template-rows: 1fr auto; }
+  .vocoach-flows {
+    justify-self: center;
   }
   
 }
