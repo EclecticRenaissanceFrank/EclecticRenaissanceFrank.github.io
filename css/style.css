@@ -153,7 +153,8 @@
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
 }
-.grid-bandtastic-logoMistake, .grid-bandtastic-icon-issues, .grid-bandtastic-greenNblueButt {
+/* grid that starts in mobile, some to center TAB grid =============================== */
+.grid-bandtastic-logoMistake, .grid-bandtastic-icon-issues, .grid-bandtastic-greenNblueButt, .grid-vocoach-discovery, .grid-vocoach-sketches, .grid-vocoach-sketch2wire, .grid-vocoach-title, .grid-vocoach-sheet {
   display: grid;
   justify-items: center;
 }
@@ -359,10 +360,13 @@ input {
 .swot-conclusion {
   text-indent: 5%;
 }
+/* case study specific.typo ================================= */
 .bandtastic-iteration-chunk .case-content {
   font-style: italic;
 }
-
+.vocoach-survey {
+  font-style: italic;
+}
 
 /*
   ========================================
@@ -398,6 +402,9 @@ input {
 .swot { 
   border-bottom: 1px ridge rgb(0, 0, 0);
 }
+li img {
+  vertical-align: middle;
+}
 .greenNblueButt-2, .greenNblueButt-4 {
   border: 1px solid black;
 }
@@ -421,7 +428,7 @@ input {
 /* Prototype & B4 actual Process ================================= */
 .proto {  padding: 5vh 0 5vh 0; }
 .process-title {  padding: 15vh 0 10vh 0; }
-.process-strip { padding: 0 0 10vh 0; }
+
 /* Process Titles & Icons ================================= */
 .process-box {  padding: 15vh 0 5vh 0; }
 .process-icon { padding: 0 0 2vh 0; }
@@ -618,6 +625,15 @@ input {
     text-align: center; 
     font-weight: 150;
   }
+  /* This is allowing 1 centered line not to get indented from case-content & bumped to the next line for no reason */
+  .vocoach-gamified, .vocoach-survey, .vocoach-sketches, .vocoach-title, .vocoach-sheet {
+    text-align: center;
+    text-indent: 0%;
+}
+  .grid-vocoach-personas {
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
 
 }
 
@@ -708,6 +724,21 @@ input {
     .grid-bandtastic-atomic a {
       justify-self: center;
   }
+
+  .grid-vocoach-discovery {
+    grid-template-columns: 1fr auto;
+    margin-right: 5vw;
+  }
+  .grid-vocoach-gamified {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .gamified, .survey { text-align: left; }
+  .grid-vocoach-survey {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  
 }
 
 
