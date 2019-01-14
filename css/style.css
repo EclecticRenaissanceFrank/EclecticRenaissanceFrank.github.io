@@ -60,25 +60,10 @@
   display: grid;
   grid-template-rows: 10vh;
   grid-template-columns: 
-  1fr 1fr 1fr 
-  1fr 1fr 1fr
-  1fr 1fr 1fr 
-  1fr 1fr 1fr;
+  1fr 1fr;
   align-items: center;
-}
-.footer-item-mail {
-  grid-column: 2 / 3;
-  justify-self: start;
-}
-.footer-item-contact {
-  grid-column: 3 / 11;
-  justify-self: center;
-  text-align: center;
-  margin: 0 auto;
-}
-.footer-item-lin {
-  grid-column: 11 / 12;
-  justify-self: end;
+  justify-items: center;
+  column-gap: 25vw;
 }
 .footer {
   position: relative;
@@ -189,6 +174,13 @@ a {
 a:visited {
   color: #AF50D7;
 }
+a:hover {
+  font-size: 1.1em;
+}
+a:active {
+  color: #AF50D7;
+}
+
 
 
 /* Header/Footer */
@@ -200,7 +192,7 @@ a:visited {
   font-weight: 300;
 }
 .type-logo a {
-  font-weight: 400;
+  font-weight: 750;
 }
 #tl-fm {
   color: #E3C588;
@@ -540,7 +532,10 @@ li img {
   .case-section-major-label { font-size: 2.5em;  }
   .case-section-label {font-size: 2em;}
 
-  .case-content { text-align: left; }
+  .case-content { text-align: left;
+    letter-spacing: 0.075em;
+    word-spacing: 0.15em;
+  }
   /* case-content override to keep centered... */
   .problem, .solution { text-align: center; }
   .swot { border: 5px ridge rgb(0, 0, 0);  }
@@ -667,7 +662,7 @@ li img {
   .grid-projects {  
     grid-template-columns: 33vw 33vw; 
     justify-content: space-evenly;}  
-  body {  font-size: 1.25em; }
+  body {  font-size: 1.25em;  }
   .hero { font-size: 3em; }
   .project-title {  font-size: 2em; }
   .project-content {  line-height: 1.375em; }
@@ -685,11 +680,13 @@ li img {
   input { font-size: 1.125em;  }
   .contact-form h1 {  font-size: 2.5em; }
   .flabel { font-size: 1.75em;  }
-  /* Case Studies */
+  /* Case Studies ================================= */
   .case-section-major-label { font-size: 3em;  }
   .case-section-label {font-size: 2.5em;}
-
-
+  .case-content {
+    letter-spacing: 0.375em;
+    word-spacing: 0.375em;
+  }
   /* Case Study GRIDS! ================================= */
   /* BANDTASTIC ------------------------- */
   .grid-bandtastic-mvp {
