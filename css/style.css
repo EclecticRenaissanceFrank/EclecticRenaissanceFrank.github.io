@@ -175,11 +175,27 @@ a:visited {
   color: #AF50D7;
 }
 a:hover {
-  font-size: 1.1em;
+  font-size: 1.05em;
 }
 a:active {
-  color: #AF50D7;
+  color: #E3C588;
 }
+.projects a:link {
+  color: #FAFAFA;
+}
+.projects a:visited {
+  color: #FAFAFA;
+}
+.project-vocoacher a:hover {
+  color: #FAFAFA;
+  outline: solid 1px #E3C588;
+}
+.project-bandtastic a:hover {
+  color: #FAFAFA;
+  outline: solid 1px #6DB66D;
+}
+
+
 
 
 
@@ -363,7 +379,7 @@ input {
   ========================================
 */
 .nav-item a:active {
-  border-bottom: 1px solid #E3C588;
+  color: #6DB66D;
 }
 
 /* About */
@@ -683,10 +699,7 @@ li img {
   /* Case Studies ================================= */
   .case-section-major-label { font-size: 3em;  }
   .case-section-label {font-size: 2.5em;}
-  .case-content {
-    letter-spacing: 0.375em;
-    word-spacing: 0.375em;
-  }
+  
   /* Case Study GRIDS! ================================= */
   /* BANDTASTIC ------------------------- */
   .grid-bandtastic-mvp {
