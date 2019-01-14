@@ -63,7 +63,7 @@
   1fr 1fr;
   align-items: center;
   justify-items: center;
-  column-gap: 25vw;
+  column-gap: 47.5vw;
 }
 .footer {
   position: relative;
@@ -186,18 +186,6 @@ a:active {
 .projects a:visited {
   color: #FAFAFA;
 }
-.project-vocoacher a:hover {
-  color: #FAFAFA;
-  outline: solid 1px #E3C588;
-}
-.project-bandtastic a:hover {
-  color: #FAFAFA;
-  outline: solid 1px #6DB66D;
-}
-
-
-
-
 
 /* Header/Footer */
 .nav a, .footer a {
@@ -357,6 +345,9 @@ input {
  .swot-item-title {
   font-weight: 600;
 }
+.swot-item-label {
+  color: #E3C588
+}
 .swot-title {
   font-size: 1.625em;
   font-weight: 100;
@@ -381,6 +372,15 @@ input {
 .nav-item a:active {
   color: #6DB66D;
 }
+.project-vocoacher a:hover {
+  color: #FAFAFA;
+  outline: solid 1px #E3C588;
+}
+.project-bandtastic a:hover {
+  color: #FAFAFA;
+  outline: solid 1px #6DB66D;
+}
+
 
 /* About */
 .north-strip {
@@ -403,6 +403,9 @@ input {
 }
 .proto {
   background-color: #212121;
+}
+.proto:hover {
+  outline: solid 1px #E3C588;
 }
 .swot { 
   border-bottom: 1px ridge rgb(0, 0, 0);
@@ -554,7 +557,7 @@ li img {
   }
   /* case-content override to keep centered... */
   .problem, .solution { text-align: center; }
-  .swot { border: 5px ridge rgb(0, 0, 0);  }
+  .swot { border: 5px solid rgb(0, 0, 0);  }
   .swot-title, .swot-item-title {
     text-align: center;
   }
