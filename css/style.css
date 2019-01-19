@@ -60,10 +60,10 @@
   display: grid;
   grid-template-rows: 10vh;
   grid-template-columns: 
-  1fr 1fr;
+  auto auto auto;
   align-items: center;
   justify-items: center;
-  column-gap: 47.5vw;
+  column-gap: 15vw;
 }
 .footer {
   position: relative;
@@ -88,7 +88,7 @@
 }
 .grid-bio-content {
   grid-column: 2 / 12;
-  margin: 1vh 0 1vh 0;
+  margin: 1.25vh 0 1.25vh 0;
 }
 .grid-bio-h2s {
   /* 1/4 desk
@@ -96,6 +96,8 @@
   1/2 mobile*/
   grid-column: 1 / 7;
   margin: 2vh 0 2vh 0;
+  align-content: center;
+  align-items: center;
 }
 .bruce {
   /* always 1/12 on each side */
@@ -118,7 +120,7 @@
 .contact-form {
   display: grid;
   grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 2fr 1fr;
-  grid-gap: 1vh;
+  grid-gap: .5vw;
 
   position: relative;
   width: 90vw;
@@ -169,10 +171,10 @@ body {
 
 a {
   text-decoration: none;
-  color: #4B9BFF;
+  color: rgb(94, 166, 255);
 }
 a:visited {
-  color: #AF50D7;
+  color: rgb(188, 133, 255);
 }
 a:hover {
   font-size: 1.05em;
@@ -188,7 +190,7 @@ a:active {
 }
 
 /* Header/Footer */
-.nav a, .footer a {
+.nav a, .footer a, .footer-item-copyright {
   color: #FAFAFA;
   font-weight: 300;
 }
@@ -211,6 +213,10 @@ a:active {
 .hero {
 text-align: center;
 font-size: 1.5em;
+/* Unitless: use this number multiplied by
+the element's font size */ 
+line-height: 1.25;
+
 }
 #hfm {
   display: inline;
@@ -273,7 +279,7 @@ font-size: 1.5em;
 }
 .grid-bio-h2s h2 {
   position: absolute;
-  z-index: 1; 
+  z-index: 1;
   left: 8.3%; 
   font-size: 1.75em;
   font-family: 'Cormorant Garamond', 'Times New Roman', Times, serif;
@@ -298,7 +304,10 @@ font-size: 1.5em;
   color: #151515;
   text-decoration: none;
 }
-.contact-form button,
+.contact-form button {
+  font-size: 1em;
+  font-weight: 150;
+}
 .contact-form textarea,
 input {
   font-family: lato;
@@ -308,7 +317,7 @@ input {
   font-size: 2em;
   text-align: center;
   align-self: center;
-  font-weight: 300;
+  font-weight: 450;
 }
 .flabel {
   font-size: 1.25em;
@@ -316,6 +325,7 @@ input {
   align-self: end;
   width: 90%;
   justify-self: center;
+  font-weight: 350;
 }
 .contact-form input, 
 .contact-form textarea {
@@ -372,14 +382,15 @@ input {
 .nav-item a:active {
   color: #6DB66D;
 }
-.project-vocoacher a:hover {
+.project-vocoacher a:hover img {
   color: #FAFAFA;
   outline: solid 1px #E3C588;
 }
-.project-bandtastic a:hover {
+.project-bandtastic a:hover img {
   color: #FAFAFA;
   outline: solid 1px #6DB66D;
 }
+
 
 
 /* About */
@@ -390,10 +401,23 @@ input {
 /* Contact Page */
 .contact-form {
   background: rgb(39, 39, 39);
-  border-radius: 5px;
+  border-radius: 25px;
 }
-.contact-form h1, .contact-form button, .flabel {
+.contact-form h1 {
   background: #E3C588;
+}
+.contact-form button {
+  background: #6DB66D;
+  border-radius: 12.5px;
+}
+.flabel {
+  background: #DADADA;
+}
+#name, #email, #message, .flabel {
+  border-radius: 12.5px;
+}
+.contact-form input:focus, .contact-form textarea:focus {
+  background: #FFEAC0;
 }
 
 /* Case Studies OVERRIDE IN SPECIFIC */
@@ -427,7 +451,7 @@ li img {
 .case-study { margin: 10vh 0 0 0; }
 /* Hero ================================= */
 .case-hero { padding: 15vh 0 15vh 0;  }
-.app-name { padding: 0 0 5vh 0;  }
+.app-name { margin: 0 0 5vh 0;  }
 
 /* Intro-Problem-Solution ================================= */
 .case-snapshot  { padding: 5vh 5vw 5vh 5vw;  }
@@ -444,7 +468,7 @@ li img {
 .swot-title { padding: 10vh 0 2vh 0;}
 .swot-item-title { padding: 2vh 0 2vh 0;}
 .swot {
-  padding: 2vh 5vw 2vh 5vw;
+  padding: 5vh 5vw 5vh 5vw;
 }
 /* Postprocess Conclusion ================================= */
 .conclusion-bg  { margin: 20vh 0 0 0; }
@@ -453,6 +477,8 @@ li img {
   padding: 0 0 5vh 0;
   margin: 0 5vw 0 5vw;
 }
+/* Copy Margins ================================= */
+.mar-full-width-copy {  margin: 5vh 5vw 5vh 5vw;  }
 
 /*
   ========================================
@@ -496,6 +522,20 @@ li img {
   margin-bottom: 10vw;
 }
 
+.mar-l15 {  margin-left: 15vw;  }
+.mar-r15 {  margin-right: 15vw; }
+.mar-horz30 {
+  margin-left: 15vw;
+  margin-right: 15vw;
+}
+.mar-l20 {  margin-left: 20vw;  }
+.mar-r20 {  margin-right: 20vw; }
+.mar-horz40 {
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
+
+
 
 
 
@@ -529,7 +569,10 @@ li img {
   }
   .about { grid-column: 1 / 2 }
   .grid-bio-h2s h2 {  font-size: 2em;  }
-  .grid-bio-content { font-weight: 300; }
+  .grid-bio-content { 
+    font-weight: 300;
+    grid-column: 3 / 11;
+  }
   .bruce  { font-size: 1.125em; }
   .pictures {
     grid-template-columns: repeat(6, 1fr);
@@ -537,7 +580,9 @@ li img {
   }
   /* Contact Page */
   .contact-form { width: 66vw;  }
-  .contact-form button,
+  .contact-form button {
+    font-size: 1.125em;
+  }
   .contact-form textarea,
   input { font-size: 1em;  }
   .contact-form h1 {  font-size: 2.25em; }
@@ -548,6 +593,8 @@ li img {
   }
 
   /* Case Studies ================================= */
+  .case-snapshot  { padding: 5vh 10vw 5vh 10vw;  }
+
   .case-section-major-label { font-size: 2.5em;  }
   .case-section-label {font-size: 2em;}
 
@@ -561,7 +608,8 @@ li img {
   .swot-title, .swot-item-title {
     text-align: center;
   }
-
+  .conclusion-content { margin: 0 10vw 0 10vw;  }
+  .mar-full-width-copy {  margin: 5vh 10vw 5vh 10vw;  }
   /* Case Study GRIDS! ================================= */
   .proto {
     display: grid;
@@ -571,21 +619,20 @@ li img {
   .grid-swot {
     display: grid;
     grid-template-columns: repeat(auto-fit, 50%);
+    /*margin: 0 5vw 0 5vw;*/
   }
   /* BANDTASTIC ------------------------- */
   .grid-bandtastic-personas {
     display: grid;
     grid-template-columns: 1fr 2fr;
   }
-  .bandtastic-logoMistake-top { padding: 0 10vw 0 10vw; }
-  .bandtastic-logoMistake-bot { padding: 0 10vw 0 10vw; }
   .grid-bandtastic-logoCollage {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
   .grid-bandtastic-moodboard {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    justify-items: center;
   }
   .grid-bandtastic-styleTiles {
     display: grid;
@@ -608,7 +655,6 @@ li img {
     display: grid;
     grid-template-columns: 2fr 1fr;
   }
-  .project-bandtastic-icon-issuesMid1, .project-bandtastic-icon-issuesMid2, .project-bandtastic-icon-issuesMid3 { padding: 0 15vw 0 15vw;  }
   .grid-bandtastic-greenNblueButt {
     grid-template-rows: auto 1fr;
     grid-template-columns: 1fr 1fr;
@@ -632,10 +678,7 @@ li img {
     font-weight: 150;
   }
   /* POCKET VOCOACHER ------------------------- */
-  .vocoach-gamified, .vocoach-survey, .vocoach-sitemap, .vocoach-flows, .vocoach-sketches, .vocoach-title, .vocoach-sheet, .vocoach-logo-3chunk-content, .vocoach-logo-4chunk-content, .vocoach-style-content { text-align: center; }
-  /* Big ol center override of case-content */
-  
-  
+  .vocoach-survey { text-align: center; }
   .grid-vocoach-personas {
     display: grid;
     grid-template-columns: 1fr auto;
@@ -688,41 +731,35 @@ li img {
   /* About */
   .grid-bio-h2s h2 {  font-size: 2.25em;  }
   .about {  font-size: 4em; }
+  .grid-bio-content { margin: 2.5vh 0 2.5vh 0;  }
   .bruce {
     font-size: 1.75em;
     font-weight: 400;
   }
   /* Contact Page */
   .contact-form { width: 50vw;  }
-  .contact-form button,
+  .contact-form button {
+    font-size: 1.25em;
+  }
   .contact-form textarea,
   input { font-size: 1.125em;  }
   .contact-form h1 {  font-size: 2.5em; }
   .flabel { font-size: 1.75em;  }
   /* Case Studies ================================= */
+  .case-snapshot  { padding: 5vh 22.5vw 5vh 22.5vw;  }
+
   .case-section-major-label { font-size: 3em;  }
   .case-section-label {font-size: 2.5em;}
+  .conclusion-content { margin: 0 22.5vw 0 22.5vw;  }
+  .mar-full-width-copy {  margin: 5vh 22.5vw 5vh 22.5vw;  }
   
   /* Case Study GRIDS! ================================= */
+  .grid-swot {  margin: 0 5vw 0 5vw;  }
   /* BANDTASTIC ------------------------- */
   .grid-bandtastic-mvp {
     display: grid;
     grid-template-columns: 1fr 2fr;
   }
-  .grid-bandtastic-flows {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-areas: "img txt"; }
-  .bandtastic-flow1 { grid-area: txt; }
-  .bandtastic-flow2 { grid-area: img; 
-  }
-  .grid-bandtastic-balsamiqWires {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-  }
-  .bandtastic-logoMistake-top { padding: 0 15vw 0 15vw; }
-  .bandtastic-logoMistake-bot { padding: 0 15vw 0 15vw; }
-  
   .grid-bandtastic-styleTiles {
     grid-template-rows: 1fr;
     grid-template-columns: 2fr 1fr 2fr; 
@@ -740,22 +777,15 @@ li img {
   .grid-bandtastic-typog {  grid-template-columns: 4fr 1fr; }
   .grid-bandtastic-color {  
     display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "left right"
+    justify-items: center;
   }
   .bandtastic-iteration-chunk { justify-self: center; }
   .grid-bandtastic-atomic { 
     display: grid;
-    grid-template-rows: auto auto;  }
-    .grid-bandtastic-atomic p { text-align: center; }
-    .grid-bandtastic-atomic a {
-      justify-self: center;
+    grid-template-rows: auto auto;
+    justify-items: center;  }
   }
   /* POCKET VOCOACHER ------------------------- */
-  .vocoach-gamified, .vocoach-sitemap, .vocoach-sketches, .vocoach-title, .vocoach-sheet {
-    text-align: left;
-  }
   .grid-vocoach-discovery {
     grid-template-columns: 1fr auto;
     margin-left: 5vw;
@@ -813,6 +843,19 @@ li img {
 .conclusion-bg-bandtastic {
   background-color: rgb(9, 38, 78);
 }
+.bandtastic li:before {
+  /* For a round bullet */
+  content: '\2022';
+  display: block;
+  position: relative;
+  max-width: 0;
+  max-height: 0;
+  left: -2vw;
+  top: -.125vw;
+  top: 0;
+  color: #4B9BFF;
+  font-size: 2vw;
+}
 
 /*
   ========================================
@@ -832,8 +875,18 @@ li img {
 .conclusion-bg-vocoach {
   background-color: #240A44;
 }
-
-
+.vocoacher li:before {
+  /* For a round bullet */
+  content: '\2022';
+  display: block;
+  position: relative;
+  max-width: 0;
+  max-height: 0;
+  left: -2vw;
+  top: -.125vw;
+  color: #AF50D7;
+  font-size: 2vw;
+}
 
 
 /*
