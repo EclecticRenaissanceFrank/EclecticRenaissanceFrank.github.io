@@ -8,6 +8,15 @@
   ========================================
 */
 
+
+
+
+
+
+
+
+
+
 /*
   ========================================
   Grids
@@ -145,6 +154,13 @@
   display: grid;
   justify-items: center;
 }
+
+
+
+
+
+
+
 
 
 
@@ -374,6 +390,15 @@ input {
   font-weight: 150;
 }
 
+
+
+
+
+
+
+
+
+
 /*
   ========================================
   Styling
@@ -442,6 +467,14 @@ li img {
 }
 
 
+
+
+
+
+
+
+
+
 /*
   ========================================
   Universal Case Study Padding & Margins
@@ -479,6 +512,15 @@ li img {
 }
 /* Copy Margins ================================= */
 .mar-full-width-copy {  margin: 2.5vh 5vw 2.5vh 5vw;  }
+
+
+
+
+
+
+
+
+
 
 /*
   ========================================
@@ -535,6 +577,109 @@ li img {
   margin-right: 20vw;
 }
 
+
+
+
+
+
+
+
+
+
+/*
+  ========================================
+  Bandtastic Specific
+  ========================================
+*/
+.case-hero-bandtastic {
+  background-image: url(../desk-assets/project-bandtastic-banner-center.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.app-bg-color-bandtastic {
+  background-color: #E1EAF7;
+}
+.conclusion-bg-bandtastic {
+  background-color: rgb(9, 38, 78);
+}
+.bandtastic li:before {
+  /* For a round bullet */
+  content: '\2022';
+  display: block;
+  position: relative;
+  max-width: 0;
+  max-height: 0;
+  left: -2vw;
+  top: -.125vw;
+  top: 0;
+  color: #4B9BFF;
+  font-size: 2vw;
+}
+/*
+  ========================================
+  Pocket VoCoacher Specific
+  ========================================
+*/
+.case-hero-vocoach {
+  background-image: url(../desk-assets/project-vocoach-banner-center.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.app-bg-color-vocoach {
+  background-color: rgb(234, 217, 255);
+}
+.conclusion-bg-vocoach {
+  background-color: #240A44;
+}
+.vocoacher li:before {
+  /* For a round bullet */
+  content: '\2022';
+  display: block;
+  position: relative;
+  max-width: 0;
+  max-height: 0;
+  left: -2vw;
+  top: -.125vw;
+  color: #AF50D7;
+  font-size: 2vw;
+}
+/*
+  ========================================
+  Reference
+  ========================================
+*/
+.green-l {
+  color: #9FD39F;
+}
+.greed-d {
+  color: #6DB66D;
+}
+.green-tint {
+  color: rgba(24, 81, 27, 0.8);
+}
+.gold-l {
+  color: #FFEAC0;
+}
+.gold-d {
+  color: #E3C588;
+}
+.yellow-tint {
+  color: rgba(119, 89, 29, 0.8);
+}
+.black-90 {
+  color: rgba(21, 21, 21, 0.9);
+}
+.black-100 {
+  color: #151515;
+}
+
+.garamond {
+  color: #FAFAFA;
+  font-family: 'Cormorant Garamond', 'Times New Roman', Times, serif;
+  font-size: 1em;
+}
 
 
 
@@ -711,9 +856,23 @@ li img {
 
 
 
+
+
+
+
+
+
+
 /* another "About" h1 size */
 @media screen and (min-width: 800px) {
 .about {  font-size: 3em; }}
+
+
+
+
+
+
+
 
 
 
@@ -782,7 +941,7 @@ li img {
   .grid-bandtastic-atomic { 
     display: grid;
     grid-template-rows: auto auto;
-    justify-items: center;  }
+    justify-items: center;
   }
   /* POCKET VOCOACHER ------------------------- */
   .grid-vocoach-discovery {
@@ -811,115 +970,19 @@ li img {
   .vocoach-flows {
     justify-self: center;
   }
-  
-  
+
 }
+
+
+
+
+
+
+
 
 
 
 /* giant screens */
 @media screen and (min-width: 1280px) {
   .hero { font-size: 4em; }
-}
-
-
-
-
-/*
-  ========================================
-  Bandtastic Specific
-  ========================================
-*/
-.case-hero-bandtastic {
-  background-image: url(../desk-assets/project-bandtastic-banner-center.png);
-  background-size: cover;
-  background-position: center;
-}
-
-.app-bg-color-bandtastic {
-  background-color: #E1EAF7;
-}
-.conclusion-bg-bandtastic {
-  background-color: rgb(9, 38, 78);
-}
-.bandtastic li:before {
-  /* For a round bullet */
-  content: '\2022';
-  display: block;
-  position: relative;
-  max-width: 0;
-  max-height: 0;
-  left: -2vw;
-  top: -.125vw;
-  top: 0;
-  color: #4B9BFF;
-  font-size: 2vw;
-}
-
-/*
-  ========================================
-  Pocket VoCoacher Specific
-  ========================================
-*/
-
-.case-hero-vocoach {
-  background-image: url(../desk-assets/project-vocoach-banner-center.png);
-  background-size: cover;
-  background-position: center;
-}
-
-.app-bg-color-vocoach {
-  background-color: rgb(234, 217, 255);
-}
-.conclusion-bg-vocoach {
-  background-color: #240A44;
-}
-.vocoacher li:before {
-  /* For a round bullet */
-  content: '\2022';
-  display: block;
-  position: relative;
-  max-width: 0;
-  max-height: 0;
-  left: -2vw;
-  top: -.125vw;
-  color: #AF50D7;
-  font-size: 2vw;
-}
-
-
-/*
-  ========================================
-  Reference
-  ========================================
-*/
-.green-l {
-  color: #9FD39F;
-}
-.greed-d {
-  color: #6DB66D;
-}
-.green-tint {
-  color: rgba(24, 81, 27, 0.8);
-}
-.gold-l {
-  color: #FFEAC0;
-}
-.gold-d {
-  color: #E3C588;
-}
-.yellow-tint {
-  color: rgba(119, 89, 29, 0.8);
-}
-.black-90 {
-  color: rgba(21, 21, 21, 0.9);
-}
-.black-100 {
-  color: #151515;
-}
-
-.garamond {
-  color: #FAFAFA;
-  font-family: 'Cormorant Garamond', 'Times New Roman', Times, serif;
-  font-size: 1em;
 }
