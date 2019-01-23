@@ -150,6 +150,7 @@
   grid-template-rows: 1fr 1fr 1fr;
 }
 /* grid that starts in mobile to center grid items =============================== */
+.swot-item-title-chunk,
 .grid-bandtastic-mvp,
 .grid-bandtastic-personas,
 .grid-bandtastic-flows,
@@ -784,7 +785,7 @@ li img {
   /* case-content override to keep centered... */
   .problem, .solution { text-align: center; }
   .swot { border: 5px solid rgb(0, 0, 0);  }
-  .swot-title, .swot-item-title {
+  .swot-title {
     text-align: center;
   }
   .conclusion-content { margin: 0 10vw 0 10vw;  }
