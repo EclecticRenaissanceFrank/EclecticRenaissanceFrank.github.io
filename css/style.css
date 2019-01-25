@@ -129,7 +129,7 @@
 .contact-form {
   display: grid;
   grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 2fr 1fr;
-  grid-gap: .5vw;
+  gap: .5vw;
 
   position: relative;
   width: 90vw;
@@ -142,8 +142,8 @@
 .case-section-label, .case-section-major-label {
   /* No text-align: center, aligns images */
   display: grid;
-  align-items: center;
   justify-items: center;
+  justify-content: center;
 }
 .proto {
   display: grid;
@@ -175,9 +175,8 @@
 .grid-vocoach-sketch2wire, 
 .grid-vocoach-title, 
 .grid-vocoach-sheet, 
-.grid-vocoach-logo-3chunk, 
-.grid-vocoach-logo-2chunk,
-.vocoach-logo-3chunk-2,
+.grid-vocoach-logo-paper, 
+.grid-vocoach-logo-digi,
 .grid-vocoach-logo-final,
 .grid-vocoach-style,
 .grid-vocoach-version, 
@@ -186,6 +185,9 @@
   display: grid;
   justify-items: center;
   justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 5vh;
 }
 
 
@@ -423,6 +425,7 @@ input {
 .vocoach-survey, .vocoach-sitemap {
   font-style: italic;
   font-weight: 150;
+  margin: 0 5vw 0 5vw;
 }
 
 
@@ -530,7 +533,7 @@ li img {
 .process-title {  padding: 15vh 0 10vh 0; }
 
 /* Process Titles & Icons ================================= */
-.process-box {  padding: 15vh 0 5vh 0; }
+.process-box {  padding: 20vh 0 0 0; }/*2x the .mar-full-width*/
 .process-icon { padding: 0 0 2vh 0; }
 /* SWOT  ================================= */
 .swot-title { padding: 10vh 0 2vh 0;}
@@ -546,9 +549,9 @@ li img {
   margin: 0 5vw 0 5vw;
 }
 /* Copy Margins ================================= */
-.mar-full-width-copy {  margin: 2.5vh 5vw 2.5vh 5vw;  }
-/*.vocoacher img, .bandtastic img {  margin: 5vh 0 5vh 0;  }*/
-
+.mar-full-width {  padding: 10vh 5vw 10vh 5vw;  }
+.swot-conclusion {  padding: 5vh 5vw 10vh 5vw;   }
+.vocoach-ia-intro {  margin: 10vh 5vw -5vh 5vw;   }
 
 
 
@@ -789,7 +792,10 @@ li img {
     text-align: center;
   }
   .conclusion-content { margin: 0 10vw 0 10vw;  }
-  .mar-full-width-copy {  margin: 2.5vh 10vw 2.5vh 10vw;  }
+  .mar-full-width {  padding: 10vh 10vw 10vh 10vw;  }
+  .swot-conclusion {  padding: 5vh 10vw 10vh 10vw;   }
+  .vocoach-ia-intro {  margin: 10vh 10vw -5vh 10vw;   }
+  .vocoach-title  {  margin: 5vh 5vh -5vh 5vh;   }
   /* Case Study GRIDS! ================================= */
   .proto {
     display: grid;
@@ -802,10 +808,13 @@ li img {
   }
   /* BANDTASTIC ------------------------- */
   .grid-bandtastic-personas {
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: auto auto;
+  }
+  .grid-bandtastic-logoMistake {
+    grid-template-columns: auto auto;
   }
   .grid-bandtastic-logoCollage {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
   }
   .grid-bandtastic-styleTiles {
     grid-template-columns: 1fr 2fr;
@@ -849,29 +858,22 @@ li img {
   }
   /* POCKET VOCOACHER ------------------------- */
   .vocoach-survey { text-align: center; }
-  .grid-vocoach-personas {
-    grid-template-columns: 1fr auto;
-    align-items: center;
-    margin-right: 5vw;
-  }
-  .grid-vocoach-logo-3chunk {
-    grid-template-rows: auto auto;
-    grid-template-columns: auto auto;
-    justify-items: center;
-    text-align: center;
-  }
-  .vocoach-logo-3chunk-3 {
-    grid-area: 2 / 1 / 3 / 3;
-  }
-  .grid-vocoach-logo-final {
+  .grid-vocoach-sketches {
     grid-template-columns: auto auto;
   }
-  .grid-vocoach-style {
-    justify-items: center;
+  .vocoach-sketches-top {
+    grid-column: 1 / 3;
+  }
+  .grid-vocoach-logo-paper  {
+    grid-template-columns: auto auto;
+  }
+  .grid-vocoach-logo-digi {
+    grid-template-columns: auto auto; }
+    .vocoach-logo-digi-top {
+      grid-column: 1 / 3;
   }
   .grid-vocoach-version {
     grid-template-columns: auto auto;
-    margin: 0 5vw 0 5vw;
   }
 }
 
@@ -930,12 +932,14 @@ li img {
   .case-section-major-label { font-size: 3em;  }
   .case-section-label {font-size: 2.5em;}
   .conclusion-content { margin: 0 20vw 0 20vw;  }
-  .mar-full-width-copy {  margin: 2.5vh 20vw 2.5vh 20vw;  }
+  .mar-full-width {  padding: 10vh 20vw 10vh 20vw;  }
+  .swot-conclusion {  padding: 5vh 20vw 10vh 20vw;   }
+  .vocoach-ia-intro {  margin: 10vh 20vw -5vh 20vw;   }
   
   /* Case Study GRIDS! ================================= */
   
   /* BANDTASTIC ------------------------- */
-  .grid-bandtastic-styleTiles {
+  /*.grid-bandtastic-styleTiles {
     grid-template-rows: 1fr;
     grid-template-columns: 2fr 1fr 2fr; 
     align-items: center;  }
@@ -948,7 +952,7 @@ li img {
   .bandtastic-styleTiles-botR {
     grid-column-start: 3;
     grid-column-end: 4;
-  }
+  }*/
   .grid-bandtastic-typog {  grid-template-columns: 4fr 1fr; }
   .bandtastic-iteration-chunk { justify-self: center; }
   .grid-bandtastic-atomic { 
@@ -957,24 +961,28 @@ li img {
   }
   /* POCKET VOCOACHER ------------------------- */
   .grid-vocoach-discovery {
-    grid-template-columns: 1fr auto;
-    margin-left: 5vw;
-    margin-right: 10vw;
-    grid-column-gap: 10vw;
-    align-items: center;
-  }
-  .grid-vocoach-gamified {
     grid-template-columns: auto auto;
   }
-  .grid-vocoach-personas {  
-    margin-left: 5vw;
-    margin-right: 10vw;
-    grid-column-gap: 5vw;
+  .grid-vocoach-gamified {
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto; }
+    .vocoach-gamified-top {
+      grid-column: 1 / 3;
+  }
+  .grid-vocoach-personas {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;  }
+    .vocoach-personas-bottom {
+      grid-column: 1 / 3;
   }
   .grid-vocoach-flows {
-    grid-template-rows: 1fr auto; }
-  .vocoach-flows {
-    justify-self: center;
+    grid-template-rows: auto auto; }
+    .vocoach-flows {
+      justify-self: center;
+  }
+  
+  .grid-vocoach-logo-paper  {
+    grid-template-columns: auto auto auto auto auto;
   }
 
 }
@@ -991,4 +999,23 @@ li img {
 /* giant screens */
 @media screen and (min-width: 1280px) {
   .hero { font-size: 4em; }
+}
+
+
+
+
+.bgalt {
+  background-color: rgb(255, 0, 191)
+}
+/*
+<div class="space-small"></div>
+*/
+.space-small {
+  padding: 10vh 0 0 0;
+}
+/*
+<div class="space-large"></div>
+*/
+.space-large {
+  padding: 25vh 0 0 0;
 }
