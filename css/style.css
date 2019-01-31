@@ -25,6 +25,9 @@
 * {
   box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 /* Header */
 .nav-sticky-wrapper {
   position: fixed;
@@ -457,6 +460,7 @@ input {
   color: #FAFAFA;
   outline: solid 1px #6DB66D;
 }
+
 
 
 
