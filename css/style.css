@@ -452,6 +452,27 @@ input {
 .nav-item a:active {
   color: #6DB66D;
 }
+.nav-item {
+  animation-name: navgrow;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0,0,.9,.25);
+  animation-iteration-count: 1; }
+  @keyframes navgrow {
+    0% { transform: scale(0); }
+    85% { transform: scale(1); }
+    90% { transform: scale(1.05); }
+    95% { transform: scale(.95); }
+}
+.arrow {
+  animation-name: arrowpulse;
+  animation-duration: 3s;
+  animation-timing-function: cubic-bezier(.25,.75,.75,.25);
+  animation-iteration-count: infinite;  }
+  @keyframes arrowpulse {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
 .project-vocoacher a:hover img {
   color: #FAFAFA;
   outline: solid 1px #E3C588;
@@ -515,15 +536,12 @@ li img {
 
 .alternate {
   background: #FAFAFA;
-  color: #151515;
-  
-}
-.alternate a {
-  text-decoration: none;
-  color: #4B9BFF;
-}
-.alternate a:visited {
-  color: #AF50D7;
+  color: #151515; }
+  .alternate a {
+    text-decoration: none;
+    color: #4B9BFF; }
+  .alternate a:visited {
+    color: #AF50D7;
 }
 
 
