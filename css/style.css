@@ -154,6 +154,7 @@ html {
 }
 /* grid that starts in mobile to center grid items =============================== */
 .swot-item-title-chunk,
+.bandtastic-mockup,
 .grid-bandtastic-mvp,
 .grid-bandtastic-personas,
 .grid-bandtastic-flows,
@@ -168,6 +169,7 @@ html {
 .grid-bandtastic-greenNblueButt, 
 .grid-bandtastic-iterations,
 .grid-bandtastic-atomic,
+.vocoach-mockup,
 .grid-vocoach-discovery, 
 .grid-vocoach-gamified, 
 .grid-vocoach-survey,
@@ -481,7 +483,9 @@ input {
   color: #FAFAFA;
   outline: solid 1px #6DB66D;
 }
-
+.grid-vocoach-screen a:hover img {
+  transform: scale(1.05); 
+}
 
 
 
@@ -561,7 +565,7 @@ li img {
 .app-name { margin: 0 0 5vh 0;  }
 
 /* Intro-Problem-Solution ================================= */
-.case-snapshot  { padding: 10vh 5vw 10vh 5vw;  }
+.case-snapshot  { padding: 5vh 5vw 10vh 5vw;  }
 .problem-title, .solution-title  { padding: 5vh 0 1vh 0;  }
 
 /* Prototype & B4 actual Process ================================= */
@@ -815,7 +819,7 @@ li img {
   }
 
   /* Case Studies ================================= */
-  .case-snapshot  { padding: 10vh 10vw 10vh 10vw;  }
+  .case-snapshot  { padding: 5vh 10vw 10vh 10vw;  }
 
   .case-section-major-label { font-size: 2.5em;  }
   .case-section-label {font-size: 2em;}
@@ -846,6 +850,9 @@ li img {
     grid-template-columns: repeat(auto-fit, 50%);
   }
   /* BANDTASTIC ------------------------- */
+  .bandtastic-mockup {
+    grid-template-columns: auto auto;
+  }
   .grid-bandtastic-personas {
     grid-template-columns: auto auto;
   }
@@ -892,7 +899,7 @@ li img {
   .bandtastic-iteration-intro { 
     text-align: center;
     padding: 5vh 0 0 0;
-}
+  }
   .grid-bandtastic-iterations {
     grid-template-columns: 1fr 1fr;
   }
@@ -971,7 +978,7 @@ li img {
   .contact-form h1 {  font-size: 2.5em; }
   .flabel { font-size: 1.75em;  }
   /* Case Studies ================================= */
-  .case-snapshot  { padding: 10vh 20vw 10vh 20vw;  }
+  .case-snapshot  { padding: 5vh 20vw 10vh 20vw;  }
 
   .case-section-major-label { font-size: 3em;  }
   .case-section-label {font-size: 2.5em;}
