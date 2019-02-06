@@ -141,6 +141,8 @@
               sizes="(max-width: 675px) 90vw,
                 (min-width: 675px) and (max-width: 1150px) 80vw,
                 (min-width: 1150px) 60vw">
+
+            <canvas id="bandastic-mvp-graph"></canvas>
           </div>
           
 
@@ -713,5 +715,28 @@
           <a href="https://www.linkedin.com/in/frank-mooradian/" target="_blank">LinkedIn</a>
         </div>
     </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+  <script> 
+    ctx = document.getElementById('bandastic-mvp-graph').getContext('2d');
+    var chart = new Chart(ctx, {
+      // The type of chart we want to create
+      type: 'bar',
+
+      // The data for our dataset
+      data: {
+          labels: ["January", "February", "March", "April", "May", "June", "July"],
+          datasets: [{
+              label: "My First dataset",
+              backgroundColor: 'rgb(255, 99, 132)',
+              borderColor: 'rgb(255, 99, 132)',
+              data: [0, 10, 5, 2, 20, 30, 45],
+          }]
+      },
+
+      // Configuration options go here
+      options: {}
+    });
+</script>
 
 </body>
