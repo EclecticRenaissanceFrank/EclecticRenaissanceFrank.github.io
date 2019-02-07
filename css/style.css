@@ -153,7 +153,7 @@ html {
   grid-template-rows: 1fr 1fr 1fr;
 }
 /* grid that starts in mobile to center grid items =============================== */
-.swot-item-title-chunk,
+.swot-item-title,
 .bandtastic-mockup,
 .grid-bandtastic-mvp,
 .grid-bandtastic-personas,
@@ -194,7 +194,9 @@ html {
   align-content: center;
   gap: 5vh;
 }
-
+.bandastic-mvp-graph, .vocoach-learning-graph {
+  width: 75vw;
+}
 
 
 
@@ -408,9 +410,6 @@ input {
   font-weight: 300;
   text-align: center;
 }
- .swot-item-title {
-  font-weight: 600;
-}
 .swot-item-label {
   color: #E3C588
 }
@@ -577,10 +576,8 @@ li img {
 .process-icon { padding: 0 0 2vh 0; }
 /* SWOT  ================================= */
 .swot-title { padding: 20vh 0 15vh 0;}
-.swot-item-title { padding: 2vh 0 2vh 0;}
-.swot {
-  padding: 5vh 5vw 5vh 5vw;
-}
+.swot-item-title { padding: 5vh 0 5vh 0; }
+.swot { padding: 5vh 5vw 5vh 5vw; }
 /* Postprocess Conclusion ================================= */
 .conclusion-bg  { 
   padding: 10vh 0 0 0;
@@ -853,6 +850,10 @@ li img {
   .bandtastic-mockup {
     grid-template-columns: auto auto;
   }
+  .grid-bandtastic-mvp {
+    grid-template-columns: auto auto; }
+    .bandastic-mvp-graph {  width: 40vw;
+  }
   .grid-bandtastic-personas {
     grid-template-columns: auto auto;
   }
@@ -909,6 +910,9 @@ li img {
   }
   /* POCKET VOCOACHER ------------------------- */
   .vocoach-survey { text-align: center; }
+  .vocoach-learning-graph {
+    width: 40vw;
+  }
   .grid-vocoach-sketches {
     grid-template-columns: auto auto;
   }
@@ -990,20 +994,7 @@ li img {
   /* Case Study GRIDS! ================================= */
   
   /* BANDTASTIC ------------------------- */
-  /*.grid-bandtastic-styleTiles {
-    grid-template-rows: 1fr;
-    grid-template-columns: 2fr 1fr 2fr; 
-    align-items: center;  }
-  .bandtastic-styleTiles-top { 
-    grid-column-start: 1;
-    grid-column-end: 2; }
-  .bandtastic-styleTiles-botL {
-     grid-column-start: 2;
-    grid-column-end: 3; }
-  .bandtastic-styleTiles-botR {
-    grid-column-start: 3;
-    grid-column-end: 4;
-  }*/
+  .bandastic-mvp-graph {  width: 30vw;  }
   .grid-bandtastic-typog {  grid-template-columns: 4fr 1fr; }
   .bandtastic-iteration-chunk { justify-self: center; }
   .grid-bandtastic-atomic { 
@@ -1014,6 +1005,7 @@ li img {
   .grid-vocoach-discovery {
     grid-template-columns: auto auto;
   }
+  .vocoach-learning-graph { width: 30vw;  }
   .grid-vocoach-gamified {
     grid-template-rows: auto auto;
     grid-template-columns: auto auto; }

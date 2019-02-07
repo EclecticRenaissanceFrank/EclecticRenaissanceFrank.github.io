@@ -160,19 +160,14 @@
               I had two surveys. One for general demographic & education information, & the other covered features. I did the second survey over two populations, musicians/vocalists, & the general population. Since I wanted the app to apply to practicing vocalists & beginners, I was curious to see how their priorities differed.
             </p>
 
-            <img srcset="desk-assets/project-vocoach-visual.png 1680w,
-              tab-assets/project-vocoach-visual.png 840w"
-
-              sizes="(max-width: 675px) 90vw,
-                (min-width: 675px) and (max-width: 1150px) 70vw,
-                (min-width: 1150px) 35vw">
+            <div class="vocoach-learning-graph">
+              <canvas id="vocoach-learning-graph"></canvas>
+            </div>
 
             <p class="case-content discovery vocoach-gamified">
               A gamified app was supported by 2 key things from my user research, peoples affinity toward visual learning, & problems with motivation to complete MOOC classes.
             </p>
           </div>
-          
-
 
           <div class="grid-vocoach-survey mar-full-width alternate">
           <p class="case-content discovery">
@@ -204,10 +199,7 @@
 
             <div class="grid-swot">
               <div class="rockband swot">
-                <div class="swot-item-title-chunk">
-                  <p class="case-content strategy swot-item-title">
-                    Rock Band 4
-                  </p>
+                <div class="swot-item-title">
 
                   <img srcset="desk-assets/project-vocoach-logo-rock-band-4.png 617w,
                     desk-assets/project-vocoach-logo-rock-band-4.png 617w"
@@ -255,10 +247,7 @@
               </div>
                 
               <div class="tamplin swot">
-                <div class="swot-item-title-chunk">
-                  <p class="case-content strategy swot-item-title">
-                    Ken Tamplin
-                  </p>
+                <div class="swot-item-title">
 
                   <img srcset="desk-assets/project-vocoach-logo-ken-tamplin.png 840w,
                     desk-assets/project-vocoach-logo-ken-tamplin.png 840w"
@@ -304,10 +293,7 @@
               </div>
 
               <div class="notehitter swot">
-                <div class="swot-item-title-chunk">
-                  <p class="case-content strategy swot-item-title">
-                    Note Hitter Voice
-                  </p>
+                <div class="swot-item-title">
 
                   <img srcset="desk-assets/project-vocoach-logo-note-hitter.png 840w,
                     desk-assets/project-vocoach-logo-note-hitter.png 840w"
@@ -353,10 +339,7 @@
               </div>
 
               <div class="mattf swot">
-                <div class="swot-item-title-chunk">
-                  <p class="case-content strategy swot-item-title">
-                    Matt Farnsworth Vocal Studio
-                  </p>
+                <div class="swot-item-title">
 
                   <img srcset="desk-assets/project-vocoach-logo-mfvoice.png 840w,
                     desk-assets/project-vocoach-logo-mfvoice.png 840w"
@@ -1131,5 +1114,7 @@
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="scripts/vocoach-chart.js"></script>
   </body>
 </html>

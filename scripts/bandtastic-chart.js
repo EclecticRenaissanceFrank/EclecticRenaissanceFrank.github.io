@@ -7,7 +7,7 @@ var chart = new Chart(ctx, {
   data: {
       labels: ["Purchase New Gear", "Purchase Used Gear", "Sell Gear", "Rent Gear", "Repair Gear", "Take Music Lessons"],
       datasets: [{
-          label: ". I want to...",
+          label: "I want to...",
           backgroundColor: ['#1863CD', '#5E35B1', '#2E7D32', '#ccc', '#ccc', '#ccc'],
           borderWidth: 2,
           borderColor: '#ffffff',
