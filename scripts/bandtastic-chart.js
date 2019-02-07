@@ -5,12 +5,13 @@ var chart = new Chart(ctx, {
 
   // The data for our dataset
   data: {
-      labels: ["1 (Most Used/Important)", "2", "3", "4", "5", "6 (Least Used/Important)"],
+      labels: ["Purchase New Gear", "Purchase Used Gear", "Sell Gear", "Rent Gear", "Repair Gear", "Take Music Lessons"],
       datasets: [{
-          label: "Purchase New Gear",
-          backgroundColor: 'rgb(255, 99, 132)',
-          borderColor: 'rgb(255, 99, 132)',
-          data: [0, 10, 5, 2, 20, 30, 45],
+          label: "Choose the most (1) to least (6) important to you. I want to...",
+          backgroundColor: '#1863CD',
+          borderWidth: 2,
+          borderColor: '#4B9BFF',
+          data: [12, 12, 16, 19, 17, 16],
       }]
       
   },
@@ -18,18 +19,5 @@ var chart = new Chart(ctx, {
   
 
   // Configuration options go here
-  options: {
-    scales: {
-        yAxes: [{
-            id: 'left-y-axis',
-            type: 'linear',
-            position: 'left'
-        }, {
-            id: 'right-y-axis',
-            type: 'linear',
-            position: 'right'
-        }]
-    }
-
-  }
+  options: { }
 });
