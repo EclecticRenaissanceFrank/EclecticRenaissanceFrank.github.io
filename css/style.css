@@ -193,16 +193,21 @@ html {
   justify-content: center;
   align-items: center;
   align-content: center;
-  gap: 5vh;
+  row-gap: 5vh;
+  column-gap: 5vw;
 }
 
 .grid-color-chip-group {
-  grid-template-columns: 45vw 45vw;
+  grid-template-columns: auto auto;
 }
 .grid-color-chip {
   display: grid;
-  grid-template-rows: 15vh 1fr;
+  justify-items: center;
+  grid-template-rows: 15vh auto;
   gap: 1vh;
+}
+.color-chip {
+  width: 42.5vw;
 }
 
 
@@ -815,6 +820,21 @@ li img {
     grid-column-start: 2;
     grid-column-end: 3;
   }
+
+
+
+
+
+  
+  .color-chip {
+    width: 37.5vw;
+  }
+  
+
+
+
+
+
   .grid-bandtastic-typog {
     grid-template-columns: 2fr 1fr;
   }
@@ -929,6 +949,23 @@ li img {
   
   /* BANDTASTIC ------------------------- */
   .bandastic-mvp-graph {  width: 30vw;  }
+
+
+
+
+
+  .grid-color-chip-group {
+    grid-template-columns: auto auto auto;
+  }
+  .color-chip {
+    width: 16.66vw;
+  }
+  
+
+
+
+
+
   .grid-bandtastic-typog {  grid-template-columns: 4fr 1fr; }
   .bandtastic-iteration-chunk { justify-self: center; }
   .grid-bandtastic-atomic { 
