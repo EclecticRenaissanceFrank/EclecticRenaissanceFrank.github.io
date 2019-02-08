@@ -163,7 +163,6 @@ html {
 .grid-bandtastic-logoMistake,
 .grid-bandtastic-logoCollage, 
 .grid-bandtastic-moodboard,
-.grid-bandtastic-styleTiles,
 .grid-bandtastic-typog,
 .grid-bandtastic-color,
 .grid-bandtastic-icon-issues, 
@@ -698,7 +697,31 @@ li img {
   font-size: 2vw;
 }
 
+.vocoach-cc-b {
+  background-color: #0D47A1;
+}
+.vocoach-cc-g {
+  background-color: #004D40;
+}
+.vocoach-cc-v {
+  background-color: #4A148C;
+}
 
+.vocoach-cc-mainPurple {
+  background-color: #240A44;
+}
+.vocoach-cc-purpleGrad {
+  background-color: #4A148C;
+}
+.vocoach-cc-titleButtons {
+  background-color: #0D47A1;
+}
+.vocoach-cc-offBlack {
+  background-color: #212121;
+}
+.vocoach-cc-lightGrey {
+  background-color: #e5e5e5;
+}
 
 
 
@@ -804,22 +827,7 @@ li img {
   .grid-bandtastic-logoCollage {
     grid-template-columns: auto auto;
   }
-  .grid-bandtastic-styleTiles {
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: auto auto;
-  }
-  .bandtastic-styleTiles-top { 
-    grid-column-start: 1;
-    grid-column-end: 3;
-  }
-  .bandtastic-styleTiles-botL {
-    grid-column-start: 1;
-    grid-column-end: 2;
-  }
-  .bandtastic-styleTiles-botR {
-    grid-column-start: 2;
-    grid-column-end: 3;
-  }
+  
 
 
 
