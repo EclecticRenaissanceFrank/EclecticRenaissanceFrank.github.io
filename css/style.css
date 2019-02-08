@@ -154,6 +154,7 @@ html {
 }
 /* grid that starts in mobile to center grid items =============================== */
 .swot-item-title,
+.grid-color-chip-group,
 .bandtastic-mockup,
 .grid-bandtastic-mvp,
 .grid-bandtastic-personas,
@@ -194,9 +195,16 @@ html {
   align-content: center;
   gap: 5vh;
 }
-.bandastic-mvp-graph, .vocoach-learning-graph {
-  width: 75vw;
+
+.grid-color-chip-group {
+  grid-template-columns: 45vw 45vw;
 }
+.grid-color-chip {
+  display: grid;
+  grid-template-rows: 15vh 1fr;
+  gap: 1vh;
+}
+
 
 
 
@@ -445,6 +453,7 @@ input {
 
 
 
+
 /*
   ========================================
   Styling
@@ -485,8 +494,6 @@ input {
 .grid-vocoach-screen a:hover img {
   transform: scale(1.05); 
 }
-
-
 
 /* About */
 .north-strip {
@@ -536,7 +543,6 @@ li img {
   border: 1px solid black;
 }
 
-
 .alternate {
   background: #FAFAFA;
   color: #151515; }
@@ -546,6 +552,10 @@ li img {
   .alternate a:visited {
     color: #AF50D7;
 }
+
+
+
+
 
 
 
@@ -600,66 +610,6 @@ li img {
 
 
 
-/*
-  ========================================
-  Padding/Margin Classes for content
-  ========================================
-*/
-.pad-l5 { padding-left: 5vw; }
-.pad-r5 { padding-right: 5vw; }
-.pad-horz5 {
-  padding-left: 5vw;
-  padding-right: 5vw;
-}
-.pad-t5 { padding-top: 5vw; }
-.pad-b5 { padding-bottom: 5vw; }
-.pad-vert5 {
-  padding-top: 5vw;
-  padding-bottom: 5vw;
-}
-.mar-l5 { margin-left: 5vw; }
-.mar-r5 { margin-right: 5vw; }
-.mar-horz5 {
-  margin-left: 5vw;
-  margin-right: 5vw;
-}
-.mar-t5 { margin-top: 5vw; }
-.mar-b5 { margin-bottom: 5vw; }
-.mar-vert5 {
-  margin-top: 5vw;
-  margin-bottom: 5vw;
-}
-.mar-l10 { margin-left: 10vw; }
-.mar-r10 { margin-right: 10vw; }
-.mar-horz10 {
-  margin-left: 10vw;
-  margin-right: 10vw;
-}
-.mar-t10 { margin-top: 10vw; }
-.mar-b10 { margin-bottom: 10vw; }
-.mar-vert10 {
-  margin-top: 10vw;
-  margin-bottom: 10vw;
-}
-
-.mar-l15 {  margin-left: 15vw;  }
-.mar-r15 {  margin-right: 15vw; }
-.mar-horz30 {
-  margin-left: 15vw;
-  margin-right: 15vw;
-}
-.mar-l20 {  margin-left: 20vw;  }
-.mar-r20 {  margin-right: 20vw; }
-.mar-horz40 {
-  margin-left: 20vw;
-  margin-right: 20vw;
-}
-
-
-
-
-
-
 
 
 
@@ -674,9 +624,11 @@ li img {
   background-size: cover;
   background-position: center;
 }
-
 .app-bg-color-bandtastic {
   background-color: #E1EAF7;
+}
+.bandastic-mvp-graph {
+  width: 75vw;
 }
 .conclusion-bg-bandtastic {
   background-color: rgb(9, 38, 78);
@@ -694,6 +646,21 @@ li img {
   color: #4B9BFF;
   font-size: 2vw;
 }
+.bandtastic-cc-megaman {
+  background-color: #1863cd;
+}
+.bandtastic-cc-babyblue {
+  background-color: #d1e0f5;
+}
+.bandtastic-cc-medblack {
+  background-color: #333333;
+}
+.bandtastic-cc-medgrey {
+  background-color: #999999;
+}
+.bandtastic-cc-lightgrey {
+  background-color: #e5e5e5;
+}
 /*
   ========================================
   Pocket VoCoacher Specific
@@ -704,9 +671,11 @@ li img {
   background-size: cover;
   background-position: center;
 }
-
 .app-bg-color-vocoach {
   background-color: rgb(234, 217, 255);
+}
+.vocoach-learning-graph {
+  width: 75vw;
 }
 .conclusion-bg-vocoach {
   background-color: #240A44;
@@ -722,41 +691,6 @@ li img {
   top: -.125vw;
   color: #AF50D7;
   font-size: 2vw;
-}
-/*
-  ========================================
-  Reference
-  ========================================
-*/
-.green-l {
-  color: #9FD39F;
-}
-.greed-d {
-  color: #6DB66D;
-}
-.green-tint {
-  color: rgba(24, 81, 27, 0.8);
-}
-.gold-l {
-  color: #FFEAC0;
-}
-.gold-d {
-  color: #E3C588;
-}
-.yellow-tint {
-  color: rgba(119, 89, 29, 0.8);
-}
-.black-90 {
-  color: rgba(21, 21, 21, 0.9);
-}
-.black-100 {
-  color: #151515;
-}
-
-.garamond {
-  color: #FAFAFA;
-  font-family: 'Cormorant Garamond', 'Times New Roman', Times, serif;
-  font-size: 1em;
 }
 
 
@@ -1047,15 +981,119 @@ li img {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
-<div class="space-small"></div>
+  ========================================
+  Reference
+  ========================================
 */
-.space-small {
-  padding: 10vh 0 0 0;
+.green-l {
+  color: #9FD39F;
 }
+.greed-d {
+  color: #6DB66D;
+}
+.green-tint {
+  color: rgba(24, 81, 27, 0.8);
+}
+.gold-l {
+  color: #FFEAC0;
+}
+.gold-d {
+  color: #E3C588;
+}
+.yellow-tint {
+  color: rgba(119, 89, 29, 0.8);
+}
+.black-90 {
+  color: rgba(21, 21, 21, 0.9);
+}
+.black-100 {
+  color: #151515;
+}
+
+.garamond {
+  color: #FAFAFA;
+  font-family: 'Cormorant Garamond', 'Times New Roman', Times, serif;
+  font-size: 1em;
+}
+
+
+
+
+
+
+
+
+
+
 /*
-<div class="space-large"></div>
+  ========================================
+  Padding/Margin Classes for content
+  ========================================
 */
-.space-large {
-  padding: 25vh 0 0 0;
+.pad-l5 { padding-left: 5vw; }
+.pad-r5 { padding-right: 5vw; }
+.pad-horz5 {
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
+.pad-t5 { padding-top: 5vw; }
+.pad-b5 { padding-bottom: 5vw; }
+.pad-vert5 {
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+}
+.mar-l5 { margin-left: 5vw; }
+.mar-r5 { margin-right: 5vw; }
+.mar-horz5 {
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+.mar-t5 { margin-top: 5vw; }
+.mar-b5 { margin-bottom: 5vw; }
+.mar-vert5 {
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+}
+.mar-l10 { margin-left: 10vw; }
+.mar-r10 { margin-right: 10vw; }
+.mar-horz10 {
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+.mar-t10 { margin-top: 10vw; }
+.mar-b10 { margin-bottom: 10vw; }
+.mar-vert10 {
+  margin-top: 10vw;
+  margin-bottom: 10vw;
+}
+
+.mar-l15 {  margin-left: 15vw;  }
+.mar-r15 {  margin-right: 15vw; }
+.mar-horz30 {
+  margin-left: 15vw;
+  margin-right: 15vw;
+}
+.mar-l20 {  margin-left: 20vw;  }
+.mar-r20 {  margin-right: 20vw; }
+.mar-horz40 {
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
+
