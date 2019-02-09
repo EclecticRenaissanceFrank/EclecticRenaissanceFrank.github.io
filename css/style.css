@@ -141,7 +141,7 @@ html {
   
 }
 
-/* casetemp.grid =============================== */
+/* caseUniversal.grid =============================== */
 .case-section-label, .case-section-major-label {
   /* No text-align: center, aligns images */
   display: grid;
@@ -152,41 +152,35 @@ html {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
 }
-/* grid that starts in mobile to center grid items =============================== */
-.swot-item-title,
-.grid-color-chip-group,
-.bandtastic-mockup,
-.grid-bandtastic-mvp,
-.grid-bandtastic-personas,
-.grid-bandtastic-flows,
-.grid-bandtastic-balsamiqWires,
-.grid-bandtastic-logoMistake,
-.grid-bandtastic-logoCollage, 
-.grid-bandtastic-moodboard,
-.grid-bandtastic-typog,
-.grid-bandtastic-color,
-.grid-bandtastic-icon-issues, 
-.grid-bandtastic-greenNblueButt, 
-.grid-bandtastic-iterations,
-.grid-bandtastic-atomic,
-.vocoach-mockup,
-.grid-vocoach-discovery, 
-.grid-vocoach-gamified, 
-.grid-vocoach-survey,
-.grid-vocoach-personas,
-.grid-vocoach-sitemap,
-.grid-vocoach-flows,
-.grid-vocoach-sketches, 
-.grid-vocoach-sketch2wire, 
-.grid-vocoach-title, 
-.grid-vocoach-sheet, 
-.grid-vocoach-logo-paper, 
-.grid-vocoach-logo-digi,
-.grid-vocoach-logo-final,
-.grid-vocoach-style,
-.grid-vocoach-version, 
-.grid-vocoach-vis-pattern, 
-.grid-vocoach-screen {
+.swot-item-title {
+  display: grid;
+  justify-content: center;
+  row-gap: 5vh;
+  column-gap: 5vw;
+}
+
+
+
+.grid-persona-section {
+  display: grid;
+  row-gap: 5vh;
+  column-gap: 5vw;
+}
+
+.grid-persona {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  row-gap: 5vh;
+  column-gap: 5vw;
+  outline: black 1px solid;
+}
+.persona-pic {
+  width: 25vw;
+}
+
+
+.grid-color-chip-group {
   display: grid;
   justify-items: center;
   justify-content: center;
@@ -207,6 +201,55 @@ html {
 }
 .color-chip {
   width: 42.5vw;
+}
+
+
+
+
+
+
+
+
+
+
+/* grid that starts in mobile to center grid items =============================== */
+.bandtastic-mockup,
+.grid-bandtastic-mvp,
+.grid-bandtastic-flows,
+.grid-bandtastic-balsamiqWires,
+.grid-bandtastic-logoMistake,
+.grid-bandtastic-logoCollage, 
+.grid-bandtastic-moodboard,
+.grid-bandtastic-typog,
+.grid-bandtastic-color,
+.grid-bandtastic-icon-issues, 
+.grid-bandtastic-greenNblueButt, 
+.grid-bandtastic-iterations,
+.grid-bandtastic-atomic,
+.vocoach-mockup,
+.grid-vocoach-discovery, 
+.grid-vocoach-gamified, 
+.grid-vocoach-survey,
+.grid-vocoach-sitemap,
+.grid-vocoach-flows,
+.grid-vocoach-sketches, 
+.grid-vocoach-sketch2wire, 
+.grid-vocoach-title, 
+.grid-vocoach-sheet, 
+.grid-vocoach-logo-paper, 
+.grid-vocoach-logo-digi,
+.grid-vocoach-logo-final,
+.grid-vocoach-style,
+.grid-vocoach-version, 
+.grid-vocoach-vis-pattern, 
+.grid-vocoach-screen {
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  row-gap: 5vh;
+  column-gap: 5vw;
 }
 
 
@@ -816,9 +859,6 @@ li img {
     grid-template-columns: auto auto; }
     .bandastic-mvp-graph {  width: 40vw;
   }
-  .grid-bandtastic-personas {
-    grid-template-columns: auto auto;
-  }
   .grid-bandtastic-logoMistake {
     grid-template-columns: auto auto; }
     .bandtastic-logoMistake-bottom {
@@ -989,12 +1029,6 @@ li img {
     grid-template-rows: auto auto;
     grid-template-columns: auto auto; }
     .vocoach-gamified-top {
-      grid-column: 1 / 3;
-  }
-  .grid-vocoach-personas {
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;  }
-    .vocoach-personas-bottom {
       grid-column: 1 / 3;
   }
   .grid-vocoach-flows {
