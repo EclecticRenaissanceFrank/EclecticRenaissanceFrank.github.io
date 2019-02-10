@@ -176,7 +176,7 @@ html {
   outline: black 1px solid;
 }
 .persona-pic {
-  width: 25vw;
+  width: 33vw;
 }
 
 
@@ -475,6 +475,9 @@ input {
 .grid-swot ul li, .swot-conclusion {
   text-align: left;
 }
+.grid-persona-section {
+  text-align: center;
+}
 /* case study specific.typo ================================= */
 .bandtastic-iteration-chunk .case-content {
   font-style: italic;
@@ -693,6 +696,7 @@ li img {
   color: #4B9BFF;
   font-size: 2vw;
 }
+/* Color Chips */
 .bandtastic-cc-megaman {
   background-color: #1863cd;
 }
@@ -740,6 +744,7 @@ li img {
   font-size: 2vw;
 }
 
+/* Color Chips */
 .vocoach-cc-b {
   background-color: #0D47A1;
 }
@@ -851,6 +856,9 @@ li img {
     display: grid;
     grid-template-columns: repeat(auto-fit, 50%);
   }
+  .grid-persona-section {
+    grid-template-columns: 1fr 1fr;
+  }
   /* BANDTASTIC ------------------------- */
   .bandtastic-mockup {
     grid-template-columns: auto auto;
@@ -872,7 +880,9 @@ li img {
 
 
 
-
+  .persona-pic {
+    width: 15vw;
+  }
   
   .color-chip {
     width: 37.5vw;
@@ -1002,6 +1012,9 @@ li img {
 
 
 
+  .persona-pic {
+    width: 10vw;
+  }
   .grid-color-chip-group {
     grid-template-columns: auto auto auto;
   }
