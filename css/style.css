@@ -170,9 +170,15 @@ html {
 .grid-persona {
   display: grid;
   justify-items: center;
-  align-items: center;
+  align-content: flex-start;
   row-gap: 5vh;
   column-gap: 5vw;
+}
+.second-persona {
+  border-top: solid 1px;
+}
+.second-persona .persona-pic {
+  padding-top: 5vh;
 }
 .persona-pic {
   width: 33vw;
@@ -870,6 +876,12 @@ li img {
   }
   .grid-persona-section {
     grid-template-columns: 1fr 1fr;
+  }
+  .second-persona {
+    border-top: none;
+  }
+  .second-persona .persona-pic {
+    padding-top: 0;
   }
   /* BANDTASTIC ------------------------- */
   .bandtastic-mockup {
