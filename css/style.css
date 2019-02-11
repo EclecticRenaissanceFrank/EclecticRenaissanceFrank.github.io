@@ -173,7 +173,6 @@ html {
   align-items: center;
   row-gap: 5vh;
   column-gap: 5vw;
-  outline: black 1px solid;
 }
 .persona-pic {
   width: 33vw;
@@ -477,6 +476,19 @@ input {
 }
 .grid-persona-section {
   text-align: center;
+  font-size: .750em;
+}
+.persona-name {
+  font-size: 2.25em;
+}
+.persona-heading {
+  font-weight: bold;
+}
+.persona-quote {
+  font-size: 1.5em;
+  font-weight: 450;
+  color: #7c7c7c;
+
 }
 /* case study specific.typo ================================= */
 .bandtastic-iteration-chunk .case-content {
