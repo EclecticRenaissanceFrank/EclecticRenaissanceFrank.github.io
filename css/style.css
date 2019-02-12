@@ -74,8 +74,9 @@ html {
   grid-template-columns: 
   auto auto auto;
   align-items: center;
+  align-content: space-around;
   justify-items: center;
-  column-gap: 15vw;
+  column-gap: auto;
 }
 .footer {
   position: relative;
@@ -132,8 +133,8 @@ html {
 .contact-form {
   display: grid;
   grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 2fr 1fr;
-  gap: .5vw;
-
+  row-gap: .5vh;
+  column-gap: .5vw;
   position: relative;
   width: 90vw;
   height: 75vh;
@@ -148,9 +149,16 @@ html {
   justify-items: center;
   justify-content: center;
 }
-.proto {
+.grid-proto {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+}
+.proto-button, .proto-text {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
 }
 .swot-item-title {
   display: grid;
@@ -158,15 +166,11 @@ html {
   row-gap: 5vh;
   column-gap: 5vw;
 }
-
-
-
 .grid-persona-section {
   display: grid;
   row-gap: 5vh;
   column-gap: 5vw;
 }
-
 .grid-persona {
   display: grid;
   justify-items: center;
@@ -183,8 +187,6 @@ html {
 .persona-pic {
   width: 33vw;
 }
-
-
 .grid-color-chip-group {
   display: grid;
   justify-items: center;
@@ -194,7 +196,6 @@ html {
   row-gap: 5vh;
   column-gap: 5vw;
 }
-
 .grid-color-chip-group {
   grid-template-columns: auto auto;
 }
@@ -202,7 +203,8 @@ html {
   display: grid;
   justify-items: center;
   grid-template-rows: 15vh auto;
-  gap: 1vh;
+  row-gap: 1vh;
+  column-gap: 1vw;
 }
 .color-chip {
   width: 42.5vw;
@@ -444,6 +446,7 @@ input {
   width: 90%;
   justify-self: center;
   font-weight: 350;
+  color: #fafafa;
 }
 .contact-form input, 
 .contact-form textarea {
@@ -580,9 +583,6 @@ input {
   background: #6DB66D;
   border-radius: 12.5px;
 }
-.flabel {
-  background: #DADADA;
-}
 #name, #email, #message, .flabel {
   border-radius: 12.5px;
 }
@@ -598,8 +598,11 @@ input {
 .proto {
   background-color: #212121;
 }
-.proto:hover {
-  outline: solid 1px #E3C588;
+.proto-button:hover {
+  width: 205px;
+}
+.proto-text:hover {
+  width: 101%;
 }
 .swot { 
   border-bottom: 1px ridge rgb(0, 0, 0);
@@ -667,9 +670,9 @@ li img {
   margin: 0 5vw 0 5vw;
 }
 /* Copy Margins ================================= */
-.mar-full-width {  padding: 10vh 5vw 10vh 5vw;  }
+.mar-full-width {  padding: 5vh 5vw 5vh 5vw;  }
 .swot-conclusion {  padding: 5vh 5vw 10vh 5vw;   }
-.vocoach-ia-intro {  margin: 10vh 5vw -5vh 5vw;   }
+.vocoach-ia-intro {  margin: 10vh 5vw 5vh 5vw;   }
 
 
 
@@ -792,8 +795,7 @@ li img {
 
 
 
-
-
+.process-strip { width: 100%; }
 
 
 /*
@@ -860,16 +862,11 @@ li img {
     text-align: center;
   }
   .conclusion-content { margin: 0 10vw 0 10vw;  }
-  .mar-full-width {  padding: 10vh 10vw 10vh 10vw;  }
+  .mar-full-width {  padding: 5vh 10vw 5vh 10vw;  }
   .swot-conclusion {  padding: 5vh 10vw 10vh 10vw;   }
-  .vocoach-ia-intro {  margin: 10vh 10vw -5vh 10vw;   }
+  .vocoach-ia-intro {  margin: 10vh 10vw 5vh 10vw;   }
   .vocoach-title  {  margin: 5vh 5vh -5vh 5vh;   }
   /* Case Study GRIDS! ================================= */
-  .proto {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
   .grid-swot {
     display: grid;
     grid-template-columns: repeat(auto-fit, 50%);
@@ -887,6 +884,7 @@ li img {
   .bandtastic-mockup {
     grid-template-columns: auto auto;
   }
+  
   .grid-bandtastic-mvp {
     grid-template-columns: auto auto; }
     .bandastic-mvp-graph {  width: 40vw;
@@ -1023,9 +1021,9 @@ li img {
   .case-section-major-label { font-size: 3em;  }
   .case-section-label {font-size: 2.5em;}
   .conclusion-content { margin: 0 20vw 0 20vw;  }
-  .mar-full-width {  padding: 10vh 20vw 10vh 20vw;  }
+  .mar-full-width {  padding: 5vh 20vw 5vh 20vw;  }
   .swot-conclusion {  padding: 5vh 20vw 10vh 20vw;   }
-  .vocoach-ia-intro {  margin: 10vh 20vw -5vh 20vw;   }
+  .vocoach-ia-intro {  margin: 10vh 20vw 5vh 20vw;   }
   
   /* Case Study GRIDS! ================================= */
   
@@ -1077,7 +1075,6 @@ li img {
   .grid-vocoach-logo-paper  {
     grid-template-columns: auto auto auto auto auto;
   }
-
 }
 
 
@@ -1212,4 +1209,3 @@ li img {
   margin-left: 20vw;
   margin-right: 20vw;
 }
-
