@@ -459,6 +459,7 @@ input {
 }
 .proto-text {
   color: white;
+  font-size: 1.5em;
 }
 .case-section-major-label {
   font-size: 2.25em;
@@ -597,33 +598,30 @@ input {
   background-color: #DADADA;
   color: #151515;
 }
-.proto {
-  background-color: #212121;
-}
 
 .bandtastic-proto-button {
   background: #1863CD;
-  width: 200px;
-  height: 50px;
+  width: 75%;
+  height: 60px;
   border-radius: 50px;
   border: none;
 }
 .vocoach-proto-button {
   background: #4A148C;
-  width: 200px;
-  height: 50px;
+  width: 75%;
+  height: 60px;
   border-radius: 50px;
   border: none;
 }
 .bandtastic-proto-button:hover {
-  -webkit-box-shadow: 1px 1px 5px 0px rgba(225,234,247,1);
--moz-box-shadow: 1px 1px 5px 0px rgba(225,234,247,1);
-box-shadow: 1px 1px 5px 0px rgba(225,234,247,1);
+  -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,1);
+-moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,1);
+box-shadow: 1px 1px 5px 0px rgba(0,0,0,1);
 }
 .vocoach-proto-button:hover {
-  -webkit-box-shadow: 1px 1px 5px 0px rgba(234,217,255,1);
--moz-box-shadow: 1px 1px 5px 0px rgba(234,217,255,1);
-box-shadow: 1px 1px 5px 0px rgba(234,217,255,1);
+  -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,1);
+-moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,1);
+box-shadow: 1px 1px 5px 0px rgba(0,0,0,1);
 }
 
 .swot { 
@@ -667,25 +665,23 @@ li img {
 .app-name { margin: 0 0 5vh 0;  }
 
 /* Intro-Problem-Solution ================================= */
-.case-snapshot  { padding: 5vh 5vw 10vh 5vw;  }
+.case-snapshot  { padding: 5vh 5vw 5vh 5vw;  }
 .problem-title, .solution-title  { padding: 5vh 0 1vh 0;  }
 
 /* Prototype & B4 actual Process ================================= */
-.proto {  padding: 5vh 0 5vh 0; }
-.process-title {  padding: 15vh 0 10vh 0; }
+.proto {  padding: 5vh 0 0 0; }
+.proto-text { padding: 5px 5px 5px 5px; }
+.process-title {  padding: 10vh 0 10vh 0; }
 
 /* Process Titles & Icons ================================= */
-.process-box {  padding: 20vh 0 0 0; }/*2x the .mar-full-width*/
+.process-box {  padding: 10vh 0 0 0; }/*No bottom because .mar-full-width*/
 .process-icon { padding: 0 0 2vh 0; }
 /* SWOT  ================================= */
-.swot-title { padding: 20vh 0 15vh 0;}
+.swot-title { padding: 10vh 0 5vh 0;}
 .swot-item-title { padding: 5vh 0 5vh 0; }
 .swot { padding: 5vh 5vw 5vh 5vw; }
 /* Postprocess Conclusion ================================= */
-.conclusion-bg  { 
-  padding: 10vh 0 0 0;
-  margin:  5vh 0 0 0; 
-}
+/* This equals grid gap since no grid defined */
 .conclusion-label { padding: 5vh 0 5vh 0;  }
 .conclusion-content { 
   padding: 0 0 5vh 0;
@@ -693,7 +689,7 @@ li img {
 }
 /* Copy Margins ================================= */
 .mar-full-width {  padding: 5vh 5vw 5vh 5vw;  }
-.swot-conclusion {  padding: 5vh 5vw 10vh 5vw;   }
+.swot-conclusion {  padding: 5vh 5vw 5vh 5vw;   }
 .vocoach-ia-intro {  margin: 10vh 5vw 5vh 5vw;   }
 
 
@@ -817,7 +813,21 @@ li img {
 
 
 
+
+
+
+
+
+/*
 .process-strip { width: 100%; }
+*/
+
+
+
+
+
+
+
 
 
 /*
@@ -868,7 +878,7 @@ li img {
   }
 
   /* Case Studies ================================= */
-  .case-snapshot  { padding: 5vh 10vw 10vh 10vw;  }
+  .case-snapshot  { padding: 5vh 10vw 5vh 10vw;  }
 
   .case-section-major-label { font-size: 2.5em;  }
   .case-section-label {font-size: 2em;}
@@ -885,7 +895,7 @@ li img {
   }
   .conclusion-content { margin: 0 10vw 0 10vw;  }
   .mar-full-width {  padding: 5vh 10vw 5vh 10vw;  }
-  .swot-conclusion {  padding: 5vh 10vw 10vh 10vw;   }
+  .swot-conclusion {  padding: 5vh 10vw 5vh 10vw;   }
   .vocoach-ia-intro {  margin: 10vh 10vw 5vh 10vw;   }
   .vocoach-title  {  margin: 5vh 5vh -5vh 5vh;   }
   /* Case Study GRIDS! ================================= */
@@ -986,6 +996,16 @@ li img {
   .grid-vocoach-version {
     grid-template-columns: auto auto;
   }
+    /* Styling & Specific ------------------------- */
+  .bandtastic-proto-button { 
+    width: 50%;
+    font-weight: 150;
+  }
+  .vocoach-proto-button {
+    width: 50%;
+    font-weight: 150;
+  }
+  .proto-text { font-size: 1.75em; }
 }
 
 
@@ -1038,24 +1058,19 @@ li img {
   .contact-form h1 {  font-size: 2.5em; }
   .flabel { font-size: 1.75em;  }
   /* Case Studies ================================= */
-  .case-snapshot  { padding: 5vh 20vw 10vh 20vw;  }
+  .case-snapshot  { padding: 5vh 20vw 5vh 20vw;  }
 
   .case-section-major-label { font-size: 3em;  }
   .case-section-label {font-size: 2.5em;}
   .conclusion-content { margin: 0 20vw 0 20vw;  }
   .mar-full-width {  padding: 5vh 20vw 5vh 20vw;  }
-  .swot-conclusion {  padding: 5vh 20vw 10vh 20vw;   }
+  .swot-conclusion {  padding: 5vh 20vw 5vh 20vw;   }
   .vocoach-ia-intro {  margin: 10vh 20vw 5vh 20vw;   }
   
   /* Case Study GRIDS! ================================= */
   
   /* BANDTASTIC ------------------------- */
   .bandastic-mvp-graph {  width: 30vw;  }
-
-
-
-
-
   .persona-pic {
     width: 10vw;
   }
@@ -1065,12 +1080,6 @@ li img {
   .color-chip {
     width: 16.66vw;
   }
-  
-
-
-
-
-
   .grid-bandtastic-typog {  grid-template-columns: 4fr 1fr; }
   .bandtastic-iteration-chunk { justify-self: center; }
   .grid-bandtastic-atomic { 
@@ -1097,6 +1106,9 @@ li img {
   .grid-vocoach-logo-paper  {
     grid-template-columns: auto auto auto auto auto;
   }
+  /* Styling & Specific ------------------------- */
+  .bandtastic-proto-button { width: 33%; }
+  .vocoach-proto-button { width: 33%; }
 }
 
 
