@@ -134,7 +134,6 @@ html {
   display: grid;
   grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 2fr 1fr;
   row-gap: .5vh;
-  column-gap: .5vw;
   position: relative;
   width: 90vw;
   height: 75vh;
@@ -156,7 +155,7 @@ html {
   align-items: center;
   justify-items: center;
 }
-.proto-button, .proto-text {
+.bandtastic-proto-button, .vocoach-proto-button, .proto-text {
   grid-row: 1 / 2;
   grid-column: 1 / 2;
 }
@@ -458,6 +457,9 @@ input {
 .short-description {
   text-align: center;
 }
+.proto-text {
+  color: white;
+}
 .case-section-major-label {
   font-size: 2.25em;
   font-family: 'Cormorant Garamond', 'Times New Roman', Times, serif;
@@ -598,12 +600,32 @@ input {
 .proto {
   background-color: #212121;
 }
-.proto-button:hover {
-  width: 205px;
+
+.bandtastic-proto-button {
+  background: #1863CD;
+  width: 200px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
 }
-.proto-text:hover {
-  width: 101%;
+.vocoach-proto-button {
+  background: #4A148C;
+  width: 200px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
 }
+.bandtastic-proto-button:hover {
+  -webkit-box-shadow: 1px 1px 5px 0px rgba(225,234,247,1);
+-moz-box-shadow: 1px 1px 5px 0px rgba(225,234,247,1);
+box-shadow: 1px 1px 5px 0px rgba(225,234,247,1);
+}
+.vocoach-proto-button:hover {
+  -webkit-box-shadow: 1px 1px 5px 0px rgba(234,217,255,1);
+-moz-box-shadow: 1px 1px 5px 0px rgba(234,217,255,1);
+box-shadow: 1px 1px 5px 0px rgba(234,217,255,1);
+}
+
 .swot { 
   border-bottom: 1px ridge rgb(0, 0, 0);
 }
