@@ -240,8 +240,7 @@ html {
 .grid-vocoach-flows,
 .grid-vocoach-sketches, 
 .grid-vocoach-sketch2wire, 
-.grid-vocoach-title, 
-.grid-vocoach-sheet, 
+.grid-vocoach-title-sheet, 
 .grid-vocoach-logo-paper, 
 .grid-vocoach-logo-digi,
 .grid-vocoach-logo-final,
@@ -897,7 +896,6 @@ li img {
   .mar-full-width {  padding: 5vh 10vw 5vh 10vw;  }
   .swot-conclusion {  padding: 5vh 10vw 5vh 10vw;   }
   .vocoach-ia-intro {  margin: 10vh 10vw 5vh 10vw;   }
-  .vocoach-title  {  margin: 5vh 5vh -5vh 5vh;   }
   /* Case Study GRIDS! ================================= */
   .grid-swot {
     display: grid;
