@@ -546,7 +546,7 @@ input {
     90% { transform: scale(1.05); }
     95% { transform: scale(.95); }
 }
-.arrow {
+/*.arrow-mob, .arrow-tab, .arrow-desk,*/ .arrow {
   animation-name: arrowpulse;
   animation-duration: 3s;
   animation-timing-function: cubic-bezier(.25,.75,.75,.25);
@@ -818,11 +818,14 @@ li img {
 
 
 /*
-.process-strip { width: 100%; }
+  ========================================
+  Image Overhaul
+  ========================================
 */
-
-
-
+/* Index ------------------------- */
+/* About ------------------------- */
+/* BANDTASTIC ------------------------- */
+/* POCKET VOCOACHER ------------------------- */
 
 
 
@@ -835,7 +838,7 @@ li img {
   ========================================
 */
 @media screen and (min-width: 675px) {
-  /* Index */
+  /* Index ------------------------- */
   .grid-arrow { height: 85px; }
   .grid-projects {  
     grid-template-columns: 50vw 50vw;
@@ -846,7 +849,7 @@ li img {
   .hero { font-size: 2em; }
   .project-title {  font-size: 2em; }
   .project-content {  line-height: 1.25em; }
-  /* About */
+  /* About ------------------------- */
   .north-strip {  
     grid-template-columns: 1fr max-content;
     grid-template-rows: 1fr;
@@ -862,7 +865,7 @@ li img {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 1fr;
   }
-  /* Contact Page */
+  /* Contact Page ------------------------- */
   .contact-form { width: 66vw;  }
   .contact-form button {
     font-size: 1.125em;
@@ -927,24 +930,12 @@ li img {
   .grid-bandtastic-logoCollage {
     grid-template-columns: auto auto;
   }
-  
-
-
-
-
   .persona-pic {
     width: 15vw;
   }
-  
   .color-chip {
     width: 37.5vw;
   }
-  
-
-
-
-
-
   .grid-bandtastic-typog {
     grid-template-columns: 2fr 1fr;
   }
@@ -959,7 +950,6 @@ li img {
   .greenNblueButt-2 { grid-area: bl;}
   .greenNblueButt-3 { grid-area: tr;}
   .greenNblueButt-4 { grid-area: br;}
-
 
   .bandtastic-iteration-intro { 
     text-align: center;
@@ -1004,6 +994,12 @@ li img {
     font-weight: 150;
   }
   .proto-text { font-size: 1.75em; }
+  /* Image Overhaul ==================== */
+  /* Index ------------------------- */
+  /* About ------------------------- */
+  /* BANDTASTIC ------------------------- */
+  /* POCKET VOCOACHER ------------------------- */
+
 }
 
 
@@ -1029,7 +1025,7 @@ li img {
 
 
 @media screen and (min-width: 1150px) {
-  /* Index */
+  /* Index ------------------------- */
   .grid-arrow { height: 100px; }
   .grid-projects {  
     grid-template-columns: 33vw 33vw; 
@@ -1038,7 +1034,7 @@ li img {
   .hero { font-size: 3em; }
   .project-title {  font-size: 2em; }
   .project-content {  line-height: 1.375em; }
-  /* About */
+  /* About ------------------------- */
   .grid-bio-h2s h2 {  font-size: 2.25em;  }
   .about {  font-size: 4em; }
   .grid-bio-content { margin: 2.5vh 0 2.5vh 0;  }
@@ -1046,7 +1042,7 @@ li img {
     font-size: 1.75em;
     font-weight: 400;
   }
-  /* Contact Page */
+  /* Contact Page ------------------------- */
   .contact-form { width: 50vw;  }
   .contact-form button {
     font-size: 1.25em;
@@ -1057,16 +1053,13 @@ li img {
   .flabel { font-size: 1.75em;  }
   /* Case Studies ================================= */
   .case-snapshot  { padding: 5vh 20vw 5vh 20vw;  }
-
   .case-section-major-label { font-size: 3em;  }
   .case-section-label {font-size: 2.5em;}
   .conclusion-content { margin: 0 20vw 0 20vw;  }
   .mar-full-width {  padding: 5vh 20vw 5vh 20vw;  }
   .swot-conclusion {  padding: 5vh 20vw 5vh 20vw;   }
   .vocoach-ia-intro {  margin: 10vh 20vw 5vh 20vw;   }
-  
   /* Case Study GRIDS! ================================= */
-  
   /* BANDTASTIC ------------------------- */
   .bandastic-mvp-graph {  width: 30vw;  }
   .persona-pic {
@@ -1100,19 +1093,19 @@ li img {
     .vocoach-flows {
       justify-self: center;
   }
-  
   .grid-vocoach-logo-paper  {
     grid-template-columns: auto auto auto auto auto;
   }
   /* Styling & Specific ------------------------- */
   .bandtastic-proto-button { width: 33%; }
   .vocoach-proto-button { width: 33%; }
+  /* Image Overhaul ==================== */
+  /* Index ------------------------- */
+  /* About ------------------------- */
+  /* BANDTASTIC ------------------------- */
+  /* POCKET VOCOACHER ------------------------- */
+
 }
-
-
-
-
-
 
 
 
@@ -1177,15 +1170,6 @@ li img {
   font-family: 'Cormorant Garamond', 'Times New Roman', Times, serif;
   font-size: 1em;
 }
-
-
-
-
-
-
-
-
-
 
 /*
   ========================================
