@@ -188,15 +188,13 @@ html {
 }
 .grid-color-chip-group {
   display: grid;
+  grid-template-columns: auto auto;
   justify-items: center;
   justify-content: center;
   align-items: center;
   align-content: center;
   row-gap: 5vh;
   column-gap: 5vw;
-}
-.grid-color-chip-group {
-  grid-template-columns: auto auto;
 }
 .grid-color-chip {
   display: grid;
