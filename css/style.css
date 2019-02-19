@@ -132,7 +132,7 @@ html {
 /* contact.grid =============================== */
 .contact-form {
   display: grid;
-  grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 2fr 1fr .25fr;
   row-gap: .5vh;
   position: relative;
   width: 90vw;
@@ -433,6 +433,7 @@ input {
   text-align: center;
   align-self: center;
   font-weight: 450;
+  margin: 5vh 0 0 0;
 }
 .flabel {
   font-size: 1.25em;
@@ -581,6 +582,8 @@ input {
 .contact-form button {
   background: #6DB66D;
   border-radius: 12.5px;
+  width: 90%;
+  justify-self: center;
 }
 #name, #email, #message, .flabel {
   border-radius: 12.5px;
@@ -857,10 +860,6 @@ li img {
   input { font-size: 1em;  }
   .contact-form h1 {  font-size: 2.25em; }
   .flabel { font-size: 1.5em;  }
-  .contact-form button {
-    width: 90%;
-    justify-self: center;
-  }
 
   /* Case Studies ================================= */
   .case-snapshot  { padding: 5vh 10vw 5vh 10vw;  }
