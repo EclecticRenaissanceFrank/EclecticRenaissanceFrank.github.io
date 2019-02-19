@@ -40,7 +40,7 @@ html {
 .grid-nav {
   display: grid;
   grid-template-rows: 10vh;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   justify-items: center;
 }
@@ -138,7 +138,6 @@ html {
   width: 90vw;
   height: 75vh;
   margin: 10vh auto 10vh auto;
-  
 }
 
 /* caseUniversal.grid =============================== */
@@ -287,7 +286,7 @@ body {
 
 a {
   text-decoration: none;
-  color: rgb(94, 166, 255);
+  color: rgb(122, 182, 255);
 }
 a:visited {
   color: rgb(188, 133, 255);
@@ -815,23 +814,6 @@ li img {
 
 
 
-/*
-  ========================================
-  Image Overhaul
-  ========================================
-*/
-/* Index ------------------------- */
-/* About ------------------------- */
-/* BANDTASTIC ------------------------- */
-/* POCKET VOCOACHER ------------------------- 
-CHECKING
-0W
-vocoacherIMGs
-*/
-
-
-
-
 
 /*
   ========================================
@@ -995,12 +977,6 @@ vocoacherIMGs
     font-weight: 150;
   }
   .proto-text { font-size: 1.75em; }
-  /* Image Overhaul ==================== */
-  /* Index ------------------------- */
-  /* About ------------------------- */
-  /* BANDTASTIC ------------------------- */
-  /* POCKET VOCOACHER ------------------------- */
-
 }
 
 
@@ -1100,12 +1076,6 @@ vocoacherIMGs
   /* Styling & Specific ------------------------- */
   .bandtastic-proto-button { width: 33%; }
   .vocoach-proto-button { width: 33%; }
-  /* Image Overhaul ==================== */
-  /* Index ------------------------- */
-  /* About ------------------------- */
-  /* BANDTASTIC ------------------------- */
-  /* POCKET VOCOACHER ------------------------- */
-
 }
 
 
