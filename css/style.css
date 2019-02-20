@@ -190,7 +190,7 @@ html {
   grid-template-columns: auto auto;
   justify-items: center;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   align-content: center;
   row-gap: 5vh;
   column-gap: 5vw;
