@@ -107,7 +107,9 @@ html {
   /* 1/4 desk
   1/3 tablet
   1/2 mobile*/
-  grid-column: 1 / 7;
+  display: grid;
+  grid-template-rows: 7.5vh;
+  grid-column: 1 / 5;
   margin: 2vh 0 2vh 0;
   align-content: center;
   align-items: center;
@@ -567,9 +569,9 @@ input {
 }
 
 /* About */
-.north-strip {
-  background-color: #E3C588;
-}
+.north-strip { background-color: #E3C588; }
+.bio-green { background-color: #18511B; }
+.bio-mustard { background-color: #77591D; }
 
 /* Contact Page */
 .contact-form {
