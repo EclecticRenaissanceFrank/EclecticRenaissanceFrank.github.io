@@ -109,7 +109,7 @@ html {
   1/2 mobile*/
   display: grid;
   grid-template-rows: 7.5vh;
-  grid-column: 1 / 5;
+  grid-column: 1 / 7;
   margin: 2vh 0 2vh 0;
   align-content: center;
   align-items: center;
@@ -843,6 +843,7 @@ li img {
     grid-template-rows: 1fr;
   }
   .about { grid-column: 1 / 2 }
+  .grid-bio-h2s { grid-column: 1 / 5; }
   .grid-bio-h2s h2 {  font-size: 2em;  }
   .grid-bio-content { 
     font-weight: 300;
@@ -1013,6 +1014,7 @@ li img {
   .project-title {  font-size: 2em; }
   .project-content {  line-height: 1.375em; }
   /* About ------------------------- */
+  .grid-bio-h2s { grid-column: 1 / 4; }
   .grid-bio-h2s h2 {  font-size: 2.25em;  }
   .about {  font-size: 4em; }
   .grid-bio-content { margin: 2.5vh 0 2.5vh 0;  }
