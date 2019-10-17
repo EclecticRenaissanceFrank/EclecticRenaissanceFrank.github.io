@@ -7,6 +7,8 @@
 
   - just testing a change
 
+  "I would maybe consider pulling the styles into different files for each page and a global, and it looked like there are some classes that you don't need. For example, I see a footer element with a footer class, you could just select on the element instead of adding a class."
+
   ========================================
 */
 
