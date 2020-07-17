@@ -76,7 +76,7 @@ html {
   display: grid;
   grid-template-rows: 10vh;
   grid-template-columns: 
-  auto auto auto;
+  auto auto;
   align-items: center;
   align-content: space-around;
   justify-items: center;
