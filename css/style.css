@@ -80,7 +80,7 @@ html {
   align-items: center;
   align-content: space-around;
   justify-items: center;
-  column-gap: auto;
+  column-gap: normal;
 }
 .footer {
   position: relative;
