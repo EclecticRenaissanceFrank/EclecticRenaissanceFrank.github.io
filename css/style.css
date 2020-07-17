@@ -129,7 +129,7 @@ html {
   grid-column: 1 / 13;
   padding: 5vh 0 0 0;
 }
-.pictures {
+.pictures { /* Grid starts with mobile first, single row for desk inherited by tablet */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -785,7 +785,7 @@ li img {
     grid-column: 3 / 11;
   }
   .bruce  { font-size: 1.125em; }
-  .pictures {
+  .pictures { /* grid for tablet & up */
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 1fr;
   }
