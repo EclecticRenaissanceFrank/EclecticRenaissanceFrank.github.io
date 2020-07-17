@@ -135,17 +135,6 @@ html {
   grid-template-rows: 1fr 1fr;
 }
 
-/* contact.grid =============================== */
-.contact-form {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 2fr 1fr .25fr;
-  row-gap: .5vh;
-  position: relative;
-  width: 90vw;
-  height: 75vh;
-  margin: 10vh auto 10vh auto;
-}
-
 /* caseUniversal.grid =============================== */
 .case-section-label, .case-section-major-label {
   /* No text-align: center, aligns images */
@@ -419,43 +408,6 @@ line-height: 1.25;
   font-style: italic;
 }
 
-/* contact.typo ================================= */
-.contact-form {
-  font-family: 'Cormorant Garamond', 'Times New Roman', Times, serif;
-  color: #151515;
-  text-decoration: none;
-}
-.contact-form button {
-  font-size: 1em;
-  font-weight: 150;
-}
-.contact-form textarea,
-input {
-  font-family: lato;
-  font-size: .875em;
-}
-.contact-form h1 {
-  font-size: 2em;
-  text-align: center;
-  align-self: center;
-  font-weight: 450;
-  margin: 5vh 0 0 0;
-}
-.flabel {
-  font-size: 1.25em;
-  text-indent: 1%;
-  align-self: end;
-  width: 90%;
-  justify-self: center;
-  font-weight: 350;
-  color: #fafafa;
-}
-.contact-form input, 
-.contact-form textarea {
-  width: 90%;
-  justify-self: center;
-}
-
 /* casetemp.typo ================================= */
 .short-description {
   text-align: center;
@@ -576,27 +528,6 @@ input {
 .north-strip { background-color: #E3C588; }
 .bio-green { background-color: #18511B; }
 .bio-mustard { background-color: #77591D; }
-
-/* Contact Page */
-.contact-form {
-  background: rgb(39, 39, 39);
-  border-radius: 25px;
-}
-.contact-form h1 {
-  background: #E3C588;
-}
-.contact-form button {
-  background: #6DB66D;
-  border-radius: 12.5px;
-  width: 90%;
-  justify-self: center;
-}
-#name, #email, #message, .flabel {
-  border-radius: 12.5px;
-}
-.contact-form input:focus, .contact-form textarea:focus {
-  background: #FFEAC0;
-}
 
 /* Case Studies OVERRIDE IN SPECIFIC */
 .case-snapshot {
@@ -858,16 +789,6 @@ li img {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 1fr;
   }
-  /* Contact Page ------------------------- */
-  .contact-form { width: 66vw;  }
-  .contact-form button {
-    font-size: 1.125em;
-  }
-  .contact-form textarea,
-  input { font-size: 1em;  }
-  .contact-form h1 {  font-size: 2.25em; }
-  .flabel { font-size: 1.5em;  }
-
   /* Case Studies ================================= */
   .case-snapshot  { padding: 5vh 10vw 5vh 10vw;  }
 
@@ -1026,15 +947,6 @@ li img {
     font-size: 1.75em;
     font-weight: 400;
   }
-  /* Contact Page ------------------------- */
-  .contact-form { width: 50vw;  }
-  .contact-form button {
-    font-size: 1.25em;
-  }
-  .contact-form textarea,
-  input { font-size: 1.125em;  }
-  .contact-form h1 {  font-size: 2.5em; }
-  .flabel { font-size: 1.75em;  }
   /* Case Studies ================================= */
   .case-snapshot  { padding: 5vh 20vw 5vh 20vw;  }
   .case-section-major-label { font-size: 3em;  }
