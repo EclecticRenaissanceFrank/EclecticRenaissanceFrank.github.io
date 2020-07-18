@@ -19,7 +19,15 @@
 
 
 
-
+/*
+  ========================================
+  I didn't see a spot for Header/Footer Horizontal Responsive Padding
+  ========================================
+*/
+.nav, .footer {
+    padding-left:   2vh;
+    padding-right:  2vh;
+}
 
 /*
   ========================================
@@ -33,7 +41,7 @@ html {
     scroll-behavior: smooth;
 }
 /* Header */
-.nav-sticky-wrapper {
+.nav-sticky-wrapper { /*Justa-note: .nav-sticky-wrapper is redundant & could use header. I guess back then...semantics or planning.*/
   position: fixed;
   top: 0;
   left: 0;
@@ -44,9 +52,10 @@ html {
 .grid-nav {
   display: grid;
   grid-template-rows: 10vh;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: auto auto auto;
   align-items: center;
   justify-items: center;
+  justify-content: space-between;
 }
 
 /* Hero */
@@ -75,12 +84,10 @@ html {
 .grid-footer {
   display: grid;
   grid-template-rows: 10vh;
-  grid-template-columns: 
-  auto auto;
+  grid-template-columns: auto auto;
   align-items: center;
-  align-content: space-around;
   justify-items: center;
-  column-gap: normal;
+  justify-content: space-between;
 }
 .footer {
   position: relative;
@@ -89,6 +96,7 @@ html {
   right: 0;
   background: #151515;
   z-index: 10;
+  padding-top: 10vh;
 }
 
 /* about.grid =============================== */
@@ -249,16 +257,17 @@ html {
 
 /*
   ========================================
-  Typography
-  100 Thin
-  200 Extra Light
-  300 Light
-  400 font-weight normal
-  500 Medium
-  600 Semi-Bold
-  700 font-weight bold
-  800 Extra Bold
-  900 Ultra Bold
+    Available Lato Typography
+    Thin 100
+    Thin 100 italic
+    Light 300
+    Light 300 italic
+    Regular 400
+    Regular 400 italic
+    Bold 700
+    Bold 700 italic
+    Black 900
+    Black 900 italic
   ========================================
 */
 body {
@@ -370,14 +379,10 @@ line-height: 1.25;
   font-weight: 300;
   color: #151515;
 }
-.grid-bio-h2s img {
-  position: relative;
-  display: inline-block;
-}
 .grid-bio-h2s h2 {
   position: absolute;
   z-index: 1;
-  left: 8.3%; 
+  left: 2vh; 
   font-size: 1.75em;
   font-weight: 700;
 }
@@ -885,9 +890,12 @@ li img {
     font-weight: 150;
   }
   .proto-text { font-size: 1.75em; }
+   /* Header/Footer Horizontal Responsive Padding ------------------------- */
+  .nav, .footer, .grid-bio-h2s h2 {
+    padding-left:   5vh;
+    padding-right:  5vh;
+  }
 }
-
-
 
 
 
@@ -976,15 +984,25 @@ li img {
   /* Styling & Specific ------------------------- */
   .bandtastic-proto-button { width: 33%; }
   .vocoach-proto-button { width: 33%; }
+  /* Header/Footer Horizontal Responsive Padding ------------------------- */
+ .nav, .footer, .grid-bio-h2s h2 {
+    padding-left:   10vh;
+    padding-right:  10vh;
+ }
 }
-
-
 
 
 
 /* giant screens */
 @media screen and (min-width: 1280px) {
   .hero { font-size: 4em; }
+
+    /* Header/Footer Horizontal Responsive Padding ------------------------- */
+ .nav, .footer, .grid-bio-h2s h2 {
+    padding-left:   15vh;
+    padding-right:  15vh;
+ }
+     
 }
 
 
