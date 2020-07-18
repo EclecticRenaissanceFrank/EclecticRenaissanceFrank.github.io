@@ -96,7 +96,7 @@ html {
   right: 0;
   background: #151515;
   z-index: 10;
-  padding-top: 10vh;
+  margin-top: 10vh;
 }
 
 /* about.grid =============================== */
@@ -272,8 +272,8 @@ html {
   ========================================
 */
 body {
-  background-color: #151515;
-  color: #FAFAFA;
+  background-color: #FAFAFA;
+  color: #151515;
   font-family: Lato, Arial, Helvetica, sans-serif;
   font-size: 1em;
 }
@@ -561,8 +561,8 @@ li img {
 }
 
 .alternate {
-  background: #FAFAFA;
-  color: #151515; }
+  background: #151515;
+  color: #FAFAFA; }
   .alternate a {
     text-decoration: none;
     color: #4B9BFF; }
