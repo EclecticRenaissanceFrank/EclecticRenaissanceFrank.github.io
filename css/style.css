@@ -123,8 +123,9 @@ html {
   grid-template-rows: 7.5vh;
   grid-column: 1 / 7;
   margin: 2vh 0 2vh 0;
-  align-content: center;
+  /*align-content: center;*/
   align-items: center;
+  justify-content: inherit;
 }
 .bruce {
   /* always 1/12 on each side */
