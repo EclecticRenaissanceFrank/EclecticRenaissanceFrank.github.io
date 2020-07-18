@@ -379,7 +379,7 @@ line-height: 1.25;
   font-weight: 300;
   color: #151515;
 }
-.grid-bio-h2s h2 {
+.self {
   position: absolute;
   z-index: 1;
   left: 2vh; 
@@ -768,7 +768,7 @@ li img {
   }
   .about { grid-column: 1 / 2 }
   .grid-bio-h2s { grid-column: 1 / 5; }
-  .grid-bio-h2s h2 {  font-size: 2em;  }
+  .self {  font-size: 2em;  }
   .grid-bio-content { 
     font-weight: 300;
     grid-column: 3 / 11;
@@ -891,7 +891,7 @@ li img {
   }
   .proto-text { font-size: 1.75em; }
    /* Header/Footer Horizontal Responsive Padding ------------------------- */
-  .nav, .footer, .grid-bio-h2s h2 {
+  .nav, .footer, .self {
     padding-left:   5vh;
     padding-right:  5vh;
   }
@@ -929,7 +929,7 @@ li img {
   .project-content {  line-height: 1.375em; }
   /* About ------------------------- */
   .grid-bio-h2s { grid-column: 1 / 4; }
-  .grid-bio-h2s h2 {  font-size: 2.25em;  }
+  .self {  font-size: 2.25em;  }
   .about {  font-size: 4em; }
   .grid-bio-content { margin: 2.5vh 0 2.5vh 0;  }
   .bruce {
@@ -985,7 +985,7 @@ li img {
   .bandtastic-proto-button { width: 33%; }
   .vocoach-proto-button { width: 33%; }
   /* Header/Footer Horizontal Responsive Padding ------------------------- */
- .nav, .footer, .grid-bio-h2s h2 {
+ .nav, .footer, .self {
     padding-left:   10vh;
     padding-right:  10vh;
  }
@@ -998,7 +998,7 @@ li img {
   .hero { font-size: 4em; }
 
     /* Header/Footer Horizontal Responsive Padding ------------------------- */
- .nav, .footer, .grid-bio-h2s h2 {
+ .nav, .footer, .self {
     padding-left:   15vh;
     padding-right:  15vh;
  }
