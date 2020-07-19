@@ -272,7 +272,7 @@ html {
   ========================================
 */
 body {
-  background-color: #FAFFFA;
+  background-color: #F5F5F5;
   color: #151515;
   font-family: Lato, Arial, Helvetica, sans-serif;
   font-size: 1em;
@@ -387,7 +387,8 @@ line-height: 1.25;
   z-index: 1;
   left: 2vh; 
   font-size: 1.75em;
-  font-weight: 900;
+  font-weight: 400;
+  font-style: italic;
 }
 .grid-bio-content {
   line-height: 1.75em;
@@ -519,11 +520,11 @@ line-height: 1.25;
 /* About */
 .north-strip { background-color: #C8E6C8; }
 .bio-green { background-color: #327D32; }
-.bio-mustard { background-color: #0082D2; }
+.bio-blue { background-color: #0082D2; }
 
 /* Case Studies OVERRIDE IN SPECIFIC */
 .case-snapshot {
-  background-color: #DADADA;
+  background-color: #F0F0F0;
   color: #151515;
 }
 
@@ -562,8 +563,8 @@ li img {
   border: 1px solid black;
 }
 
-.alternate { /*copying norm for time being*/
-  background-color: #FAFAFF;
+.alternate {
+  background-color: #F0F0F0;
   color: #151515; }
   .alternate a {
     text-decoration: none;
