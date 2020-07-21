@@ -75,9 +75,32 @@ html {
 /* Projects */
 .grid-projects {
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  align-items: center;
-  justify-items: center;
+  grid-template-rows: repeat(12, 1fr);
+  grid-template-columns: repeat(12, 1fr);
+}
+.project-bandtastic {
+  display: grid;
+  grid-row: 1 / span 1;
+  grid-column: auto / span 1;
+  /*background-color: #D7EBFF;*/
+  background-color: #0080ff;
+  border: 1px solid rgb(0, 255, 21);
+  place-items: center;
+
+  
+  
+}
+.project-vocoacher {
+  display: grid;
+  grid-row: 1 / span 1;
+  grid-column: auto / span 1;
+  /*background-color: #E1BEEB;*/
+  background-color: #c800ff;
+  border: 1px solid rgb(0, 4, 255);
+  place-items: center;
+
+  
+  
 }
 
 /* Footer */
@@ -107,7 +130,7 @@ html {
   justify-items: center;
   margin: 10vh 0 5vh 0;
 }
-.bio {
+.grid-bio {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
@@ -121,7 +144,7 @@ html {
   1/2 mobile*/
   display: grid;
   grid-template-rows: 7.5vh;
-  grid-column: 1 / 7;
+  grid-column: span 4;
   margin: 2vh 0 2vh 0;
   /*align-content: center;*/
   align-items: center;
@@ -292,10 +315,10 @@ a:active {
   color: #327D32;
 }
 .projects a:link {
-  color: #FAFAFA;
+  color: #151515;
 }
 .projects a:visited {
-  color: #FAFAFA;
+  color: #212121;
 }
 
 /* Header/Footer */
@@ -761,7 +784,7 @@ li img {
     grid-template-columns: 50vw 50vw;
     grid-template-rows: 1fr;
     justify-content: center;
-  }  
+  }
   body {  font-size: 1.125em; }
   .hero { font-size: 2em; }
   .project-title {  font-size: 2em; }
@@ -772,7 +795,7 @@ li img {
     grid-template-rows: 1fr;
   }
   .about { grid-column: 1 / 2 }
-  .grid-bio-h2s { grid-column: 1 / 5; }
+  .grid-bio-h2s { grid-column: span 4; } /*Changed & now Redundant*/
   .self {  font-size: 2em;  }
   .grid-bio-content { 
     font-weight: 300;
@@ -927,13 +950,13 @@ li img {
   .grid-arrow { height: 100px; }
   .grid-projects {  
     grid-template-columns: 33vw 33vw; 
-    justify-content: space-evenly;}  
+    justify-content: space-evenly;}
   body {  font-size: 1.25em;  }
   .hero { font-size: 3em; }
   .project-title {  font-size: 2em; }
   .project-content {  line-height: 1.375em; }
   /* About ------------------------- */
-  .grid-bio-h2s { grid-column: 1 / 4; }
+  .grid-bio-h2s { grid-column: span 3; }
   .self {  font-size: 2.25em;  }
   .about {  font-size: 4em; }
   .grid-bio-content { margin: 2.5vh 0 2.5vh 0;  }
