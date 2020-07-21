@@ -273,7 +273,7 @@ html {
 */
 body {
   background-color: #F5F5F5;
-  color: #151515;
+  color: #212121;
   font-family: Lato, Arial, Helvetica, sans-serif;
   font-size: 1em;
 }
@@ -380,7 +380,7 @@ line-height: 1.25;
 .about {
   font-size: 2em;
   font-weight: 300;
-  color: #151515;
+  color: #212121;
 }
 .self {
   position: absolute;
@@ -525,7 +525,7 @@ line-height: 1.25;
 /* Case Studies OVERRIDE IN SPECIFIC */
 .case-snapshot {
   background-color: #F0F0F0;
-  color: #151515;
+  color: #212121;
 }
 
 .bandtastic-proto-button {
@@ -641,6 +641,7 @@ li img {
   background-image: url(../desk-assets/project-bandtastic-banner-center.png);
   background-size: cover;
   background-position: center;
+  
 }
 .app-bg-color-bandtastic {
   background-color: #E1EAF7;
