@@ -74,34 +74,11 @@ html {
 
 /* Projects */
 .grid-projects {
-  display: grid;
-  grid-template-rows: repeat(12, 1fr);
-  grid-template-columns: repeat(12, 1fr);
-}
-.project-bandtastic {
-  display: grid;
-  grid-row: 1 / span 1;
-  grid-column: auto / span 1;
-  /*background-color: #D7EBFF;*/
-  background-color: #0080ff;
-  border: 1px solid rgb(0, 255, 21);
-  place-items: center;
-
-  
-  
-}
-.project-vocoacher {
-  display: grid;
-  grid-row: 1 / span 1;
-  grid-column: auto / span 1;
-  /*background-color: #E1BEEB;*/
-  background-color: #c800ff;
-  border: 1px solid rgb(0, 4, 255);
-  place-items: center;
-
-  
-  
-}
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+  }
 
 /* Footer */
 .grid-footer {
