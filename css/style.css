@@ -79,13 +79,13 @@ html {
     grid-auto-rows: auto;
     grid-template-columns: auto;
     grid-auto-columns: auto;
+    justify-content: center;
+    align-content: center;
   }
   .grid-project-tile { /*Items are the individuals, & content is the chunk*/
     display: grid;
     justify-items: center;
     align-items: center;
-    /*justify-content: center; THIS IS HAVING NO EFFECT
-    align-content: center;*/
 }
 .project-tile-bg, .project-text {
     grid-row: 1 / 1;
