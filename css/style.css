@@ -73,14 +73,12 @@ html {
 }
 
 /* Projects */
-.grid-projects { /*Grid created based on srcset image size in html*/
+.grid-projects {
+    /*Grid created based on srcset image size in html
+    AND, no spacing required until media queries desk
+    BECAUSE, I'm ok with a chunk missing in tablet,
+    but would rather center it on desktop.*/
     display: grid;
-    grid-template-rows: auto;
-    grid-auto-rows: auto;
-    grid-template-columns: auto;
-    grid-auto-columns: auto;
-    justify-content: center;
-    align-content: center;
   }
   .grid-project-tile { /*Items are the individuals, & content is the chunk*/
     display: grid;
@@ -747,9 +745,7 @@ li img {
   /* Index ------------------------- */
   .grid-arrow { height: 85px; }
   .grid-projects {  
-    grid-template-columns: 50vw 50vw;
-    grid-template-rows: 1fr;
-    justify-content: center;
+    grid-template-columns: 1fr 1fr;
   }
   body {  font-size: 1.125em; }
   .hero { font-size: 2em; }
@@ -914,9 +910,7 @@ li img {
 @media screen and (min-width: 1150px) {
   /* Index ------------------------- */
   .grid-arrow { height: 100px; }
-  .grid-projects {  
-    grid-template-columns: auto auto auto;
-    justify-content: space-evenly;}
+  /*.grid-projects {  grid-template-columns: 1fr 1fr; } I can't believe I didn't even need this*/
   body {  font-size: 1.25em;  }
   .hero { font-size: 3em; }
   .project-title {  font-size: 2em; }
