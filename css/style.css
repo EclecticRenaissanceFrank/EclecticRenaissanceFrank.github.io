@@ -75,16 +75,16 @@ html {
 /* Projects */
 .grid-projects { /*Grid created based on srcset image size in html*/
     display: grid;
-    /*grid-template-rows: auto;
+    grid-template-rows: auto;
     grid-auto-rows: auto;
     grid-template-columns: auto;
-    grid-auto-columns: auto;*/
+    grid-auto-columns: auto;
   }
-  .grid-project-tile {
+  .grid-project-tile { /*Items are the individuals, & content is the chunk*/
     display: grid;
-    /*justify-items: center;
+    justify-items: center;
     align-items: center;
-    justify-content: center;
+    /*justify-content: center; THIS IS HAVING NO EFFECT
     align-content: center;*/
 }
 .project-tile-bg, .project-text {
@@ -361,6 +361,9 @@ Projects
 .project-content {
   line-height: 1.125em;
 }
+.project-text {
+    text-align: center;
+}
 
 /* about.typo ================================= */
 .about {
@@ -499,7 +502,7 @@ Projects
   color: #FAFAFA;
   outline: solid 1px #6DB66D;
 }
-.grid-vocoach-screen a:hover img {
+.grid-vocoach-screen a:hover img { /*This is in the case study*/
   transform: scale(1.05); 
 }
 
