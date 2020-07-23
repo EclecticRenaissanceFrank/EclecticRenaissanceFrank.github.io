@@ -73,12 +73,20 @@ html {
 }
 
 /* Projects */
-.grid-projects {
+.grid-projects { /*Grid created based on srcset image size in html*/
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    align-items: center;
-    justify-items: center;
+    grid-template-rows: none;
+    grid-auto-rows: auto;
+    grid-template-columns: none;
+    grid-auto-columns: auto;
   }
+  .grid-project-tile {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
 
 /* Footer */
 .grid-footer {
@@ -340,29 +348,15 @@ line-height: 1.25;
   font-weight: bold;
 }
 
-/* Projects */
+/* Projects 
 .project-bandtastic, 
 .project-vocoacher {
   position: relative;
   display: inline-block;
 }
-.project-text-2l {
-  position: absolute;
+.project-text {
+  position: auto;
   bottom: 43%; 
-  left: 7.5%; 
-  text-align: center;
-  width: 85%;
-}
-.project-text-3l {
-  position: absolute;
-  bottom: 40%; 
-  left: 7.5%; 
-  text-align: center;
-  width: 85%;
-}
-.project-text-4l {
-  position: absolute;
-  bottom: 38%; 
   left: 7.5%; 
   text-align: center;
   width: 85%;
@@ -374,7 +368,7 @@ line-height: 1.25;
 }
 .project-content {
   line-height: 1.125em;
-}
+}*/
 
 /* about.typo ================================= */
 .about {
@@ -926,7 +920,7 @@ li img {
   /* Index ------------------------- */
   .grid-arrow { height: 100px; }
   .grid-projects {  
-    grid-template-columns: 33vw 33vw; 
+    grid-template-columns: auto auto auto;
     justify-content: space-evenly;}
   body {  font-size: 1.25em;  }
   .hero { font-size: 3em; }
