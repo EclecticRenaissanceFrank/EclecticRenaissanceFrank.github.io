@@ -487,14 +487,14 @@ line-height: 1.25;
     50% { opacity: 0; }
     100% { opacity: 1; }
 }
-.project-vocoacher a:hover img {
-  color: #FAFAFA;
-  outline: solid 1px #E3C588;
+.project-tile-bg:hover {
+    z-index: 10;    
+    box-shadow:0px 2px 5px rgb(0, 0, 0);
+    opacity: 25%;
 }
-.project-bandtastic a:hover img {
-  color: #FAFAFA;
-  outline: solid 1px #6DB66D;
-}
+
+
+
 
 
 /* About */
@@ -905,7 +905,10 @@ li img {
 @media screen and (min-width: 1150px) {
   /* Index ------------------------- */
   .grid-arrow { height: 100px; }
-  /*.grid-projects {  grid-template-columns: 1fr 1fr; } I can't believe I didn't even need this. Needed when inserting next.*/
+  .grid-projects {
+    /*I can't for the life of me center the 2 column grid
+    grid-template-columns: 1fr 1fr;
+  }*/
   body {  font-size: 1.25em;  }
   .hero { font-size: 3em; }
   .project-title {
