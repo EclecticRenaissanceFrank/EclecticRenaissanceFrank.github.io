@@ -407,7 +407,7 @@ line-height: 1.25;
   text-align: center;
 }
 .swot-item-label {
-  color: #E3C588
+  color: #002341
 }
 .swot-title {
   font-size: 1.625em;
@@ -537,7 +537,7 @@ box-shadow: 1px 1px 5px 0px rgba(0,0,0,1);
 }
 
 .swot { 
-  border-bottom: 1px ridge rgb(0, 0, 0);
+  border-bottom: 2px solid #FAFAFF;
 }
 li img {
   vertical-align: middle;
@@ -547,7 +547,7 @@ li img {
 }
 
 .alternate {
-  background-color: #F0F0F0;
+  background-color: #F2F2F2;
   color: #151515; }
   .alternate a {
     text-decoration: none;
@@ -775,7 +775,7 @@ li img {
   }
   /* case-content override to keep centered... */
   .problem, .solution { text-align: center; }
-  .swot { border: 5px solid rgb(0, 0, 0);  }
+  .swot { border: 2px solid #FAFAFF;  }
   .swot-title {
     text-align: center;
   }
