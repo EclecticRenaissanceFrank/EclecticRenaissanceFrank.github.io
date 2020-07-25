@@ -503,8 +503,11 @@ line-height: 1.25;
 .bio-blue { background-color: #0082D2; }
 
 /* Case Studies OVERRIDE IN SPECIFIC */
+.case-hero, .short-description {
+    color: #f0f0f0;
+}
 .case-snapshot {
-  background-color: #F0F0F0;
+  background-color: #;
   color: #212121;
 }
 
@@ -625,13 +628,13 @@ li img {
   
 }
 .app-bg-color-bandtastic {
-  background-color: #E1EAF7;
+  background-color: #D1E0F5;
 }
 .bandastic-mvp-graph {
   width: 75vw;
 }
 .conclusion-bg-bandtastic {
-  background-color: rgb(9, 38, 78);
+  background-color: #D1E0F5;
 }
 .bandtastic li:before {
   /* For a round bullet */
@@ -673,13 +676,13 @@ li img {
   background-position: center;
 }
 .app-bg-color-vocoach {
-  background-color: rgb(234, 217, 255);
+  background-color: #E1D2EB;
 }
 .vocoach-learning-graph {
   width: 75vw;
 }
 .conclusion-bg-vocoach {
-  background-color: #240A44;
+  background-color: #E1D2EB;
 }
 .vocoacher li:before {
   /* For a round bullet */
