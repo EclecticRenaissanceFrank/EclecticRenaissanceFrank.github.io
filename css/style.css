@@ -911,8 +911,8 @@ li img {
   .grid-arrow { height: 100px; }
   .grid-projects {
     /*I can't for the life of me center the 2 column grid
-    grid-template-columns: 1fr 1fr;
-  }*/
+    grid-template-columns: 1fr 1fr;*/
+  }
   body {  font-size: 1.25em;  }
   .hero { font-size: 3em; }
   .project-title {
@@ -958,7 +958,7 @@ li img {
   .vocoach-gamified-top { grid-column: 1 / 3;  }
   .grid-vocoach-flows { grid-template-rows: auto auto; }
   .vocoach-flows {    justify-self: center;  }
-  .grid-vocoach-logo-paper  {   grid-template-columns: auto auto auto auto auto;  }
+  .grid-vocoach-logo-paper  {   grid-template-columns: auto auto auto auto auto;    }
   /* Styling & Specific ------------------------- */
   .bandtastic-proto-button { width: 33%; }
   .vocoach-proto-button { width: 33%; }
@@ -966,8 +966,11 @@ li img {
   .nav, .footer, .self {
     padding-left:   10vh;
     padding-right:  10vh;
- }
+  }
 }
+
+
+
 
 
 
@@ -1086,7 +1089,3 @@ li img {
   margin-left: 20vw;
   margin-right: 20vw;
 }
-
-
-
-
