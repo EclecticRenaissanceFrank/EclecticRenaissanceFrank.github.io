@@ -800,6 +800,7 @@ li img {
   /* BANDTASTIC ------------------------- */
   .bandtastic-mockup {
     grid-template-columns: auto auto;
+    
   }
   
   .grid-bandtastic-mvp {
