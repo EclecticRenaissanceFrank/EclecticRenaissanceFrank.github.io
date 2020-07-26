@@ -156,9 +156,9 @@ html {
 }
 .swot-item-title {
   display: grid;
-  justify-content: center;
-  row-gap: 5vh;
-  column-gap: 5vw;
+  grid-template-rows: 15vh;
+  justify-items: center;
+  align-items: center;
 }
 .grid-persona-section {
   display: grid;
@@ -489,7 +489,7 @@ line-height: 1.25;
 }
 .project-tile-bg:hover {
     z-index: 10;    
-    box-shadow:0px 2px 5px rgb(0, 0, 0);
+    box-shadow:0px 2px 5px #616161;
     opacity: 25%;
 }
 
@@ -526,13 +526,11 @@ line-height: 1.25;
   border: none;
 }
 .bandtastic-proto-button:hover, .vocoach-proto-button:hover {
-  -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,1);
--moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,1);
-box-shadow: 1px 1px 5px 0px rgba(0,0,0,1);
+  -webkit-box-shadow: 0px 2px 5px #616161;
+-moz-box-shadow: 0px 2px 5px #616161;
+box-shadow:0px 2px 5px #616161;
 }
-.swot { 
-  border-bottom: 2px solid #FAFAFF;
-}
+.swot { border-bottom: 2px solid #FAFAFF;   }
 li img {
   vertical-align: middle;
 }
@@ -777,6 +775,7 @@ li img {
   /* case-content override to keep centered... */
   .problem, .solution { text-align: center; }
   .swot { border: 2px solid #FAFAFF;  }
+  /*This is NOT redundant because it goes from just bottom, to all 4 sides*/
   .swot-title {
     text-align: center;
   }
