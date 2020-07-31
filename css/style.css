@@ -241,8 +241,21 @@ html {
 .grid-vocoach-version, 
 .grid-vocoach-vis-pattern, 
 .grid-vocoach-screen,
+.grid-bt-centerthisplease,
 .grid-bt-redesign-snapshot,
-.grid-bt-step {
+.grid-bt-process,
+.grid-bt-step-centerpiece,
+.grid-bt-step-choosing-0,
+.grid-bt-step-choosing-1,
+.grid-bt-step-choosing-2,
+.grid-bt-step-choosing-3,
+.grid-bt-step-choosing-4,
+.grid-bt-step-final-three,
+.grid-bt-step-fin,
+.grid-bt-step-pot,
+.grid-bt-step-bal,
+.grid-bt-step-flat,
+.grid-bt-step-final {
   display: grid;
   justify-items: center;
   justify-content: center;
@@ -412,8 +425,17 @@ line-height: 1.25;
   color: #002341
 }
 .swot-title {
-  font-size: 1.625em;
+  /*font-size: 1.625em;*/
+  font-size: 2em;;
   font-weight: 100;
+}
+.sub-heading { 
+    /*Almost replaced SWOT Title but, unique padding.
+    Consider for future case studies & labeling of smaller parts*/
+    font-size: 2em;
+    font-weight: 100;
+    text-align: center;
+    padding: 10vh 0 10vh 0;
 }
 .grid-swot ul li, .swot-conclusion {
   text-align: left;
@@ -438,10 +460,6 @@ line-height: 1.25;
 .bandtastic-iteration-chunk .case-content {
   font-style: italic;
 }
-.bt-step {
-    font-size: 2em;
-    font-weight: 100;
-  }
 
 /*  CAPTIONING  */
 .vocoach-survey, .vocoach-sitemap {
@@ -584,7 +602,7 @@ li img {
 .process-title {  padding: 10vh 0 10vh 0; }
 
 /* Process Titles & Icons ================================= */
-.process-box {  padding: 10vh 0 0 0; }/*No bottom because .mar-full-width*/
+.process-box {  padding: 10vh 0 0 0; } /*No bottom because .mar-full-width*/
 .process-icon { padding: 0 0 2vh 0; }
 /* SWOT  ================================= */
 .swot-title { padding: 10vh 0 5vh 0;}
@@ -939,7 +957,7 @@ li img {
   .case-section-major-label { font-size: 3em;  }
   .case-section-label {font-size: 2.5em;}
   .conclusion-content { margin: 0 20vw 0 20vw;  }
-  .mar-full-width {  padding: 5vh 20vw 5vh 20vw;  }
+  .mar-full-width {  padding: 5vh 15vw 5vh 15vw;  }
   .swot-conclusion {  padding: 5vh 20vw 5vh 20vw;   }
   .vocoach-ia-intro {  margin: 10vh 20vw 5vh 20vw;   }
   /* Case Study GRIDS! ================================= */
