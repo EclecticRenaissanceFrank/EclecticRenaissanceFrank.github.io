@@ -240,7 +240,9 @@ html {
 .grid-vocoach-style,
 .grid-vocoach-version, 
 .grid-vocoach-vis-pattern, 
-.grid-vocoach-screen {
+.grid-vocoach-screen,
+.grid-bt-redesign-snapshot,
+.grid-bt-step {
   display: grid;
   justify-items: center;
   justify-content: center;
@@ -436,6 +438,10 @@ line-height: 1.25;
 .bandtastic-iteration-chunk .case-content {
   font-style: italic;
 }
+.bt-step {
+    font-size: 2em;
+    font-weight: 100;
+  }
 
 /*  CAPTIONING  */
 .vocoach-survey, .vocoach-sitemap {
@@ -507,7 +513,6 @@ line-height: 1.25;
     color: #F0F0F0;
 }
 .case-snapshot {
-  background-color: #;
   color: #212121;
 }
 
@@ -564,7 +569,7 @@ li img {
   ========================================
 */
 
-/*.case-study { margin: 10vh 0 0 0; } /*Dodges Header*/
+/*.case-study { margin: 10vh 0 0 0; } /*Dodges Header, removed to blend color*/
 /* Hero ================================= */
 .case-hero { padding: 15vh 0 5vh 0;  }
 .app-name { margin: 0 0 5vh 0;  }
