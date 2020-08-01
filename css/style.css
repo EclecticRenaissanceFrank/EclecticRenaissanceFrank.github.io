@@ -225,6 +225,7 @@ html {
 .grid-bandtastic-greenNblueButt, 
 .grid-bandtastic-iterations,
 .grid-bandtastic-atomic,
+
 .vocoach-mockup,
 .grid-vocoach-discovery, 
 .grid-vocoach-gamified, 
@@ -241,9 +242,9 @@ html {
 .grid-vocoach-version, 
 .grid-vocoach-vis-pattern, 
 .grid-vocoach-screen,
+
 .grid-bt-centerthisplease,
-.grid-bt-redesign-snapshot,
-.grid-bt-process,
+.grid-bt-redesign-snapshot-collage,
 .grid-bt-step-centerpiece,
 .grid-bt-step-choosing-0,
 .grid-bt-step-choosing-1,
@@ -264,8 +265,6 @@ html {
   row-gap: 5vh;
   column-gap: 5vw;
 }
-
-
 
 
 
@@ -435,7 +434,7 @@ line-height: 1.25;
     font-size: 2em;
     font-weight: 100;
     text-align: center;
-    padding: 10vh 0 10vh 0;
+    padding: 10vh 0 5vh 0;
 }
 .grid-swot ul li, .swot-conclusion {
   text-align: left;
@@ -746,6 +745,32 @@ li img {
   background-color: #e5e5e5;
 }
 
+/*
+  ========================================
+  Bandtastic Logo Redesign Specific
+  ========================================
+*/
+
+.grid-bt-redesign-snapshot-collage {
+    column-gap: 1vw;
+    row-gap: 1vh;
+    grid-template-columns: auto auto auto;
+}
+.grid-bt-step-choosing-1,
+.grid-bt-step-choosing-2,
+.grid-bt-step-choosing-3,
+.grid-bt-step-choosing-4 {
+    grid-template-columns: auto auto;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+.grid-bt-step-flat {
+  grid-template-columns: auto auto;
+}
+.case-content-centerpiece {
+  margin: 0 5vw 0 5vw;
+}
+
 
 
 
@@ -823,7 +848,6 @@ li img {
   /* BANDTASTIC ------------------------- */
   .bandtastic-mockup {
     grid-template-columns: auto auto;
-    
   }
   
   .grid-bandtastic-mvp {
@@ -907,6 +931,35 @@ li img {
     padding-left:   5vh;
     padding-right:  5vh;
   }
+  /* Bandtastic Logo Redesign ------------------------- */
+  .grid-bt-redesign-snapshot-collage {
+    grid-template-columns: auto auto auto auto;
+  }
+   .grid-bt-step-centerpiece {
+        grid-template-columns: 1fr 4fr;
+        margin-left: 5vw;
+  }
+   .grid-bt-step-choosing-1,
+   .grid-bt-step-choosing-2,
+   .grid-bt-step-choosing-3,
+   .grid-bt-step-choosing-4 {
+        grid-template-columns: auto auto;
+        margin-left: 25vw;
+        margin-right: 25vw;
+  }
+  .grid-bt-step-final-three {
+    margin-left: 15vw;
+    margin-right: 15vw;
+  }
+  .grid-bt-step-fin, .grid-bt-step-pot, .grid-bt-step-bal {
+    margin-left: 15vw;
+    margin-right: 15vw;
+  }
+  .case-content-centerpiece {
+    margin: 0 5vw 0 0;
+  }
+  
+
 }
 
 
@@ -990,6 +1043,34 @@ li img {
     padding-left:   10vh;
     padding-right:  10vh;
   }
+  /* Bandtastic Logo Redesign ------------------------- */
+  .grid-bt-redesign-snapshot-collage {
+    grid-template-columns: auto auto auto auto auto;
+  }
+  .grid-bt-step-centerpiece {
+      grid-template-columns: 1fr 6fr;
+      margin-left: 10vw;
+      margin-right: 10vw;
+  }
+  .grid-bt-step-choosing-1,
+  .grid-bt-step-choosing-2,
+  .grid-bt-step-choosing-3,
+  .grid-bt-step-choosing-4 {
+      grid-template-columns: auto auto;
+      margin-left: 33vw;
+      margin-right: 33vw;
+  }
+  .grid-bt-step-final-three {
+      grid-template-columns: auto auto;
+      margin-left: 10vw;
+      margin-right: 10vw;
+  }
+  .grid-bt-step-fin, .grid-bt-step-pot, .grid-bt-step-bal {
+    margin-left: 25vw;
+    margin-right: 25vw;
+  }
+
+
 }
 
 
