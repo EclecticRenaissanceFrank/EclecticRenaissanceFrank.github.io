@@ -986,8 +986,7 @@ li img {
   /* Index ------------------------- */
   .grid-arrow { height: 100px; }
   .grid-projects {
-    /*I can't for the life of me center the 2 column grid
-    grid-template-columns: 1fr 1fr;*/
+    grid-template-columns: 1fr 1fr 1fr;
   }
   body {  font-size: 1.25em;  }
   .hero { font-size: 3em; }
